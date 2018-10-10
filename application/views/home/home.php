@@ -94,7 +94,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <!-- Main Menu End-->
                 <div class="outer-box clearfix">
-                    <div class="social-links ">
+                    <!-- <div class="social-links ">
                         <span>Follow us :</span>
                         <ul class="social-icon-one">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -102,7 +102,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             <li><a href="#"><i class="fa fa-youtube-play"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                     <!--Search Box-->
                     <div class="search-box-outer">
                         <div class="dropdown">
@@ -150,7 +150,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--End Main Box -->
         
     </header>
-    <!--End Main Header -->                           
+    <!--End Main Header -->    
 
     <!-- bar pilih menu -->
     <div class="header header-style-1">
@@ -159,7 +159,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="nav-section header-sticky">
                     <div class="primary-nav-section">
                         <div class="container">
-                            <div class="menubego">
+                            <div class="text-center">
                                 <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
                                     <li class="menu-item home-icon">
                                         <a href="#" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
@@ -854,324 +854,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
     <!--End Main Slider-->
 
-    <!-- Features Section -->
-    <section class="features-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>Featured Collections</h2>
-                <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
-            </div>
-
-            <section class="main-slider with-border">
-                <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
-                    <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
-                                    <!-- Feature Block -->
-                                    <div class="feature-block col-md-6 col-sm-12 col-xs-12">
-                                        <div class="inner-box wow fadeInLeft">
-                                            <div class="image-box"><a href="images/resource/feature-1.jpg" class="lightbox-image" data-fancybox="gallery"><img src="images/resource/feature-1.jpg" alt=""></a></div>
-                                            <div class="content-box">
-                                                <h3><a href="product-details.html">#Fancy Table</a></h3>
-                                                <div class="link-box"><a href="product-details.html">Shop now <i class="fa fa-angle-right"></i></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- Feature Block -->
-                                    <div class="feature-block col-md-6 col-sm-12 col-xs-12">
-                                        <div class="inner-box wow fadeInRight">
-                                            <div class="image-box"><a href="images/resource/feature-2.jpg" class="lightbox-image" data-fancybox="gallery"><img src="images/resource/feature-2.jpg" alt=""></a></div>
-                                            <div class="content-box">
-                                                <h3><a href="product-details.html">#Modern Chair</a></h3>
-                                                <div class="link-box"><a href="product-details.html">Shop now <i class="fa fa-angle-right"></i></a></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    </section>
-    <!--End Features Section -->
-
-    <!-- New Products -->
-    <section class="new-products">
-        <div class="auto-container">
-            <div class="sec-title text-center wow fadeInDown">
-                <h2>What’s New?</h2>
-                <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
-            </div>
-
-            <!--MixitUp Galery-->
-            <div class="mixitup-gallery">
-                <div class="inner-container clearfix">
-                    <!--Filter-->
-                    <div class="filters text-center clearfix">                     
-                        <ul class="filter-tabs filter-btns clearfix">
-                            <li class="filter active" data-role="button" data-filter="all">All Products<span>(30)</span></li>
-                            <li class="filter" data-role="button" data-filter=".cairs">Chairs<span>(10)</span></li>
-                            <li class="filter" data-role="button" data-filter=".tables">Tables<span>(08)</span></li>
-                            <li class="filter" data-role="button" data-filter=".appliances">Appliances<span>(07)</span></li>
-                            <li class="filter" data-role="button" data-filter=".others">Others<span>(05)</span></li>
-                        </ul>                                               
-                    </div>
-                </div>
-                                                
-                <div class="filter-list row clearfix">
-                    <!-- Product Block -->
-                    <div class="product-block mix all tables others col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/1.jpg" alt=""></a>
-                                <span class="tag">Sale!</span>
-                                <div class="link-box">
-                                    <a href="images/resource/products/1.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Pair Waterbottle</a></h3>
-                                <span class="price">$65.10</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix cairs others appliances all col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/2.jpg" alt=""></a>
-                                <div class="link-box">
-                                    <a href="images/resource/products/2.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Small Table</a></h3>
-                                <span class="price"><del>$86.00</del> $82.30</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all others appliances cairs col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/3.jpg" alt=""></a>
-                                <span class="tag">Sale!</span>
-                                <div class="link-box">
-                                    <a href="images/resource/products/3.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Storage Tap</a></h3>
-                                <span class="price">$25.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all others tables appliances cairs col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/4.jpg" alt=""></a>
-                                <div class="link-box">
-                                    <a href="images/resource/products/4.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Home Decor</a></h3>
-                                <span class="price">$22.10</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all tables others cairs col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/5.jpg" alt=""></a>
-                                <span class="tag">Sale!</span>
-                                <div class="link-box">
-                                    <a href="images/resource/products/5.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Wooden Wallclock</a></h3>
-                                <span class="price">$80.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix cairs others appliances all col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/6.jpg" alt=""></a>
-                                <span class="tag">Sale!</span>
-                                <div class="link-box">
-                                    <a href="images/resource/products/6.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Wireless Speaker</a></h3>
-                                <span class="price">$155.70</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix cairs appliances all tables col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/7.jpg" alt=""></a>
-                                <div class="link-box">
-                                    <a href="images/resource/products/7.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Modern Lamp</a></h3>
-                                <span class="price">$172.00</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all others cairs col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/8.jpg" alt=""></a>
-                                <span class="tag">Sale!</span>
-                                <div class="link-box">
-                                    <a href="images/resource/products/8.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Water Jug</a></h3>
-                                <span class="price"><del>$26.00</del> $22.10</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all appliances cairs col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/9.jpg" alt=""></a>
-                                <span class="tag">Sale!</span>
-                                <div class="link-box">
-                                    <a href="images/resource/products/9.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Stylish Pots</a></h3>
-                                <span class="price"><del>$36.00</del> $30.05</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all cairs others tables col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/10.jpg" alt=""></a>
-                                <div class="link-box">
-                                    <a href="images/resource/products/10.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Interior Decors</a></h3>
-                                <span class="price">$40.50</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all appliances col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/11.jpg" alt=""></a>
-                                <div class="link-box">
-                                    <a href="images/resource/products/11.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Plate and Spoon</a></h3>
-                                <span class="price"><del>$22.00</del> $20.10</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product Block -->
-                    <div class="product-block mix all others tables appliances col-md-3 col-sm-6 col-xs-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                            	<a href="product-details.html"><img src="images/resource/products/12.jpg" alt=""></a>
-                                <div class="link-box">
-                                    <a href="images/resource/products/12.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-                                    <a href="#"><span class="flaticon-like-1"></span></a>
-                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                                </div>                       
-                            </div>
-                            <div class="content-box">
-                                <h3><a href="product-details.html">Home Decors</a></h3>
-                                <span class="price">$18.20</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="link-box text-center wow tada">
-                    <a href="shop-grid.html" class="theme-btn btn-style-two">View more <i class="fa fa-angle-right"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End New Products -->
-
-    <!-- Offer Section -->
-    <section class="offer-section">
-        <div class="auto-container">
-        	<div class="row clearfix">
-            	<!--Image-->
-                <div class="image-column col-md-6 col-sm-6 col-xs-12">
-                    <figure class="image wow fadeInLeft"><img src="images/resource/offer-image.png" alt=""></figure>
-                </div>
-                <!--Content-->
-                <div class="content-column col-md-6 col-sm-6 col-xs-12">
-                    <div class="content-box wow fadeInRight">
-                        <h4>2018 Fresh Collections</h4>
-                        <h2>Brand New Iconic <br> Design Speaker</h2>
-                        <div class="link-box">
-                            <a href="shop-list.html">Explore now <i class="fa fa-angle-right"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-    </section>
-    <!-- End Offer Section -->
-
     <!-- News Section -->
     <section class="news-section">
         <div class="auto-container">
@@ -1366,7 +1048,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="auto-container">
                 <div class="inner-container clearfix"> 
                     <div class="pull-left">
-                        <div class="copyright">© 2018 <a href="index-2.html">Les Cons.</a> All rights reserved.</div>
+                        <div class="copyright">© 2018 <a href="index-2.html">Hauw.</a> All rights reserved.</div>
                     </div>
                     <div class="pull-right clearfix">
                         <div class="payment-box">
