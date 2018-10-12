@@ -14,8 +14,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <title>SkyNineCoffee | Home Page</title>
     <?php echo $css; ?>
     <!--Favicon-->
-    <link rel="shortcut icon" href="<?php echo site_url('/assets/images/favicon.png'); ?>" type="image/x-icon">
-    <link rel="icon" href="<?php echo base_url('/assets/images/favicon.png') ?>" type="image/x-icon">
+    <link rel="shortcut icon" href="<?php echo site_url('/assets/images/logokopi.png'); ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url('/assets/images/logokopi.png') ?>" type="image/x-icon">
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
@@ -88,7 +88,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="logo-outer">
                     <div class="logo">
-                        <a href="#"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/logo1.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/logo2.png') ?>"/></a>
                     </div>
                 </div>
 
@@ -867,7 +868,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInLeft">
                         <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="images/resource/news-1.jpg" alt=""></a>
+                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-1.jpg') ?>" alt=""></a>
                             </div>
                             <span class="tag">Decorations</span>
                         </div>
@@ -886,7 +887,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInUp">
                         <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="images/resource/news-2.jpg" alt=""></a>
+                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-2.jpg') ?>" alt=""></a>
                             </div>
                             <span class="tag">Life Style</span>
                         </div>
@@ -905,7 +906,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInRight">
                         <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="images/resource/news-3.jpg" alt=""></a>
+                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-3.jpg') ?>" alt=""></a>
                             </div>
                             <span class="tag">Fashion</span>
                         </div>
@@ -930,13 +931,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="sponsors-outer">
                 <!--Sponsors Carousel-->
                 <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/1.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/2.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/3.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/4.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/5.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/assets/images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/assets/images/clients/2.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
@@ -1048,7 +1049,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="auto-container">
                 <div class="inner-container clearfix"> 
                     <div class="pull-left">
-                        <div class="copyright">© 2018 <a href="index-2.html">Hauw.</a> All rights reserved.</div>
+                        <div class="copyright">© 2018 <a href="index-2.html">Hauw.</a> Yeah!.</div>
                     </div>
                     <div class="pull-right clearfix">
                         <div class="payment-box">
