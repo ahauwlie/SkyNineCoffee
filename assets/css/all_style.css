@@ -699,6 +699,12 @@ img{
 	padding: 26px 0;
 }
 
+.main-header .iner-box{
+	position:relative;
+	float:left;
+	padding: 26px 0;
+}
+
 .header-style-two .outer-box{
 	margin-left: 20px;
 }

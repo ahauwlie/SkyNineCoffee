@@ -86,6 +86,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </nav>
 
+                <div class="iner-box">
+                    <ul class="social-icon-one">
+                        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Login / Sign Up</a></li>
+                    </ul>
+                </div>
+
                 <div class="logo-outer">
                     <div class="logo">
                         <a href="#"><img src="<?php echo base_url('/assets/images/logo1.png') ?>"/></a>
@@ -124,7 +130,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="like-btn"><span class="icon flaticon-like"></span></div>
                     <div class="cart-btn">
-                        <a href="shopping-cart.html">
+                        <a href="<?php echo site_url('shop/cart'); ?>">
                             <span class="count">3</span>
                             <span class="icon flaticon-shopping-bag"></span>
                         </a>
@@ -651,13 +657,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </div>
     <!-- bar pilihan menu selesai -->
 
+
+    <!-- <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> -->
+
+
     <!--Main Slider-->
     <section class="main-slider with-border">
         <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/main-slider/1.jpg"> 
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/assets/images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> 
+
 
 						<div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
@@ -671,13 +682,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-width="auto"
                         data-hoffset="['0','0','0','0']"
                         data-voffset="['0','0','0','0']"
-                        data-x="['left','left','left','left']"
+                        data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="images/main-slider/content-img-3.png"></figure>
+                        data-frames='[{"from":"y:0;z:0;x:1000;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-1.png') ?>"></figure>
                         </div>
                         
-                        <div class="tp-caption tp-resizeme" 
+                        <!-- <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
                         data-paddingleft="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
@@ -692,8 +703,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="images/main-slider/content-img-4.png"></figure>
-                        </div>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-4.png') ?>"></figure>
+                        </div> -->
                         
                         <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
@@ -754,7 +765,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </li>
 
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="images/main-slider/1.jpg"> 
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> 
 
                         <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
@@ -770,8 +781,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-voffset="['0','0','0','0']"
                         data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="images/main-slider/content-img-3.png"></figure>
+                        data-frames='[{"from":"y:0;z:0;rX:0deg;rY:[-100%];rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-6.png') ?>"></figure>
                         </div>
                         
                         <div class="tp-caption tp-resizeme" 
@@ -845,7 +856,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="link-box">
-                                <a href="shop-grid.html" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
+                                <a href="<?php echo site_url('shop/list'); ?>" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </li>
@@ -966,10 +977,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
     <!-- End Subscribe Section -->
 
-     <!-- Main Footer -->
+    <!-- Main Footer -->
     <footer class="main-footer">
         <div class="auto-container">
-        
+
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
@@ -977,7 +988,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="big-column footer-column col-md-5 col-sm-12 col-xs-12">
                         <div class="footer-widget about-widget">
                             <div class="widget-content">
-                                <div class="footer-logo"><a href="index-2.html"><img src="images/footer-logo.png" alt=""></a></div>
+                                <div class="footer-logo">
+                                    <a href="#"><img src="<?php echo base_url('/assets/images/logos.png') ?>"/></a>
+                                </div>
                                 <div class="text">The movie star the professor and mary ann here on gilligans Isle you wanna be where you can see our troubles.</div>
                                 <ul class="contact-info">
                                     <li><i class="fa fa-phone"></i> <span>Call us :</span> +2 5600 900 200</li>
@@ -1049,12 +1062,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="auto-container">
                 <div class="inner-container clearfix"> 
                     <div class="pull-left">
-                        <div class="copyright">© 2018 <a href="index-2.html">Hauw.</a> Yeah!.</div>
+                        <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
                     </div>
                     <div class="pull-right clearfix">
                         <div class="payment-box">
                             <h4>Payment :</h4>
-                            <a href="#"><img src="images/resource/payments-options.png" alt=""></a>
+                            <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
                         </div>
 
                         <div class="social-links">
