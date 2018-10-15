@@ -857,9 +857,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
     <!--End Main Slider-->
 
+    
     <!-- style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);" -->
     <!-- Testimonial Section -->
-    <section class="testimonial-section">
+    <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
                 <!-- Testimonial Block -->
