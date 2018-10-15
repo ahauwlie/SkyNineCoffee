@@ -166,94 +166,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content">
+                                            <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
-                                                    <div class="custom-col-5">
+                                                    <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Home</h2>
-                                                            <ul data-menuname="Men Fashion">
-                                                                <li class="menu-item"><a href="index-2.html" class="link-term">Home 1</a></li>
-                                                                <li class="menu-item"><a href="home-02.html" class="link-term">Home 2</a></li>
-                                                                <li class="menu-item"><a href="home-03.html" class="link-term">Home 3</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Blog pages</h2>
-                                                            <ul data-menuname="Blog pages">
-                                                                <li class="menu-item"><a href="blog.html" class="link-term">Blog Left Sidebar</a></li>
-                                                                <li class="menu-item"><a href="blog-right.html" class="link-term">Blog Right Sidebar</a></li>
-                                                                <li class="menu-item"><a href="blog-post.html" class="link-term">Single Left Sidebar</a></li>
-                                                                <li class="menu-item"><a href="blog-post-right.html" class="link-term">Single Right Sidebar</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Inner pages</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="login.html" class="link-term">Login</a></li>
-                                                                <li class="menu-item"><a href="about-us.html" class="link-term">About Us</a></li>
-                                                                <li class="menu-item"><a href="contact-us.html" class="link-term">Contact Us</a></li>
-                                                                <li class="menu-item"><a href="checkout.html" class="link-term">Check Out</a></li>
-                                                                <li class="menu-item"><a href="shopping-cart.html" class="link-term">Shopping Cart</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Inner pages</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="grid-full.html" class="link-term">Grid No Sidebar</a></li>
-                                                                <li class="menu-item"><a href="grid.html" class="link-term">Grid Left Sidebar</a></li>
-                                                                <li class="menu-item"><a href="grid-right-sidebar.html" class="link-term">Grid Right Sidebar</a></li>
-                                                                <li class="menu-item"><a href="list.html" class="link-term">List Left Sidebar</a></li>
-                                                                <li class="menu-item"><a href="list-right-sidebar.html" class="link-term">List Right Sidebar</a></li>
-                                                                <li class="menu-item"><a href="detail.html" class="link-term">Detail Right Sidebar</a></li>
-                                                                <li class="menu-item"><a href="detail-left.html" class="link-term">Detail Left Sidebar</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-advance-product margin-top-12">
-                                                            <div class="product product-style-1">
-                                                                <div class="product-thumnail">
-                                                                    <a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim ">
-                                                                        <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_pr1.jpg') ?>" alt="T-Shirt Raw Hem Organic Boro Constrast Denim "></figure>
-                                                                    </a>
-                                                                </div>
-                                                                <div class="product-info">
-                                                                    <a href="#" class="product-name"><span>T-Shirt Raw Hem Organic Boro Constrast Denim </span></a>
-                                                                    <div class="wrap-btn">
-                                                                        <a href="#" class="product-link">view more<i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="wrap-gird-banner">
-                                                    <div class="grid-banner-item">
-                                                        <div class="megamenu-banner">
-                                                            <a href="#" class="link-banner banner-effect-3">
-                                                                <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_1.jpg') ?>" alt=""></figure>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="grid-banner-item">
-                                                        <div class="megamenu-banner">
-                                                            <a href="#" class="link-banner banner-effect-3">
-                                                                <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_2.jpg') ?>" alt=""></figure>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="grid-banner-item">
-                                                        <div class="megamenu-banner">
-                                                            <a href="#" class="link-banner banner-effect-3">
-                                                                <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_3.jpg') ?>" alt=""></figure>
-                                                            </a>
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Shop now</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -264,80 +182,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-526 bg-furniture-decor" >
+                                            <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
-                                                    <div class="custom-col-5">
+                                                    <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Badroom</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Living Room</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Tops & Tees</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sweaters</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jeans</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Pants</a><span class="nav-label new-label">new</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Skirts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Bedroom</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a><span class="nav-label sale-label">sale</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5-2">
-                                                        <div class="wrap-banner mg-position-01 banner-style-1 ">
-                                                            <h3 class="banner-title">Fresh Look</h3>
-                                                            <h4 class="sub-title">We’ll Make Your office more comfortablet</h4>
-                                                            <a href="#" class="btn banner-link">Shop now</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row margin-top-34" >
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Dining room</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Accessories</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Shop now</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -348,73 +198,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-526 bg-digital-electronic test">
+                                            <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
-                                                    <div class="custom-col-5">
+                                                    <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Smartphone & Tablet</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Laptop & Computer</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Tops & Tees</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sweaters</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jeans</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Pants</a><span class="nav-label new-label">new</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Skirts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Sound & Audio</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a><span class="nav-label sale-label">sale</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row margin-top-34">
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Game & Consoles</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Printer & Ink</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Shop now</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -425,87 +214,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content">
-
+                                            <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
-
-                                                    <div class="col-lg-3">
+                                                    <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Men's Fashion</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Footies & Rompersrs</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Women's Fashion</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Tops & Tees</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sweaters</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jeans</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Pants</a><span class="nav-label new-label">new</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Skirts</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Activewear</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Girl's fashion</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a><span class="nav-label sale-label">sale</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Footies & Rompers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-lg-3">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Boy's Fashion</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Footies & Rompers</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Swimwear</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="row">
-                                                    <div class="col-sm-12">
-                                                        <div class="megamenu-banner without-col grid-two-bn-01">
-                                                            <a href="#" class="link-banner banner-effect-3">
-                                                                <figure ><img src="<?php echo base_url('/assets/a6/images/megamenu_tool_equiment_banner_1.jpg') ?>" alt="" width="740" height="210"></figure>
-                                                            </a>
-                                                        </div>
-                                                        <div class="megamenu-banner without-col grid-two-bn-02">
-                                                            <a href="#" class="link-banner banner-effect-3">
-                                                                <figure ><img src="<?php echo base_url('/assets/a6/images/megamenu_tool_equiment_banner_2.jpg') ?>" width="370" height="210" alt=""></figure>
-                                                            </a>
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Shop now</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </li>
@@ -515,50 +232,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
-                                                    <div class="custom-col-5">
+                                                    <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Toy Kid’s & Baby</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Tops & Tees</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sweaters</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jeans</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Pants</a><span class="nav-label new-label">new</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Skirts</a></li>
-                                                            </ul>
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Shop now</a> </button>
                                                         </div>
                                                     </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Accessories</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a><span class="nav-label sale-label">sale</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Clothing & Shoes</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="wrap-banner banner-style-2 mg-position-02">
-                                                    <h3 class="banner-title">Baby and Kids Toothcare</h3>
-                                                    <h4 class="sub-title">3 simple steps and products to help along the way</h4>
-                                                    <a href="#" class="btn banner-link">Shop now</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -567,71 +246,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content">
+                                            <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
-                                                    <div class="custom-col-5">
+                                                    <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Spa & Beauty Salon</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Foot Massage</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Body scrub</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Facial Spa</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Oil Bath</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Pants</a><span class="nav-label new-label">new</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Skirts</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Accessories</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a><span class="nav-label sale-label">sale</span></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Organics</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Fruit Soup</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Red Bean Soup</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Chowder</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Kwait Soup</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Clothing & Shoes</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets & Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear & Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div class="custom-col-5">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h2 class="menu-title">Functional Food</h2>
-                                                            <ul>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bodysuits</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Clothing Sets</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Dresses</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Jackets &amp; Coats</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Sleepwear &amp; Robes</a></li>
-                                                                <li class="menu-item"><a href="#" class="link-term">Bloomers, Diaper Covers</a></li>
-                                                            </ul>
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Shop now</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -647,10 +267,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     <!-- bar pilihan menu selesai -->
-
-
-    <!-- <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> -->
-
 
     <!--Main Slider-->
     <section class="main-slider with-border">
@@ -857,8 +473,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
     <!--End Main Slider-->
 
-
-    <!-- style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);" -->
     <!-- Testimonial Section -->
     <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
         <div class="auto-container">
@@ -1040,6 +654,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <ul class="list">
                                             <li><a href="<?php echo site_url('aboutus/index'); ?>">Tentang Kami</a></li>
                                             <li><a href="<?php echo site_url('contactus/index'); ?>">Hubungi Kami</a></li>
+                                            <li><a href="<?php echo site_url('blog/index'); ?>">Blog</a></li>
                                         </ul>
                                     </div>
                                 </div> 

@@ -649,285 +649,105 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- bar pilihan menu selesai -->
 
 
-    <!--Page Title-->
-    <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/3.jpg'); ?>);">
-        <div class="auto-container">
-            <h1>About us</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="index-2.html">Home </a></li>
-                <li>About us</li>
-            </ul>
-        </div>
-    </section>
-    <!--End Page Title-->
-
-    <!-- History Section -->
-    <section class="history-section">
-        <div class="auto-container">
-            <div class="row clearfix">
-               <div class="image-column col-md-6 col-sm-12 col-xs-12">
-                   <div class="inner-column">
-                       <div class="image-box wow slideInLeft"><a href="<?php echo base_url('/assets/images/resource/history-image.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><img src="<?php echo base_url('/assets/images/resource/history-image.jpg') ?>"/></a></div>
-                   </div>
-                </div>
-
-                <div class="content-column col-md-6 col-sm-12 col-xs-12">
-                   <div class="inner-column">
-                       <h2>Sejarah Skynine Coffee</h2>
-                       <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout this is required when, for example, the final text is not yet available dummy text is also known as 'fill text' it is said that song composers.</div>
-                       <div class="btn-box">
-                           <a href="contact.html" class="theme-btn btn-style-four">Contact us</a>
-                       </div>
-                   </div>
-               </div>
-            </div>
-        </div>
-    </section>
-    <!--End History Section -->
-
-    <!-- Testimonial Section -->
-    <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
+    <!-- mulai -->
+    <section class="testimonial-section">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
-                <!-- Testimonial Block -->
-                <div class="testimonial-block">
-                    <div class="inner-box">
-                        <span class="icon flaticon-left-quote"></span>
-                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
-                        <div class="info">
-                            <h4 class="name">Jalen Newman</h4>
-                            <span class="designation">Art Director</span>
+
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/0ctF0lmPM1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">ES KRIM CAMPUR KOPI SELAIN AFFOGATO | Q&A - BREWCODE EPS. 4</div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Testimonial Block -->
-                <div class="testimonial-block">
-                    <div class="inner-box">
-                        <span class="icon flaticon-left-quote"></span>
-                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
-                        <div class="info">
-                            <h4 class="name">Jalen Newman</h4>
-                            <span class="designation">Art Director</span>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/xOWlvmBFoQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">MANUAL BREW | SYPHON TUTORIAL - COFFEE2BREW EPS. 3</div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Testimonial Block -->
-                <div class="testimonial-block">
-                    <div class="inner-box">
-                        <span class="icon flaticon-left-quote"></span>
-                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
-                        <div class="info">
-                            <h4 class="name">Jalen Newman</h4>
-                            <span class="designation">Art Director</span>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/bMVQeWOWyQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">CAPPUCCINO VS LATTE - BREWCODE EPS. 3</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Testimonial Section -->
 
-    <!-- Team Section -->
-    <section class="team-section">
-        <div class="auto-container">
-            <div class="sec-title text-center wow fadeInDown">
-                <h2>Tim Skynine Coffee</h2>
-                <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum <br> is that the text does not attract attention</div>
-            </div>
-
-            <div class="row clearfix">
-                <!-- Team Block -->
-                <div class="team-block col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                        	<a href="<?php echo base_url('/assets/images/resource/team-1.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-1.jpg') ?>" alt=""></a>
-                            <ul class="social-links">
-                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="300" height="350" src="https://www.youtube.com/embed/aK-eEcK9pXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">MANUAL BREW | V60 TUTORIAL - COFFEE2BREW EPS. 2</div>
                         </div>
-                        <div class="info">
-                            <h4 class="name"><a href="contact.html">Cayuz Canisius</a></h4>
-                            <span class="designation">Creative Director</span>
+                    </div>     
+
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/sNN4qNhNJkU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">KENAPA AMERICANO NAMANYA AMERICANO? - BREWCODE EPS. 2</div>
+                        </div>
+                    </div>        
+
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/UdaC5Z7l6Cw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">MANUAL BREW | AEROPRESS TUTORIAL - COFFEE2BREW EPS. 1</div>
+                        </div>
+                    </div>    
+
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/XZFk5wrGj64" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">TERNYATA INI BEDANYA ARABICA DAN ROBUSTA - BREWCODE EPS. 1</div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Team Block -->
-                <div class="team-block col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                        	<a href="<?php echo base_url('/assets/images/resource/team-2.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-2.jpg') ?>" alt=""></a>
-                            <ul class="social-links">
-                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="contact.html">Helen Judy</a></h4>
-                            <span class="designation">Ecommerce Expert</span>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/Aemel8rqnsw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">La Marzocco GS3 (INDONESIA REVIEW) - Sky Nine Coffee</div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Team Block -->
-                <div class="team-block col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                        	<a href="<?php echo base_url('/assets/images/resource/team-3.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-3.jpg') ?>" alt=""></a>
-                            <ul class="social-links">
-                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="contact.html">Jasmine Mike</a></h4>
-                            <span class="designation">Product Manager</span>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/ctgD6tqcCgc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">V60 Workshop by Sky Nine Coffee</div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Team Block -->
-                <div class="team-block col-md-3 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
-                        <div class="image-box">
-                        	<a href="<?php echo base_url('/assets/images/resource/team-4.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-4.jpg') ?>" alt=""></a>
-                            <ul class="social-links">
-                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
-                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
-                            </ul>
-                        </div>
-                        <div class="info">
-                            <h4 class="name"><a href="contact.html">Tommy Tom</a></h4>
-                            <span class="designation">Team Lead</span>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/rVuvaqO15oE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">Aeropress Workshop by Sky Nine Coffee</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Team Section -->
 
-     <!-- Main Footer -->
-    <footer class="main-footer">
-        <div class="auto-container">
-
-            <!--Widgets Section-->
-            <div class="widgets-section">
-                <div class="row clearfix">
-                    <!--Big Column-->
-                    <div class="big-column footer-column col-md-5 col-sm-12 col-xs-12">
-                        <div class="footer-widget about-widget">
-                            <div class="widget-content">
-                                <div class="footer-logo">
-                                    <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
-                                </div>
-                                <div class="text">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable</div>
-                                <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
-                                    <li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
-                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
-                                </ul>
-                            </div>
-                        </div>     
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/zWetfZoQ2Kc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">V60 (HOW TO) - Sky Nine Coffee</div>
+                        </div>
                     </div>
                     
-                    <!--Big Column-->
-                    <div class="big-column col-md-7 col-sm-12 col-xs-12">
-                        <div class="row clearfix">
-                            
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                                <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Quick Links</h2>
-                                    <div class="widget-content">
-                                        <ul class="list">
-                                            <li><a href="<?php echo site_url('aboutus/index'); ?>">About Us</a></li>
-                                            <li><a href="#">Collections</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Faq’s</a></li>
-                                            <li><a href="<?php echo site_url('contactus/index'); ?>">Contact Us</a></li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                                <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Information</h2>
-                                    <div class="widget-content">
-                                        <ul class="list">
-                                            <li><a href="#">Terms & Conditions</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Returns & Exchange</a></li>
-                                            <li><a href="#">Security</a></li>
-                                            <li><a href="#">Sitemap</a></li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div>
-
-                            <!--Footer Column-->
-                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                                <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Help</h2>
-                                    <div class="widget-content">
-                                        <ul class="list">
-                                            <li><a href="#">Payment Options</a></li>
-                                            <li><a href="#">Cancellations</a></li>
-                                            <li><a href="#">My Account</a></li>
-                                            <li><a href="#">Shipping</a></li>
-                                            <li><a href="#">Delivery</a></li>
-                                        </ul>
-                                    </div>
-                                </div> 
-                            </div>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/OyG30TJL0Lo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">Latte Art Workshop by Sky Nine Coffee</div>
                         </div>
                     </div>
-                </div>
+
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/bygp97AdKOM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">Happy Valentine's Day - Sky Nine Coffee</div>
+                        </div>
+                    </div>
             </div>
         </div>
-        
-        <!--Footer Bottom-->
-         <div class="footer-bottom">
-            <div class="auto-container">
-                <div class="inner-container clearfix"> 
-                    <div class="pull-left">
-                        <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
-                    </div>
-                    <div class="pull-right clearfix">
-                        <div class="payment-box">
-                            <h4>Payment :</h4>
-                            <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
-                        </div>
-
-                        <div class="social-links">
-                            <h4>Connect :</h4>
-                            <ul class="social-icon-two clearfix">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- End Main Footer -->
+    </section>
+    <!-- abis -->
 
 </div>
 <!--End pagewrapper-->

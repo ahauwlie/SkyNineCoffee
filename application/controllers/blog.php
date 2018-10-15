@@ -1,0 +1,23 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Hauw
+ * Date: 9/26/2018
+ * Time: 10:10 AM
+ */
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Blog extends CI_Controller
+{
+    public function index() {
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $this->load->view('blog/classic', $data);
+    }
+
+    public function single() {
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $this->load->view('blog/single', $data);
+    }
+}
