@@ -685,7 +685,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
                         data-frames='[{"from":"y:0;z:0;x:1000;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-1.png') ?>"></figure>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-7.png') ?>"></figure>
                         </div>
                         
                         <!-- <div class="tp-caption tp-resizeme" 
@@ -721,7 +721,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['left','left','left','left']"
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h4>Get flat 25% off for</h4>
+                           <h4>Do you like coffee?</h4>
                         </div>
 
                         <div class="tp-caption" 
@@ -740,7 +740,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['left','left','left','left']"
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Modern Pendant Lamp <br> Collections</h2>
+                            <h2>But are you confuse to choose<br> what kind of coffe?</h2>
                         </div>
                         
                         <div class="tp-caption tp-resizeme" 
@@ -759,7 +759,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="link-box">
-                                <a href="<?php echo site_url('shop/index'); ?>" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
+                                <a href="<?php echo site_url('shop/list'); ?>" class="theme-btn btn-style-one">Click Here <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </li>
@@ -856,7 +856,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="link-box">
-                                <a href="<?php echo site_url('shop/list'); ?>" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
+                                <a href="<?php echo site_url('shop/index'); ?>" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </li>
@@ -879,14 +879,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInLeft">
                         <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-1.jpg') ?>" alt=""></a>
+                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/Kopi Arabika - Kenya -Roasted Beans 250 Gram.jpeg') ?>" alt=""></a>
                             </div>
                             <span class="tag">Coffee</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
-                                <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
+                                <li><i class="fa fa-user-o"></i> by Tommy</li>
+                                <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
                             </ul>
                             <h3><a href="blog-single.html">Be deluxe apartment in the sky</a></h3>
                             <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
@@ -898,14 +898,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInUp">
                         <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-2.jpg') ?>" alt=""></a>
+                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/coffee_machine.jpg') ?>" alt=""></a>
                             </div>
                             <span class="tag">Equipments</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
-                                <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
+                                <li><i class="fa fa-user-o"></i> by Chayuz</li>
+                                <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
                             </ul>
                             <h3><a href="blog-single.html">Make our dreams come true</a></h3>
                             <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
@@ -917,14 +917,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInRight">
                         <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-3.jpg') ?>" alt=""></a>
+                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/coffee_filter.jpg') ?>" alt=""></a>
                             </div>
                             <span class="tag">Filter</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
-                                <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
+                                <li><i class="fa fa-user-o"></i> by Mike</li>
+                                <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
                             </ul>
                             <h3><a href="blog-single.html">Come and dance on our floor</a></h3>
                             <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
@@ -947,11 +947,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/3.png') ?>" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/4.png') ?>" alt=""></a></figure></li>
                     <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/5.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/assets/images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/assets/images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/6.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/7.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/8.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/9.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/10.png') ?>" alt=""></a></figure></li>
                 </ul>
             </div>
         </div>

@@ -62,13 +62,16 @@ class Register extends CI_Controller {
 		
 		if($this->email->send())
 		{
-			echo "Berhasil melakukan registrasi, silahkan cek email kamu";
+			//echo "Berhasil melakukan registrasi, silahkan cek email kamu";
+			$data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+			$data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+			$this->load->view('home/new1', $data);
 		}else
 		{
 			echo "Berhasil melakukan registrasi, namun gagal mengirim verifikasi email";
 		}
 		
-		echo "<br><br><a href='".site_url("home")."'>Back to Home Page</a>";
+		//echo "<br><br><a href='".site_url("home")."'>Back to Home Page</a>";
 	}
 	
 	public function verification($key)
