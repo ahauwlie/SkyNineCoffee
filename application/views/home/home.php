@@ -991,10 +991,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="footer-logo">
                                     <a href="#"><img src="<?php echo base_url('/assets/images/logos.png') ?>"/></a>
                                 </div>
-                                <div class="text">The movie star the professor and mary ann here on gilligans Isle you wanna be where you can see our troubles.</div>
+                                <div class="text">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable</div>
                                 <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +2 5600 900 200</li>
-                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  getsupport@mail.com</li>
+                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
+									<li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
                                 </ul>
                             </div>
                         </div>     
