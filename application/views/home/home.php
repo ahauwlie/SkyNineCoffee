@@ -166,12 +166,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg-kidtoy">
+                                            <div class="megamenu-content min-height-460 bg1">
                                                 <div class="row">
                                                     <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
                                                             <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Shop now</a> </button>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Klik disini</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -182,12 +182,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg-kidtoy">
+                                            <div class="megamenu-content min-height-460 bg2">
                                                 <div class="row">
                                                     <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
                                                             <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Shop now</a> </button>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -198,12 +198,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg-kidtoy">
+                                            <div class="megamenu-content min-height-460 bg3">
                                                 <div class="row">
                                                     <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
                                                             <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Shop now</a> </button>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Klik disini</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -214,12 +214,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg-kidtoy">
+                                            <div class="megamenu-content min-height-460 bg4">
                                                 <div class="row">
                                                     <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
                                                             <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Shop now</a> </button>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Klik disini</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -230,12 +230,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg-kidtoy">
+                                            <div class="megamenu-content min-height-460 bg5">
                                                 <div class="row">
                                                     <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
                                                             <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Shop now</a> </button>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -246,12 +246,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg-kidtoy">
+                                            <div class="megamenu-content min-height-460 bg6">
                                                 <div class="row">
                                                     <div class="custom-col-8">
                                                         <div class="wrap-vertical-nav">
                                                             <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Shop now</a> </button>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Klik disini</a> </button>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -366,7 +366,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="link-box">
-                                <a href="<?php echo site_url('shop/list'); ?>" class="theme-btn btn-style-one">Click Here <i class="fa fa-angle-right"></i></a>
+                                <a href="<?php echo site_url('shop/list'); ?>" class="theme-btn btn-style-one">Klik disini <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </li>
@@ -463,7 +463,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
                             <div class="link-box">
-                                <a href="<?php echo site_url('shop/index'); ?>" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
+                                <a href="<?php echo site_url('shop/index'); ?>" class="theme-btn btn-style-one">Klik disini <i class="fa fa-angle-right"></i></a>
                             </div>
                         </div>
                     </li>
@@ -655,6 +655,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <li><a href="<?php echo site_url('aboutus/index'); ?>">Tentang Kami</a></li>
                                             <li><a href="<?php echo site_url('contactus/index'); ?>">Hubungi Kami</a></li>
                                             <li><a href="<?php echo site_url('blog/index'); ?>">Blog</a></li>
+                                            <li><a href="<?php echo site_url('video/index'); ?>">Video</a></li>
                                         </ul>
                                     </div>
                                 </div> 
@@ -663,14 +664,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!--Footer Column-->
                             <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                                 <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Information</h2>
+                                    <h2 class="widget-title">Informasi</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="#">Terms & Conditions</a></li>
-                                            <li><a href="#">Privacy Policy</a></li>
-                                            <li><a href="#">Returns & Exchange</a></li>
-                                            <li><a href="#">Security</a></li>
-                                            <li><a href="#">Sitemap</a></li>
+                                            <li><a href="#">Ketentuan</a></li>
+                                            <li><a href="#">Privasi</a></li>
+                                            <li><a href="#">Keamanan</a></li>
                                         </ul>
                                     </div>
                                 </div> 
@@ -679,14 +678,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!--Footer Column-->
                             <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                                 <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Help</h2>
+                                    <h2 class="widget-title">Bantuan</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="#">Payment Options</a></li>
-                                            <li><a href="#">Cancellations</a></li>
-                                            <li><a href="#">My Account</a></li>
-                                            <li><a href="#">Shipping</a></li>
-                                            <li><a href="#">Delivery</a></li>
+                                            <li><a href="#">Pemilihan Pembayaran</a></li>
+                                            <li><a href="#">Pembatalan</a></li>
+                                            <li><a href="#">Pengiriman</a></li>
                                         </ul>
                                     </div>
                                 </div> 
