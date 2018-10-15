@@ -881,7 +881,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="image-box">                         
                             <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-1.jpg') ?>" alt=""></a>
                             </div>
-                            <span class="tag">Decorations</span>
+                            <span class="tag">Coffee</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
@@ -900,7 +900,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="image-box">                         
                             <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-2.jpg') ?>" alt=""></a>
                             </div>
-                            <span class="tag">Life Style</span>
+                            <span class="tag">Equipments</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
@@ -919,7 +919,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="image-box">                         
                             <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/resource/news-3.jpg') ?>" alt=""></a>
                             </div>
-                            <span class="tag">Fashion</span>
+                            <span class="tag">Filter</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
