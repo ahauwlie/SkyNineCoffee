@@ -23,3 +23,4 @@
 <script src="<?php echo base_url('/assets/js/mixitup.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/wow.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/script.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/map-script.js') ?>"></script>

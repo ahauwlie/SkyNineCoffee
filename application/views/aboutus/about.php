@@ -94,8 +94,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="logo-outer">
                     <div class="logo">
-                        <a href="#"><img src="<?php echo base_url('/assets/images/logo1.png') ?>"/></a>
-                        <a href="#"><img src="<?php echo base_url('/assets/images/logo2.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/skynine.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/coffee.png') ?>"/></a>
                     </div>
                 </div>
 
@@ -821,7 +821,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
      <!-- Main Footer -->
     <footer class="main-footer">
         <div class="auto-container">
-        
+
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
@@ -829,11 +829,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="big-column footer-column col-md-5 col-sm-12 col-xs-12">
                         <div class="footer-widget about-widget">
                             <div class="widget-content">
-                                <div class="footer-logo"><a href="index-2.html"><img src="images/footer-logo.png" alt=""></a></div>
-                                <div class="text">The movie star the professor and mary ann here on gilligans Isle you wanna be where you can see our troubles.</div>
+                                <div class="footer-logo">
+                                    <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
+                                </div>
+                                <div class="text">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable</div>
                                 <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +2 5600 900 200</li>
-                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  getsupport@mail.com</li>
+                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
+                                    <li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
                                 </ul>
                             </div>
                         </div>     
@@ -849,11 +852,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <h2 class="widget-title">Quick Links</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="#">About Us</a></li>
+                                            <li><a href="<?php echo site_url('aboutus/index'); ?>">About Us</a></li>
                                             <li><a href="#">Collections</a></li>
                                             <li><a href="#">Blog</a></li>
                                             <li><a href="#">Faq’s</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="<?php echo site_url('contactus/index'); ?>">Contact Us</a></li>
                                         </ul>
                                     </div>
                                 </div> 
@@ -901,12 +904,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="auto-container">
                 <div class="inner-container clearfix"> 
                     <div class="pull-left">
-                        <div class="copyright">© 2018 <a href="index-2.html">Les Cons.</a> All rights reserved.</div>
+                        <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
                     </div>
                     <div class="pull-right clearfix">
                         <div class="payment-box">
                             <h4>Payment :</h4>
-                            <a href="#"><img src="images/resource/payments-options.png" alt=""></a>
+                            <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
                         </div>
 
                         <div class="social-links">

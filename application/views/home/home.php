@@ -88,7 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="iner-box">
                     <ul class="social-icon-one">
-                        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Login / Sign Up</a></li>
+                        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
                     </ul>
                 </div>
 
@@ -160,11 +160,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="text-center">
                                 <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
                                     <li class="menu-item home-icon">
-                                        <a href="#" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Purchase/Shop</a>
+                                        <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content">
                                                 <div class="row">
@@ -262,7 +262,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Events</a>
+                                        <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content min-height-526 bg-furniture-decor" >
                                                 <div class="row">
@@ -346,7 +346,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Article</a>
+                                        <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content min-height-526 bg-digital-electronic test">
                                                 <div class="row">
@@ -423,7 +423,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Videos</a>
+                                        <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content">
 
@@ -511,7 +511,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Contact Us</a>
+                                        <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content min-height-460 bg-kidtoy">
                                                 <div class="row">
@@ -565,7 +565,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Organics & Spa" class="link-term mercado-item-title">About Us</a>
+                                        <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
                                         <div class="wrap-megamenu">
                                             <div class="megamenu-content">
                                                 <div class="row">
@@ -712,7 +712,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['left','left','left','left']"
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h4>Do you like coffee?</h4>
+                           <h4>Temukan kami:</h4>
                         </div>
 
                         <div class="tp-caption" 
@@ -731,7 +731,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['left','left','left','left']"
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>But are you confuse to choose<br> what kind of coffe?</h2>
+                            <h2>Nikmati secangkir kopi <br> dari biji berkualitas terbaik.</h2>
                         </div>
                         
                         <div class="tp-caption tp-resizeme" 
@@ -809,7 +809,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['left','left','left','left']"
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h4>Get flat 25% off for</h4>
+                           <h4>Dapatkan diskon 25% untuk</h4>
                         </div>
 
                         <div class="tp-caption" 
@@ -828,7 +828,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['left','left','left','left']"
                         data-y="['middle','middle','middle','middle']"
                         data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Modern Pendant Lamp <br> Collections</h2>
+                            <h2>Setiap pembelian kopi berkualitas<br> dari roaster terbaik.</h2>
                         </div>
                         
                         <div class="tp-caption tp-resizeme" 
@@ -857,7 +857,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     </section>
     <!--End Main Slider-->
 
-    
+
     <!-- style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);" -->
     <!-- Testimonial Section -->
     <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
@@ -895,8 +895,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="news-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <h2>From The Blog</h2>
-                <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                <h2>Produk kami</h2>
+                <div class="text">Kami menyediakan produk-produk terbaik hanya untuk Anda.</div>
             </div>
 
             <div class="row clearfix">
@@ -913,8 +913,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><i class="fa fa-user-o"></i> by Tommy</li>
                                 <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
                             </ul>
-                            <h3><a href="blog-single.html">Be deluxe apartment in the sky</a></h3>
-                            <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                            <h3><a href="blog-single.html">Biji Kopi Khusus</a></h3>
+                            <div class="text">Diolah dari biji kopi terbaik dari roastery pribadi kami.</div>
                         </div>
                     </div>
                 </div>
@@ -932,8 +932,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><i class="fa fa-user-o"></i> by Chayuz</li>
                                 <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
                             </ul>
-                            <h3><a href="blog-single.html">Make our dreams come true</a></h3>
-                            <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                            <h3><a href="blog-single.html">Mesin Kopi</a></h3>
+                            <div class="text">Menyediakan berbagai alat kebutuhan Anda untuk meracik kopi secara mandiri.</div>
                         </div>
                     </div>
                 </div>
@@ -951,8 +951,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <li><i class="fa fa-user-o"></i> by Mike</li>
                                 <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
                             </ul>
-                            <h3><a href="blog-single.html">Come and dance on our floor</a></h3>
-                            <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                            <h3><a href="blog-single.html">Penyaring Kopi</a></h3>
+                            <div class="text">Temukan filter kopi berkualitas tinggi dalam toko kami.</div>
                         </div>
                     </div>
                 </div>
@@ -987,14 +987,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="subscribe-section">
         <div class="auto-container">
             <div class="sec-title text-center">
-                <h2>Newsletter</h2>
-                <div class="text">Gift would be from me and the card attached would say thank you</div>
+                <h2>Kabar Kopi</h2>
+                <div class="text">Kami akan memberitahukan produk terbaru dari kami setiap minggunya.</div>
             </div>
             <div class="subscribe-form">
                 <form method="post" action="http://t.commonsupport.com/lescons/contact.html">
                     <div class="form-group">
-                        <input type="email" name="email" value="" placeholder="Enter Your Email" required="">
-                        <button type="submit" class="theme-btn btn-style-one">Subscribe <i class="fa fa-angle-right"></i></button>
+                        <input type="email" name="email" value="" placeholder="Masukan email anda" required="">
+                        <button type="submit" class="theme-btn btn-style-one">Berlangganan <i class="fa fa-angle-right"></i></button>
                     </div>
                 </form>
             </div>
@@ -1014,12 +1014,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="footer-widget about-widget">
                             <div class="widget-content">
                                 <div class="footer-logo">
-                                    <a href="#"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
+                                    <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
                                 </div>
-                                <div class="text">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable</div>
+                                <div class="text">Skynine Coffee adalah coffee shop sekaligus roastery
+                                    yang berlokasi di Tekno Park, Tangerang. Kami menyediakan
+                                    biji kopi terbaik yang langsung diolah dari roastery kami.</div>
                                 <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
-									<li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-phone"></i> <span>Hubungi Kami :</span> +62 857 1488 9509</li>
+									<li><i class="fa fa-phone"></i> <span>Atau :</span> +62 858 4140 2758</li>
                                     <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
                                 </ul>
                             </div>
@@ -1033,14 +1035,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!--Footer Column-->
                             <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                                 <div class="footer-widget links-widget">
-                                    <h2 class="widget-title">Quick Links</h2>
+                                    <h2 class="widget-title">Tautan Langsung</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="<?php echo site_url('aboutus/index'); ?>">About Us</a></li>
-                                            <li><a href="#">Collections</a></li>
-                                            <li><a href="#">Blog</a></li>
-                                            <li><a href="#">Faq’s</a></li>
-                                            <li><a href="#">Contact Us</a></li>
+                                            <li><a href="<?php echo site_url('aboutus/index'); ?>">Tentang Kami</a></li>
+                                            <li><a href="<?php echo site_url('contactus/index'); ?>">Hubungi Kami</a></li>
                                         </ul>
                                     </div>
                                 </div> 
@@ -1092,12 +1091,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                     <div class="pull-right clearfix">
                         <div class="payment-box">
-                            <h4>Payment :</h4>
+                            <h4>Pembayaran :</h4>
                             <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
                         </div>
 
                         <div class="social-links">
-                            <h4>Connect :</h4>
+                            <h4>Sosial Media :</h4>
                             <ul class="social-icon-two clearfix">
                                 <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
                                 <li><a href="#"><i class="fa fa-twitter"></i></a></li> 

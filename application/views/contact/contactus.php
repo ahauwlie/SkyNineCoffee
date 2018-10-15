@@ -1,0 +1,248 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: Hauw
+ * Date: 9/26/2018
+ * Time: 9:11 AM
+ */
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>SkyNineCoffee | Home Page</title>
+    <?php echo $css; ?>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="<?php echo site_url('/assets/images/logokopi.png'); ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url('/assets/images/logokopi.png') ?>" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <!-- Preloader -->
+        <div class="preloader"></div>
+        <!--Header Span-->
+        <div class="header-span"></div>
+        <!-- Main Header-->
+        <header class="main-header">
+            <!--Main Box-->
+            <div class="main-box">
+                <div class="nav-outer clearfix">
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu">
+                        <div class="navbar-header">     
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+
+                        <div class="navbar-collapse collapse clearfix">
+                            <ul class="navigation clearfix">
+                                <li class="current dropdown"><a href="#">Home</a>
+                                <ul>
+                                    <li><a href="index-2.html">Home Style 01</a></li>
+                                    <li><a href="index-3.html">Home Style 02</a></li>
+                                    <li class="dropdown"><a href="#">Header Styles</a>
+                                    <ul>
+                                        <li><a href="index-2.html">Header Type 01</a></li>
+                                        <li><a href="index-3.html">Header Type 02</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="#">Pages</a>
+                        <ul>                                
+                            <li><a href="about.html">About Us</a></li>
+                            <li class="dropdown"><a href="#">Blog</a>
+                            <ul>
+                                <li><a href="blog-classic.html">Latest Blog</a></li>
+                                <li><a href="blog-single.html">Post Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>   
+
+                <li class="dropdown"><a href="#">Shop</a>
+                <ul>
+                    <li><a href="shop-grid.html">Products Grid View</a></li>
+                    <li><a href="shop-list.html">Products List View</a></li>
+                    <li><a href="external-products.html">Product Details 01</a></li>
+                    <li><a href="variable-products.html">Product Details 02</a></li>
+                    <li><a href="product-details.html">Product Details 03</a></li>
+                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                    <li><a href="checkout.html">Checkout Page</a></li>
+                </ul>
+            </li>
+
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="iner-box">
+    <ul class="social-icon-one">
+        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Login / Sign Up</a></li>
+    </ul>
+</div>
+
+<div class="logo-outer">
+    <div class="logo">
+        <a href="#"><img src="<?php echo base_url('/assets/images/skynine.png') ?>"/></a>
+        <a href="#"><img src="<?php echo base_url('/assets/images/coffee.png') ?>"/></a>
+    </div>
+</div>
+
+<!-- Main Menu End-->
+<div class="outer-box clearfix">
+    <!--Search Box-->
+    <div class="search-box-outer">
+        <div class="dropdown">
+            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
+            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                <li class="panel-outer">
+                    <div class="form-container">
+                        <form method="post" action="http://t.commonsupport.com/lescons/blog.html">
+                            <div class="form-group">
+                                <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="like-btn"><span class="icon flaticon-like"></span></div>
+    <div class="cart-btn">
+        <a href="<?php echo site_url('shop/cart'); ?>">
+            <span class="count">3</span>
+            <span class="icon flaticon-shopping-bag"></span>
+        </a>
+    </div>
+</div>
+</div>
+
+<!--Mobile Menu-->
+<div class="mobile-menu">
+    <div class="nav-header clearfix">
+        <div class="text">Menu</div>
+        <div class="menu-btn"><span class="fa fa-bars"></span></div>
+    </div>
+    <div class="links-outer">
+        <div class="links-box">
+            <ul class="navigation">
+                <!--Keep This Empty / Menu will come through Javascript-->
+            </ul>
+        </div>
+    </div>
+</div>
+
+</div>
+<!--End Main Box -->
+
+</header>
+<!--End Main Header -->    
+
+<!--Page Title-->
+<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/3.jpg'); ?>);">
+    <div class="auto-container">
+        <h1>Contact us</h1>
+        <ul class="bread-crumb clearfix">
+            <li><a href="index-2.html">Home </a></li>
+            <li>Contact us</li>
+        </ul>
+    </div>
+</section>
+<!--End Page Title-->
+
+<!-- Map Section -->
+<section class="map-section">
+    <div class="auto-container">
+        <div class="map-outer wow fadeInUp">
+            <!--Map Canvas-->
+            <div class="map-canvas"
+            data-zoom="17"
+            data-lat="-6.328099"
+            data-lng="106.681519"
+            data-type="roadmap"
+            data-hue="#ffc400"
+            data-title="SkyNineCoffee"
+            data-icon-path="<?php echo base_url('/assets/images/icons/map-marker.png') ?>"
+            data-content="Komplek BSD Sektor XI Ruko Boulevard Tekno Block A Nomer 3 Kota Tanggerang Selatan 15314, Setu, South Tangerang City, Banten 15310">
+        </div>
+    </div>
+</div>
+</section>
+<!--End Map Section -->
+
+<!-- Main Footer -->
+<footer class="main-footer">
+    <div class="auto-container">
+
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="row clearfix">
+                <!--Big Column-->
+                <div class="big-column footer-column">
+                    <div class="footer-widget about-widget">
+                        <div class="widget-content">
+                            <div class="footer-logo col-sm-6">
+                                <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
+                            </div>
+                            <div class="text col-sm-6">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable
+                                <ul class="contact-info">
+                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
+                                    <li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer Bottom-->
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <div class="inner-container clearfix"> 
+                <div class="pull-left">
+                    <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
+                </div>
+                <div class="pull-right clearfix">
+                    <div class="social-links">
+                        <h4>Connect :</h4>
+                        <ul class="social-icon-two clearfix">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li> 
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
+                            <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Main Footer -->
+
+</div>
+<!--End pagewrapper-->
+
+<!--Scroll to top-->
+<div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
+<?php echo $js; ?>
+<!--Google Map APi Key-->
+<script src="http://maps.google.com/maps/api/js?key=AIzaSyBKS14AnP3HCIVlUpPKtGp7CbYuMtcXE2o"></script>
+<!--End Google Map APi-->
+</body>
+</html>
