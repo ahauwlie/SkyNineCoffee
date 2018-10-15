@@ -160,7 +160,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="text-center">
                                 <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
                                     <li class="menu-item home-icon">
-                                        <a href="#" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
@@ -650,7 +650,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
     <!--Page Title-->
-    <section class="page-title" style="background-image:url(images/background/3.jpg);">
+    <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/3.jpg'); ?>);">
         <div class="auto-container">
             <h1>About us</h1>
             <ul class="bread-crumb clearfix">
@@ -667,13 +667,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row clearfix">
                <div class="image-column col-md-6 col-sm-12 col-xs-12">
                    <div class="inner-column">
-                       <div class="image-box wow slideInLeft"><a href="images/resource/history-image.jpg" class="lightbox-image" data-fancybox="gallery"><img src="images/resource/history-image.jpg" alt=""></a></div>
+                       <div class="image-box wow slideInLeft"><a href="<?php echo base_url('/assets/images/resource/history-image.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><img src="<?php echo base_url('/assets/images/resource/history-image.jpg') ?>"/></a></div>
                    </div>
                 </div>
 
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
                    <div class="inner-column">
-                       <h2>Our History</h2>
+                       <h2>Sejarah Skynine Coffee</h2>
                        <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout this is required when, for example, the final text is not yet available dummy text is also known as 'fill text' it is said that song composers.</div>
                        <div class="btn-box">
                            <a href="contact.html" class="theme-btn btn-style-four">Contact us</a>
@@ -686,7 +686,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--End History Section -->
 
     <!-- Testimonial Section -->
-    <section class="testimonial-section" style="background-image: url(images/background/1.jpg);">
+    <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
                 <!-- Testimonial Block -->
@@ -733,7 +733,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="team-section">
         <div class="auto-container">
             <div class="sec-title text-center wow fadeInDown">
-                <h2>Our Team</h2>
+                <h2>Tim Skynine Coffee</h2>
                 <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum <br> is that the text does not attract attention</div>
             </div>
 
@@ -742,7 +742,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="team-block col-md-3 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="image-box">
-                        	<a href="images/resource/team-1.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-1.jpg" alt=""></a>
+                        	<a href="<?php echo base_url('/assets/images/resource/team-1.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-1.jpg') ?>" alt=""></a>
                             <ul class="social-links">
                             	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -751,7 +751,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </ul>
                         </div>
                         <div class="info">
-                            <h4 class="name"><a href="contact.html">John Mosis</a></h4>
+                            <h4 class="name"><a href="contact.html">Cayuz Canisius</a></h4>
                             <span class="designation">Creative Director</span>
                         </div>
                     </div>
@@ -761,7 +761,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="team-block col-md-3 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1500ms">
                         <div class="image-box">
-                        	<a href="images/resource/team-2.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-2.jpg" alt=""></a>
+                        	<a href="<?php echo base_url('/assets/images/resource/team-2.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-2.jpg') ?>" alt=""></a>
                             <ul class="social-links">
                             	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -780,7 +780,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="team-block col-md-3 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
                         <div class="image-box">
-                        	<a href="images/resource/team-3.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-3.jpg" alt=""></a>
+                        	<a href="<?php echo base_url('/assets/images/resource/team-3.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-3.jpg') ?>" alt=""></a>
                             <ul class="social-links">
                             	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -789,7 +789,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </ul>
                         </div>
                         <div class="info">
-                            <h4 class="name"><a href="contact.html">Jasmine</a></h4>
+                            <h4 class="name"><a href="contact.html">Jasmine Mike</a></h4>
                             <span class="designation">Product Manager</span>
                         </div>
                     </div>
@@ -799,7 +799,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="team-block col-md-3 col-sm-6 col-xs-12">
                     <div class="inner-box wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
                         <div class="image-box">
-                        	<a href="images/resource/team-4.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-4.jpg" alt=""></a>
+                        	<a href="<?php echo base_url('/assets/images/resource/team-4.jpg') ?>" class="lightbox-image" data-fancybox="team"><img src="<?php echo base_url('/assets/images/resource/team-4.jpg') ?>" alt=""></a>
                             <ul class="social-links">
                             	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
                                 <li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -808,7 +808,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             </ul>
                         </div>
                         <div class="info">
-                            <h4 class="name"><a href="contact.html">Alex Robin</a></h4>
+                            <h4 class="name"><a href="contact.html">Tommy Tom</a></h4>
                             <span class="designation">Team Lead</span>
                         </div>
                     </div>
@@ -817,28 +817,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </section>
     <!--End Team Section -->
-
-    <!--Clients Section-->
-    <section class="clients-section alternate">
-        <div class="auto-container">
-            <div class="sponsors-outer">
-                <!--Sponsors Carousel-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <!--End Clients Section-->
 
      <!-- Main Footer -->
     <footer class="main-footer">

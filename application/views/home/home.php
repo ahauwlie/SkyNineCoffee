@@ -19,11 +19,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <style type="text/css">  
-    .test{
-        background-image: url(<?php echo base_url('assets/a6/images/megamenu_digital_electronics_1.jpg'); ?>);
-    }
-    </style>
 </head>
 
 <body>
@@ -99,8 +94,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="logo-outer">
                     <div class="logo">
-                        <a href="#"><img src="<?php echo base_url('/assets/images/logo1.png') ?>"/></a>
-                        <a href="#"><img src="<?php echo base_url('/assets/images/logo2.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/skynine.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/coffee.png') ?>"/></a>
                     </div>
                 </div>
 
@@ -663,7 +658,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/assets/images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> 
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/sky1.jpg') ?>"> 
 
 
 						<div class="tp-caption tp-resizeme" 
@@ -761,7 +756,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </li>
 
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> 
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/sky2.jpg') ?>"> 
 
                         <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
@@ -777,11 +772,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-voffset="['0','0','0','0']"
                         data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:0;z:0;rX:0deg;rY:[-100%];rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-6.png') ?>"></figure>
+                        data-frames='[{"from":"y:-1000;z:0;rX:0deg;rY:[-100%];rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-8.png') ?>"></figure>
                         </div>
                         
-                        <!-- <div class="tp-caption tp-resizeme" 
+                        <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
                         data-paddingleft="[0,0,0,0]"
                         data-paddingright="[0,0,0,0]"
@@ -795,9 +790,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-voffset="['0','0','0','0']"
                         data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="images/main-slider/content-img-4.png"></figure>
-                        </div> -->
+                        data-frames='[{"from":"y:1000;z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-9.png') ?>"></figure>
+                        </div>
                         
                         <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
@@ -861,6 +856,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </section>
     <!--End Main Slider-->
+
+    <!-- style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);" -->
+    <!-- Testimonial Section -->
+    <section class="testimonial-section">
+        <div class="auto-container">
+            <div class="testimonial-carousel owl-carousel owl-theme">
+                <!-- Testimonial Block -->
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <iframe class="info col-sm-8" width="560" height="315" src="https://www.youtube.com/embed/VAJK04HOLd0" frameborder="0" allowfullscreen></iframe>
+                        <div class="text col-sm-4">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block -->
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <iframe class="info col-sm-8" width="560" height="315" src="https://www.youtube.com/embed/VAJK04HOLd0" frameborder="0" allowfullscreen></iframe>
+                        <div class="text col-sm-4">Now</div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block -->
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <iframe class="info col-sm-8" width="560" height="315" src="https://www.youtube.com/embed/VAJK04HOLd0" frameborder="0" allowfullscreen></iframe>
+                        <div class="text col-sm-4">thank you</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Testimonial Section -->
 
     <!-- News Section -->
     <section class="news-section">
@@ -985,7 +1013,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="footer-widget about-widget">
                             <div class="widget-content">
                                 <div class="footer-logo">
-                                    <a href="#"><img src="<?php echo base_url('/assets/images/logos.png') ?>"/></a>
+                                    <a href="#"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
                                 </div>
                                 <div class="text">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable</div>
                                 <ul class="contact-info">
