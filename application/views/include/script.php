@@ -18,7 +18,7 @@
 <script src="<?php echo base_url('/assets/js/bootstrap.min.js') ?>"></script>
 <script src="<?php echo base_url('/assets/js/jquery.fancybox.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/jquery-ui.js'); ?>"></script>
-<script src="<?php echo base_url('/assets/js/owl.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/owl_js.js') ?>"></script>
 <script src="<?php echo base_url('/assets/js/appear.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/mixitup.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/wow.js'); ?>"></script>
