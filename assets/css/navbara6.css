@@ -158,23 +158,23 @@ body{
     }
 
     .bg-digital-electronic{
-        background-image: url('assets/images/megamenu_digital_electronics_1.jpg')
+        background-image: url('../a6/images/megamenu_digital_electronics_1.jpg');
     }
     .bg-kidtoy{
-        background-image: url('assets/images/megamenu_kid_toy_1.jpg');
+        background-image: url('../a6/images/megamenu_kid_toy_1.jpg');
     }
     .bg-furniture-decor{
-        background-image: url('assets/images/megamenu_furniture_home_decors_1.jpg');
+        background-image: url('../a6/images/megamenu_furniture_home_decors_1.jpg');
     }
 
     .bg-vertical-furniture-decor{
-        background-image: url('assets/images/2-megamenu_furniture_home_decors_1.jpg');
+        background-image: url('../a6/images/2-megamenu_furniture_home_decors_1.jpg');
     }
     .bg-vertical-digital{
-        background-image: url('assets/images/2-megamenu_digital_electronics_1.jpg');
+        background-image: url('../a6/images/2-megamenu_digital_electronics_1');
     }
     .bg-vertical-kidtoy{
-        background-image: url('assets/images/2-megamenu_kid_toy_1.jpg');
+        background-image: url('../a6/images/2-megamenu_kid_toy_1.jpg');
     }
 
 

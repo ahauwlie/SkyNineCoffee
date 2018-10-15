@@ -19,11 +19,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <style type="text/css">  
-    .test{
-        background-image: url(<?php echo base_url('assets/a6/images/megamenu_digital_electronics_1.jpg'); ?>);
-    }
-    </style>
 </head>
 
 <body>
@@ -38,9 +33,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="main-box">
             <div class="nav-outer clearfix">
 
-        		<!-- Main Menu -->
+                <!-- Main Menu -->
                 <nav class="main-menu">
-                    <div class="navbar-header"> 	
+                    <div class="navbar-header">     
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -226,7 +221,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                             <div class="product product-style-1">
                                                                 <div class="product-thumnail">
                                                                     <a href="#" title="T-Shirt Raw Hem Organic Boro Constrast Denim ">
-                                                                        <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_pr1.jpg') ?>" alt="T-Shirt Raw Hem Organic Boro Constrast Denim "></figure>
+                                                                        <figure><img src="assets/images/mega_accessories_pr1.jpg" alt="T-Shirt Raw Hem Organic Boro Constrast Denim "></figure>
                                                                     </a>
                                                                 </div>
                                                                 <div class="product-info">
@@ -243,21 +238,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <div class="grid-banner-item">
                                                         <div class="megamenu-banner">
                                                             <a href="#" class="link-banner banner-effect-3">
-                                                                <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_1.jpg') ?>" alt=""></figure>
+                                                                <figure><img src="<?php echo site_url('/assets/images/1.jpg'); ?>"></figure>
                                                             </a>
                                                         </div>
                                                     </div>
                                                     <div class="grid-banner-item">
                                                         <div class="megamenu-banner">
                                                             <a href="#" class="link-banner banner-effect-3">
-                                                                <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_2.jpg') ?>" alt=""></figure>
+                                                                <figure><img src="<?php echo site_url('/assets/assets/images/mega_accessories_2.jpg'); ?>" alt=""></figure>
                                                             </a>
                                                         </div>
                                                     </div>
                                                     <div class="grid-banner-item">
                                                         <div class="megamenu-banner">
                                                             <a href="#" class="link-banner banner-effect-3">
-                                                                <figure><img src="<?php echo base_url('/assets/a6/images/mega_accessories_3.jpg') ?>" alt=""></figure>
+                                                                <figure><img src="<?php echo site_url('/assets/assets/images/mega_accessories_3.jpg'); ?>" alt=""></figure>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -353,7 +348,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Article</a>
                                         <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-526 bg-digital-electronic test">
+                                            <div class="megamenu-content min-height-526 bg-digital-electronic">
                                                 <div class="row">
                                                     <div class="custom-col-5">
                                                         <div class="wrap-vertical-nav">
@@ -500,12 +495,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <div class="col-sm-12">
                                                         <div class="megamenu-banner without-col grid-two-bn-01">
                                                             <a href="#" class="link-banner banner-effect-3">
-                                                                <figure ><img src="<?php echo base_url('/assets/a6/images/megamenu_tool_equiment_banner_1.jpg') ?>" alt="" width="740" height="210"></figure>
+                                                                <figure ><img src="assets/images/megamenu_tool_equiment_banner_1.jpg" alt="" width="740" height="210"></figure>
                                                             </a>
                                                         </div>
                                                         <div class="megamenu-banner without-col grid-two-bn-02">
                                                             <a href="#" class="link-banner banner-effect-3">
-                                                                <figure ><img src="<?php echo base_url('/assets/a6/images/megamenu_tool_equiment_banner_2.jpg') ?>" width="370" height="210" alt=""></figure>
+                                                                <figure ><img src="assets/images/megamenu_tool_equiment_banner_2.jpg" width="370" height="210" alt=""></figure>
                                                             </a>
                                                         </div>
                                                     </div>
@@ -654,329 +649,201 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- bar pilihan menu selesai -->
 
 
-    <!-- <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> -->
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url(images/background/3.jpg);">
+        <div class="auto-container">
+            <h1>About us</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="index-2.html">Home </a></li>
+                <li>About us</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
 
+    <!-- History Section -->
+    <section class="history-section">
+        <div class="auto-container">
+            <div class="row clearfix">
+               <div class="image-column col-md-6 col-sm-12 col-xs-12">
+                   <div class="inner-column">
+                       <div class="image-box wow slideInLeft"><a href="images/resource/history-image.jpg" class="lightbox-image" data-fancybox="gallery"><img src="images/resource/history-image.jpg" alt=""></a></div>
+                   </div>
+                </div>
 
-    <!--Main Slider-->
-    <section class="main-slider with-border">
-        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
-            <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
-                <ul>
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="/assets/images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> 
-
-
-						<div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="image"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['0','0','0','0']"
-                        data-x="['right','right','right','right']"
-                        data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:0;z:0;x:1000;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-7.png') ?>"></figure>
-                        </div>
-                        
-                        <!-- <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="image"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['210','210','210','210']"
-                        data-voffset="['0','0','0','0']"
-                        data-x="['right','right','right','right']"
-                        data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-4.png') ?>"></figure>
-                        </div> -->
-                        
-                        <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="text"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['0','15','15','15']"
-                        data-voffset="['-125','-125','-90','-90']"
-                        data-x="['left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h4>Do you like coffee?</h4>
-                        </div>
-
-                        <div class="tp-caption" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="text"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-fontsize="['64','40','36','24']"
-                        data-width="auto"
-                        data-hoffset="['0','15','15','15']"
-                        data-voffset="['-15','-15','-15','-15']"
-                        data-x="['left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>But are you confuse to choose<br> what kind of coffe?</h2>
-                        </div>
-                        
-                        <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="text"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="none"
-                        data-hoffset="['0','15','15','15']"
-                        data-voffset="['120','120','90','90']"
-                        data-x="['left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="link-box">
-                                <a href="<?php echo site_url('shop/list'); ?>" class="theme-btn btn-style-one">Click Here <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1689" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
-                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="<?php echo base_url('/assets/images/main-slider/1.jpg') ?>"> 
-
-                        <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="image"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['0','0','0','0']"
-                        data-voffset="['0','0','0','0']"
-                        data-x="['right','right','right','right']"
-                        data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:0;z:0;rX:0deg;rY:[-100%];rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-6.png') ?>"></figure>
-                        </div>
-                        
-                        <!-- <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="image"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['210','210','210','210']"
-                        data-voffset="['0','0','0','0']"
-                        data-x="['right','right','right','right']"
-                        data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="images/main-slider/content-img-4.png"></figure>
-                        </div> -->
-                        
-                        <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="text"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['0','15','15','15']"
-                        data-voffset="['-125','-125','-90','-90']"
-                        data-x="['left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <h4>Get flat 25% off for</h4>
-                        </div>
-
-                        <div class="tp-caption" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="text"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-fontsize="['64','40','36','24']"
-                        data-width="auto"
-                        data-hoffset="['0','15','15','15']"
-                        data-voffset="['-15','-15','-15','-15']"
-                        data-x="['left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2>Modern Pendant Lamp <br> Collections</h2>
-                        </div>
-                        
-                        <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="text"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="none"
-                        data-hoffset="['0','15','15','15']"
-                        data-voffset="['120','120','90','90']"
-                        data-x="['left','left','left','left']"
-                        data-y="['middle','middle','middle','middle']"
-                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":2000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <div class="link-box">
-                                <a href="<?php echo site_url('shop/index'); ?>" class="theme-btn btn-style-one">Shop now <i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+                <div class="content-column col-md-6 col-sm-12 col-xs-12">
+                   <div class="inner-column">
+                       <h2>Our History</h2>
+                       <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout this is required when, for example, the final text is not yet available dummy text is also known as 'fill text' it is said that song composers.</div>
+                       <div class="btn-box">
+                           <a href="contact.html" class="theme-btn btn-style-four">Contact us</a>
+                       </div>
+                   </div>
+               </div>
             </div>
         </div>
     </section>
-    <!--End Main Slider-->
+    <!--End History Section -->
 
-    <!-- News Section -->
-    <section class="news-section">
+    <!-- Testimonial Section -->
+    <section class="testimonial-section" style="background-image: url(images/background/1.jpg);">
         <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>From The Blog</h2>
-                <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+            <div class="testimonial-carousel owl-carousel owl-theme">
+                <!-- Testimonial Block -->
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <span class="icon flaticon-left-quote"></span>
+                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                        <div class="info">
+                            <h4 class="name">Jalen Newman</h4>
+                            <span class="designation">Art Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block -->
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <span class="icon flaticon-left-quote"></span>
+                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                        <div class="info">
+                            <h4 class="name">Jalen Newman</h4>
+                            <span class="designation">Art Director</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial Block -->
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <span class="icon flaticon-left-quote"></span>
+                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                        <div class="info">
+                            <h4 class="name">Jalen Newman</h4>
+                            <span class="designation">Art Director</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Testimonial Section -->
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="auto-container">
+            <div class="sec-title text-center wow fadeInDown">
+                <h2>Our Team</h2>
+                <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum <br> is that the text does not attract attention</div>
             </div>
 
             <div class="row clearfix">
-                <!-- News Block -->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInLeft">
-                        <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/Kopi Arabika - Kenya -Roasted Beans 250 Gram.jpeg') ?>" alt=""></a>
-                            </div>
-                            <span class="tag">Coffee</span>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info">
-                                <li><i class="fa fa-user-o"></i> by Tommy</li>
-                                <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
+                <!-- Team Block -->
+                <div class="team-block col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="image-box">
+                        	<a href="images/resource/team-1.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-1.jpg" alt=""></a>
+                            <ul class="social-links">
+                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                             </ul>
-                            <h3><a href="blog-single.html">Be deluxe apartment in the sky</a></h3>
-                            <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                        </div>
+                        <div class="info">
+                            <h4 class="name"><a href="contact.html">John Mosis</a></h4>
+                            <span class="designation">Creative Director</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- News Block -->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInUp">
-                        <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/coffee_machine.jpg') ?>" alt=""></a>
-                            </div>
-                            <span class="tag">Equipments</span>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info">
-                                <li><i class="fa fa-user-o"></i> by Chayuz</li>
-                                <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
+                <!-- Team Block -->
+                <div class="team-block col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInDown" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="image-box">
+                        	<a href="images/resource/team-2.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-2.jpg" alt=""></a>
+                            <ul class="social-links">
+                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                             </ul>
-                            <h3><a href="blog-single.html">Make our dreams come true</a></h3>
-                            <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                        </div>
+                        <div class="info">
+                            <h4 class="name"><a href="contact.html">Helen Judy</a></h4>
+                            <span class="designation">Ecommerce Expert</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- News Block -->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box wow fadeInRight">
-                        <div class="image-box">                         
-                            <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/coffee_filter.jpg') ?>" alt=""></a>
-                            </div>
-                            <span class="tag">Filter</span>
-                        </div>
-                        <div class="lower-content">
-                            <ul class="info">
-                                <li><i class="fa fa-user-o"></i> by Mike</li>
-                                <li><i class="fa fa-clock-o"></i> 7 Oct 2017</li>
+                <!-- Team Block -->
+                <div class="team-block col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInUp" data-wow-delay="500ms" data-wow-duration="1500ms">
+                        <div class="image-box">
+                        	<a href="images/resource/team-3.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-3.jpg" alt=""></a>
+                            <ul class="social-links">
+                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
                             </ul>
-                            <h3><a href="blog-single.html">Come and dance on our floor</a></h3>
-                            <div class="text">The biggest gift would be from me and the card attached would say thank you</div>
+                        </div>
+                        <div class="info">
+                            <h4 class="name"><a href="contact.html">Jasmine</a></h4>
+                            <span class="designation">Product Manager</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Block -->
+                <div class="team-block col-md-3 col-sm-6 col-xs-12">
+                    <div class="inner-box wow fadeInDown" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="image-box">
+                        	<a href="images/resource/team-4.jpg" class="lightbox-image" data-fancybox="team"><img src="images/resource/team-4.jpg" alt=""></a>
+                            <ul class="social-links">
+                            	<li><a href="#"><span class="fa fa-facebook-f"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+                                <li><a href="#"><span class="fa fa-instagram"></span></a></li>
+                            </ul>
+                        </div>
+                        <div class="info">
+                            <h4 class="name"><a href="contact.html">Alex Robin</a></h4>
+                            <span class="designation">Team Lead</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End News Section -->
+    <!--End Team Section -->
 
     <!--Clients Section-->
-    <section class="clients-section">
+    <section class="clients-section alternate">
         <div class="auto-container">
             <div class="sponsors-outer">
                 <!--Sponsors Carousel-->
                 <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/1.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/2.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/3.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/4.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/5.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/6.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/7.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/8.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/9.png') ?>" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="<?php echo base_url('/assets/images/clients/10.png') ?>" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
                 </ul>
             </div>
         </div>
     </section>
     <!--End Clients Section-->
 
-    <!-- Subscribe Section -->
-    <section class="subscribe-section">
-        <div class="auto-container">
-            <div class="sec-title text-center">
-                <h2>Newsletter</h2>
-                <div class="text">Gift would be from me and the card attached would say thank you</div>
-            </div>
-            <div class="subscribe-form">
-                <form method="post" action="http://t.commonsupport.com/lescons/contact.html">
-                    <div class="form-group">
-                        <input type="email" name="email" value="" placeholder="Enter Your Email" required="">
-                        <button type="submit" class="theme-btn btn-style-one">Subscribe <i class="fa fa-angle-right"></i></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-    <!-- End Subscribe Section -->
-
-    <!-- Main Footer -->
+     <!-- Main Footer -->
     <footer class="main-footer">
         <div class="auto-container">
-
+        
             <!--Widgets Section-->
             <div class="widgets-section">
                 <div class="row clearfix">
@@ -984,14 +851,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="big-column footer-column col-md-5 col-sm-12 col-xs-12">
                         <div class="footer-widget about-widget">
                             <div class="widget-content">
-                                <div class="footer-logo">
-                                    <a href="#"><img src="<?php echo base_url('/assets/images/logos.png') ?>"/></a>
-                                </div>
-                                <div class="text">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable</div>
+                                <div class="footer-logo"><a href="index-2.html"><img src="images/footer-logo.png" alt=""></a></div>
+                                <div class="text">The movie star the professor and mary ann here on gilligans Isle you wanna be where you can see our troubles.</div>
                                 <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
-									<li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
-                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
+                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +2 5600 900 200</li>
+                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  getsupport@mail.com</li>
                                 </ul>
                             </div>
                         </div>     
@@ -1007,7 +871,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <h2 class="widget-title">Quick Links</h2>
                                     <div class="widget-content">
                                         <ul class="list">
-                                            <li><a href="<?php echo site_url('aboutus/index'); ?>">About Us</a></li>
+                                            <li><a href="#">About Us</a></li>
                                             <li><a href="#">Collections</a></li>
                                             <li><a href="#">Blog</a></li>
                                             <li><a href="#">Faq’s</a></li>
@@ -1059,12 +923,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="auto-container">
                 <div class="inner-container clearfix"> 
                     <div class="pull-left">
-                        <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
+                        <div class="copyright">© 2018 <a href="index-2.html">Les Cons.</a> All rights reserved.</div>
                     </div>
                     <div class="pull-right clearfix">
                         <div class="payment-box">
                             <h4>Payment :</h4>
-                            <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
+                            <a href="#"><img src="images/resource/payments-options.png" alt=""></a>
                         </div>
 
                         <div class="social-links">
@@ -1083,6 +947,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </footer>
     <!-- End Main Footer -->
+
 </div>
 <!--End pagewrapper-->
 
@@ -1090,4 +955,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
 <?php echo $js; ?>
 </body>
+
+<!-- Mirrored from t.commonsupport.com/lescons/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 22 Sep 2018 17:30:50 GMT -->
 </html>
