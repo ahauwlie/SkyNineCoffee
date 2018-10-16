@@ -314,10 +314,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="footer-logo col-sm-6">
                                 <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
                             </div>
-                            <div class="text col-sm-6">The best coffee shop in Tekno Park Tangerang with an interior design that makes coffee lovers more comfortable
+                            <div class="text col-sm-6">Skynine Coffee adalah coffee shop sekaligus roastery yang berlokasi di Tekno Park, Tangerang. Kami menyediakan biji kopi terbaik yang langsung diolah dari roastery kami.
                                 <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Call us :</span> +62 857 1488 9509</li>
-                                    <li><i class="fa fa-phone"></i> <span>Or :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-phone"></i> <span>Hubungi Kami :</span> +62 857 1488 9509</li>
+                                    <li><i class="fa fa-phone"></i> <span>Atau :</span> +62 858 4140 2758</li>
                                     <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
                                 </ul>
                             </div>

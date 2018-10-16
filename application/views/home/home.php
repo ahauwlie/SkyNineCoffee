@@ -477,29 +477,36 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
-                <!-- Testimonial Block -->
-                <div class="testimonial-block">
-                    <div class="inner-box">
-                        <iframe class="info col-sm-8" width="560" height="315" src="https://www.youtube.com/embed/VAJK04HOLd0" frameborder="0" allowfullscreen></iframe>
-                        <div class="text col-sm-4">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
-                    </div>
-                </div>
 
-                <!-- Testimonial Block -->
                 <div class="testimonial-block">
-                    <div class="inner-box">
-                        <iframe class="info col-sm-8" width="560" height="315" src="https://www.youtube.com/embed/VAJK04HOLd0" frameborder="0" allowfullscreen></iframe>
-                        <div class="text col-sm-4">Now</div>
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/0ctF0lmPM1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">BREWCODE adalah sebuah talkshow yang akan menjawab dan membahas berbagai pertanyaan seputar kopi. Di episode ini, Dimas dan Tomy akan mencoba menjawab beberapa pertanyaan dari para teman kopi.</div>
+                        </div>
                     </div>
-                </div>
 
-                <!-- Testimonial Block -->
-                <div class="testimonial-block">
-                    <div class="inner-box">
-                        <iframe class="info col-sm-8" width="560" height="315" src="https://www.youtube.com/embed/VAJK04HOLd0" frameborder="0" allowfullscreen></iframe>
-                        <div class="text col-sm-4">thank you</div>
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/xOWlvmBFoQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">
+                                <p>
+                                    Ini cara membuat kopi manual brew dengan metode syphon.
+                                    <br>
+                                    Jika Anda tertarik dengan kopi kami,
+                                    jangan ragu untuk menghubungi tim pemasaran kami:
+                                    📱 +62 815-1798-0622 (Firman)
+                                    📱 ‭‭+62 878-7768-9782 (Oscar)
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+
+                    <div class="testimonial-block">
+                        <div class="inner-box">
+                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/bMVQeWOWyQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                            <div class="text col-sm-4">BREWCODE adalah sebuah talkshow yang akan menjawab dan membahas berbagai pertanyaan seputar kopi. Di episode perdana ini, Dimas dan Tomy akan mencoba menjelaskan mengenai perbedaan dari kopi robusta dan arabica.</div>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>

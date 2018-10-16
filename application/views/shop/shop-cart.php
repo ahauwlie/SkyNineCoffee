@@ -11,30 +11,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html>
 <head>
     <meta charset="utf-8">
-        <title>SkyNineCoffee | Shop Cart </title>
-        <?php echo $css; ?>
-        <!--Favicon-->
-        <link rel="shortcut icon" href="<?php echo site_url('/assets/images/logokopi.png'); ?>" type="image/x-icon">
-        <link rel="icon" href="<?php echo base_url('/assets/images/logokopi.png') ?>" type="image/x-icon">
-        <!-- Responsive -->
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>SkyNineCoffee | Home Page</title>
+    <?php echo $css; ?>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="<?php echo site_url('/assets/images/logokopi.png'); ?>" type="image/x-icon">
+    <link rel="icon" href="<?php echo base_url('/assets/images/logokopi.png') ?>" type="image/x-icon">
+    <!-- Responsive -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
 <body>
-    <div class="page-wrapper">
-        <!-- Preloader -->
-        <div class="preloader"></div>
-        <!-- Main Header-->
-        <header class="main-header alternate">
-            <!--Main Box-->
-            <div class="main-box">
-                <div class="nav-outer clearfix">
+<div class="page-wrapper">
+    <!-- Preloader -->
+    <div class="preloader"></div>
+    <!--Header Span-->
+    <div class="header-span"></div>
+    <!-- Main Header-->
+    <header class="main-header">
+        <!--Main Box-->
+        <div class="main-box">
+            <div class="nav-outer clearfix">
 
-                  <!-- Main Menu -->
-                  <nav class="main-menu">
-                    <div class="navbar-header">
-                        <!-- Toggle Button -->    	
+                <!-- Main Menu -->
+                <nav class="main-menu">
+                    <div class="navbar-header">     
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -44,118 +45,236 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="dropdown"><a href="#">Home</a>
-                            <ul>
-                                <li><a href="index-2.html">Home Style 01</a></li>
-                                <li><a href="index-3.html">Home Style 02</a></li>
-                                <li class="dropdown"><a href="#">Header Styles</a>
+                            <li class="current dropdown"><a href="#">Home</a>
                                 <ul>
-                                    <li><a href="index-2.html">Header Type 01</a></li>
-                                    <li><a href="index-3.html">Header Type 02</a></li>
+                                    <li><a href="index-2.html">Home Style 01</a></li>
+                                    <li><a href="index-3.html">Home Style 02</a></li>
+                                    <li class="dropdown"><a href="#">Header Styles</a>
+                                        <ul>
+                                            <li><a href="index-2.html">Header Type 01</a></li>
+                                            <li><a href="index-3.html">Header Type 02</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
+                            <li class="dropdown"><a href="#">Pages</a>
+                                <ul>                                
+                                    <li><a href="about.html">About Us</a></li>
+                                    <li class="dropdown"><a href="#">Blog</a>
+                                        <ul>
+                                            <li><a href="blog-classic.html">Latest Blog</a></li>
+                                            <li><a href="blog-single.html">Post Details</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>   
+
+                            <li class="dropdown"><a href="#">Shop</a>
+                                <ul>
+                                    <li><a href="shop-grid.html">Products Grid View</a></li>
+                                    <li><a href="shop-list.html">Products List View</a></li>
+                                    <li><a href="external-products.html">Product Details 01</a></li>
+                                    <li><a href="variable-products.html">Product Details 02</a></li>
+                                    <li><a href="product-details.html">Product Details 03</a></li>
+                                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
+                                    <li><a href="checkout.html">Checkout Page</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li><a href="contact.html">Contact Us</a></li>
                         </ul>
-                    </li>
-                    <li class="dropdown"><a href="#">Pages</a>
-                    <ul>                                
-                        <li><a href="about.html">About Us</a></li>
-                        <li class="dropdown"><a href="#">Blog</a>
-                        <ul>
-                            <li><a href="blog-classic.html">Latest Blog</a></li>
-                            <li><a href="blog-single.html">Post Details</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>   
-
-            <li class="current dropdown"><a href="#">Shop</a>
-            <ul>
-                <li><a href="shop-grid.html">Products Grid View</a></li>
-                <li><a href="shop-list.html">Products List View</a></li>
-                <li><a href="external-products.html">Product Details 01</a></li>
-                <li><a href="variable-products.html">Product Details 02</a></li>
-                <li><a href="product-details.html">Product Details 03</a></li>
-                <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                <li><a href="checkout.html">Checkout Page</a></li>
-            </ul>
-        </li>
-
-        <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-</div>
-</nav>
-
-<div class="logo-outer">
-    <div class="logo"><a href="index-2.html"><img src="images/logo.png" alt="" title=""></a></div>
-</div>
-
-<!-- Main Menu End-->
-<div class="outer-box clearfix">
-    <div class="social-links ">
-        <span>Follow us :</span>
-        <ul class="social-icon-one">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-        </ul>
-    </div>
-    <!--Search Box-->
-    <div class="search-box-outer">
-        <div class="dropdown">
-            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
-            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                <li class="panel-outer">
-                    <div class="form-container">
-                        <form method="post" action="http://t.commonsupport.com/lescons/blog.html">
-                            <div class="form-group">
-                                <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-                            </div>
-                        </form>
                     </div>
-                </li>
-            </ul>
+                </nav>
+
+                <div class="iner-box">
+                    <ul class="social-icon-one">
+                        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
+                    </ul>
+                </div>
+
+                <div class="logo-outer">
+                    <div class="logo">
+                        <a href="#"><img src="<?php echo base_url('/assets/images/skynine.png') ?>"/></a>
+                        <a href="#"><img src="<?php echo base_url('/assets/images/coffee.png') ?>"/></a>
+                    </div>
+                </div>
+
+                <!-- Main Menu End-->
+                <div class="outer-box clearfix">
+                    <!--Search Box-->
+                    <div class="search-box-outer">
+                        <div class="dropdown">
+                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
+                            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                <li class="panel-outer">
+                                    <div class="form-container">
+                                        <form method="post" action="http://t.commonsupport.com/lescons/blog.html">
+                                            <div class="form-group">
+                                                <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="like-btn"><span class="icon flaticon-like"></span></div>
+                    <div class="cart-btn">
+                        <a href="<?php echo site_url('shop/cart'); ?>">
+                            <span class="count">3</span>
+                            <span class="icon flaticon-shopping-bag"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Mobile Menu-->
+            <div class="mobile-menu">
+                <div class="nav-header clearfix">
+                    <div class="text">Menu</div>
+                    <div class="menu-btn"><span class="fa fa-bars"></span></div>
+                </div>
+                <div class="links-outer">
+                    <div class="links-box">
+                        <ul class="navigation">
+                            <!--Keep This Empty / Menu will come through Javascript-->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--End Main Box -->
+        
+    </header>
+    <!--End Main Header -->    
+
+    <!-- bar pilih menu -->
+    <div class="header header-style-1">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="nav-section header-sticky">
+                    <div class="primary-nav-section">
+                        <div class="container">
+                            <div class="text-center">
+                                <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
+                                    <li class="menu-item home-icon">
+                                        <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children item-megamenu" >
+                                        <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
+                                        <div class="wrap-megamenu">
+                                            <div class="megamenu-content min-height-460 bg1">
+                                                <div class="row">
+                                                    <div class="custom-col-8">
+                                                        <div class="wrap-vertical-nav">
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Klik disini</a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children item-megamenu" >
+                                        <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
+                                        <div class="wrap-megamenu">
+                                            <div class="megamenu-content min-height-460 bg2">
+                                                <div class="row">
+                                                    <div class="custom-col-8">
+                                                        <div class="wrap-vertical-nav">
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children item-megamenu" >
+                                        <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
+                                        <div class="wrap-megamenu">
+                                            <div class="megamenu-content min-height-460 bg3">
+                                                <div class="row">
+                                                    <div class="custom-col-8">
+                                                        <div class="wrap-vertical-nav">
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Klik disini</a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children item-megamenu" >
+                                        <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
+                                        <div class="wrap-megamenu">
+                                            <div class="megamenu-content min-height-460 bg4">
+                                                <div class="row">
+                                                    <div class="custom-col-8">
+                                                        <div class="wrap-vertical-nav">
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Klik disini</a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children item-megamenu" >
+                                        <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
+                                        <div class="wrap-megamenu">
+                                            <div class="megamenu-content min-height-460 bg5">
+                                                <div class="row">
+                                                    <div class="custom-col-8">
+                                                        <div class="wrap-vertical-nav">
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children item-megamenu" >
+                                        <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
+                                        <div class="wrap-megamenu">
+                                            <div class="megamenu-content min-height-460 bg6">
+                                                <div class="row">
+                                                    <div class="custom-col-8">
+                                                        <div class="wrap-vertical-nav">
+                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                            <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Klik disini</a> </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="like-btn"><span class="icon flaticon-like"></span></div>
-    <div class="cart-btn">
-        <a href="<?php echo site_url('shop/cart'); ?>">
-            <span class="count">3</span>
-            <span class="icon flaticon-shopping-bag"></span>
-        </a>
-    </div>
-</div>
-</div>
-
-<!--Mobile Menu-->
-<div class="mobile-menu">
-    <div class="nav-header clearfix">
-        <div class="text">Menu</div>
-        <div class="menu-btn"><span class="fa fa-bars"></span></div>
-    </div>
-    <div class="links-outer">
-        <div class="links-box">
-            <ul class="navigation">
-                <!--Keep This Empty / Menu will come through Javascript-->
-            </ul>
-        </div>
-    </div>
-</div>
-
-</div>
-<!--End Main Box -->
-
-</header>
-<!--End Main Header -->
+    <!-- bar pilihan menu selesai -->
 
 <!--Page Title-->
-<section class="page-title" style="background-image:url(images/background/5.jpg);">
+<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/8.jpg'); ?>);">
     <div class="auto-container">
-        <h1>Cart</h1>
+        <h1>Keranjang Belanja</h1>
         <ul class="bread-crumb clearfix">
-            <li><a href="index-2.html">Home </a></li>
-            <li>Cart</li>
+            <li><a href="index-2.html">Beranda </a></li>
+            <li>Keranjang Belanja</li>
         </ul>
     </div>
 </section>
@@ -171,9 +290,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <table class="cart-table">
                     <thead class="cart-header">
                         <tr>
-                            <th class="prod-column">Product</th>
+                            <th class="prod-column">Produk</th>
                             <th>&nbsp;</th>
-                            <th class="price">Price</th>
+                            <th class="price">Harga</th>
                             <th>Qty</th>
                             <th>Total</th>
                             <th>&nbsp;</th>
@@ -214,16 +333,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="pull-left">
                     <div class="apply-coupon clearfix">
                         <div class="form-group clearfix">
-                            <input type="text" name="coupon-code" value="" placeholder="Enter Coupon Code...">
+                            <input type="text" name="coupon-code" value="" placeholder="Masukan kode kupon...">
                         </div>
                         <div class="form-group clearfix">
-                            <button type="button" class="theme-btn btn-style-three">Apply Coupon</button>
+                            <button type="button" class="theme-btn btn-style-three">Teruskan Kode Kupon</button>
                         </div>
                     </div>
 
                 </div>
                 <div class="form-group pull-right">
-                    <button type="button" class="theme-btn cart-btn btn-style-three">Update Cart</button>
+                    <button type="button" class="theme-btn cart-btn btn-style-three">Segarkan Keranjang</button>
                 </div>
             </div>
 
@@ -233,21 +352,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!--Totals Table-->
                     <ul class="totals-table">
                         <li class="clearfix"><span class="col col-title">Sub-total</span><span class="col">$380.10</span></li>
-                        <li class="clearfix"><span class="col col-title">Shipping</span>
+                        <li class="clearfix"><span class="col col-title">Pengiriman</span>
                         <div class="col">
                             <div class="shopping-option">
                                 <input type="checkbox" name="free-shipping" id="free-shipping">
-                                <label for="free-shipping">Free Shipping</label>
+                                <label for="free-shipping">Gratis</label>
                             </div>
                             <div class="shopping-option">
                                 <input type="checkbox" name="local-pickup" id="local-pickup">
-                                <label for="local-pickup">Local Pickup</label>
+                                <label for="local-pickup">Lokal</label>
                             </div>
                         </div>
                     </li>
                     <li class="clearfix"><span class="col col-title">Total</span><span class="col">$380.10</span></li>
                 </ul>
-                <div class="text-right"><button type="submit" class="theme-btn checkout-btn btn-style-four">Proceed to Checkout</button></div>
+                <div class="text-right"><button type="submit" class="theme-btn checkout-btn btn-style-four">Lakukan Pembayaran</button></div>
             </div>
         </div>
     </div>
@@ -256,114 +375,112 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- End Cart Section -->
 
 <!-- Main Footer -->
-            <footer class="main-footer">
-                <div class="auto-container">
+    <footer class="main-footer">
+        <div class="auto-container">
 
-                    <!--Widgets Section-->
-                    <div class="widgets-section">
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="row clearfix">
+                    <!--Big Column-->
+                    <div class="big-column footer-column col-md-5 col-sm-12 col-xs-12">
+                        <div class="footer-widget about-widget">
+                            <div class="widget-content">
+                                <div class="footer-logo">
+                                    <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
+                                </div>
+                                <div class="text">Skynine Coffee adalah coffee shop sekaligus roastery
+                                    yang berlokasi di Tekno Park, Tangerang. Kami menyediakan
+                                    biji kopi terbaik yang langsung diolah dari roastery kami.</div>
+                                <ul class="contact-info">
+                                    <li><i class="fa fa-phone"></i> <span>Hubungi Kami :</span> +62 857 1488 9509</li>
+                                    <li><i class="fa fa-phone"></i> <span>Atau :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
+                                </ul>
+                            </div>
+                        </div>     
+                    </div>
+                    
+                    <!--Big Column-->
+                    <div class="big-column col-md-7 col-sm-12 col-xs-12">
                         <div class="row clearfix">
-                            <!--Big Column-->
-                            <div class="big-column footer-column col-md-5 col-sm-12 col-xs-12">
-                                <div class="footer-widget about-widget">
+                            
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2 class="widget-title">Tautan Langsung</h2>
                                     <div class="widget-content">
-                                        <div class="footer-logo">
-                                            <a href="#"><img src="<?php echo base_url('/assets/images/logos.png') ?>"/></a>
-                                        </div>
-                                        <div class="text">The movie star the professor and mary ann here on gilligans Isle you wanna be where you can see our troubles.</div>
-                                        <ul class="contact-info">
-                                            <li><i class="fa fa-phone"></i> <span>Call us :</span> +2 5600 900 200</li>
-                                            <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  getsupport@mail.com</li>
+                                        <ul class="list">
+                                            <li><a href="<?php echo site_url('aboutus/index'); ?>">Tentang Kami</a></li>
+                                            <li><a href="<?php echo site_url('contactus/index'); ?>">Hubungi Kami</a></li>
+                                            <li><a href="<?php echo site_url('blog/index'); ?>">Blog</a></li>
+                                            <li><a href="<?php echo site_url('video/index'); ?>">Video</a></li>
                                         </ul>
                                     </div>
-                                </div>     
+                                </div> 
                             </div>
 
-                            <!--Big Column-->
-                            <div class="big-column col-md-7 col-sm-12 col-xs-12">
-                                <div class="row clearfix">
-
-                                    <!--Footer Column-->
-                                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                                        <div class="footer-widget links-widget">
-                                            <h2 class="widget-title">Quick Links</h2>
-                                            <div class="widget-content">
-                                                <ul class="list">
-                                                    <li><a href="#">About Us</a></li>
-                                                    <li><a href="#">Collections</a></li>
-                                                    <li><a href="#">Blog</a></li>
-                                                    <li><a href="#">Faq’s</a></li>
-                                                    <li><a href="#">Contact Us</a></li>
-                                                </ul>
-                                            </div>
-                                        </div> 
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2 class="widget-title">Informasi</h2>
+                                    <div class="widget-content">
+                                        <ul class="list">
+                                            <li><a href="#">Ketentuan</a></li>
+                                            <li><a href="#">Privasi</a></li>
+                                            <li><a href="#">Keamanan</a></li>
+                                        </ul>
                                     </div>
+                                </div> 
+                            </div>
 
-                                    <!--Footer Column-->
-                                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                                        <div class="footer-widget links-widget">
-                                            <h2 class="widget-title">Information</h2>
-                                            <div class="widget-content">
-                                                <ul class="list">
-                                                    <li><a href="#">Terms & Conditions</a></li>
-                                                    <li><a href="#">Privacy Policy</a></li>
-                                                    <li><a href="#">Returns & Exchange</a></li>
-                                                    <li><a href="#">Security</a></li>
-                                                    <li><a href="#">Sitemap</a></li>
-                                                </ul>
-                                            </div>
-                                        </div> 
+                            <!--Footer Column-->
+                            <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                                <div class="footer-widget links-widget">
+                                    <h2 class="widget-title">Bantuan</h2>
+                                    <div class="widget-content">
+                                        <ul class="list">
+                                            <li><a href="#">Pemilihan Pembayaran</a></li>
+                                            <li><a href="#">Pembatalan</a></li>
+                                            <li><a href="#">Pengiriman</a></li>
+                                        </ul>
                                     </div>
-
-                                    <!--Footer Column-->
-                                    <div class="footer-column col-md-4 col-sm-6 col-xs-12">
-                                        <div class="footer-widget links-widget">
-                                            <h2 class="widget-title">Help</h2>
-                                            <div class="widget-content">
-                                                <ul class="list">
-                                                    <li><a href="#">Payment Options</a></li>
-                                                    <li><a href="#">Cancellations</a></li>
-                                                    <li><a href="#">My Account</a></li>
-                                                    <li><a href="#">Shipping</a></li>
-                                                    <li><a href="#">Delivery</a></li>
-                                                </ul>
-                                            </div>
-                                        </div> 
-                                    </div>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        
+        <!--Footer Bottom-->
+         <div class="footer-bottom">
+            <div class="auto-container">
+                <div class="inner-container clearfix"> 
+                    <div class="pull-left">
+                        <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
+                    </div>
+                    <div class="pull-right clearfix">
+                        <div class="payment-box">
+                            <h4>Pembayaran :</h4>
+                            <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
+                        </div>
 
-                <!--Footer Bottom-->
-                <div class="footer-bottom">
-                    <div class="auto-container">
-                        <div class="inner-container clearfix"> 
-                            <div class="pull-left">
-                                <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
-                            </div>
-                            <div class="pull-right clearfix">
-                                <div class="payment-box">
-                                    <h4>Payment :</h4>
-                                    <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
-                                </div>
-
-                                <div class="social-links">
-                                    <h4>Connect :</h4>
-                                    <ul class="social-icon-two clearfix">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li> 
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
-                                        <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
-                                    </ul>
-                                </div>
-                            </div>
+                        <div class="social-links">
+                            <h4>Sosial Media :</h4>
+                            <ul class="social-icon-two clearfix">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </footer>
-            <!-- End Main Footer -->
+            </div>
+        </div>
+    </footer>
+    <!-- End Main Footer -->
 
 </div>
 <!--End pagewrapper-->
