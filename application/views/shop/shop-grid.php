@@ -271,10 +271,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--Page Title-->
     <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/7.jpg'); ?>);">
         <div class="auto-container">
-            <h1>Shop Grid</h1>
+            <h1>Toko Produk</h1>
             <ul class="bread-crumb clearfix">
                 <li><a href="index-2.html">Home </a></li>
-                <li>Shop</li>
+                <li>Toko</li>
             </ul>
         </div>
     </section>
@@ -288,7 +288,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <!--content side-->
                 <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                     <div class="shop-upper-box clearfix">
-                        <div class="items-label pull-left">Showing 1-7 of 84 results
+                        <div class="items-label pull-left">Melihat 1-7 dari 84 Hasil
                             <div class="link-box">
                                 <a href="<?php echo site_url('shop/index'); ?>" class="active"><i class="fa fa-th"></i></a>
                                 <a href="<?php echo site_url('shop/list'); ?>"><i class="fa fa-th-list"></i></a>
@@ -296,11 +296,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                         <div class="sort-by pull-right">
                             <select class="custom-select-box">
-                                <option>Default Sorting</option>
-                                <option>Price: Lowest First</option>
-                                <option>Price: Highest First</option>
-                                <option>Ascending</option>
-                                <option>Descending</option>
+                                <option>Pengurutan Otomatis</option>
+                                <option>Harga: Termurah</option>
+                                <option>Harga: Tertinggi</option>
+                                <option>Murah -> Tinggi</option>
+                                <option>Tinggi -> Murah</option>
                             </select>
                         </div>
                     </div>
@@ -310,16 +310,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/1.jpg" alt=""></a>
-                                    <span class="tag">Sale!</span>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/1.jpg') ?>" alt=""></a>
+                                    <span class="tag">Promo!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/1.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/1.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
-                                        <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
+                                        <a href="#"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Pair Waterbottle</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Pair Waterbottle</a></h3>
                                     <span class="price">$65.10</span>
                                 </div>
                             </div>
@@ -329,15 +329,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/2.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/2.jpg') ?>" alt=""></a>
                                     <div class="link-box">
-                                        <a href="images/resource/products/2.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/2.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Small Table</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Small Table</a></h3>
                                     <span class="price"><del>$86.00</del> $82.30</span>
                                 </div>
                             </div>
@@ -347,16 +347,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/3.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/3.jpg') ?>" alt=""></a>
                                     <span class="tag">Sale!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/3.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/3.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Storage Tap</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Storage Tap</a></h3>
                                     <span class="price">$25.00</span>
                                 </div>
                             </div>
@@ -366,15 +366,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/5.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/5.jpg') ?>" alt=""></a>
                                     <div class="link-box">
-                                        <a href="images/resource/products/5.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/5.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Wooden Wallclock</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Wooden Wallclock</a></h3>
                                     <span class="price">$80.00</span>
                                 </div>
                             </div>
@@ -384,16 +384,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/7.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/7.jpg') ?>" alt=""></a>
                                     <span class="tag">Sale!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/7.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/7.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Modern Lamp</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Modern Lamp</a></h3>
                                     <span class="price">$172.00</span>
                                 </div>
                             </div>
@@ -403,15 +403,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/8.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/8.jpg') ?>" alt=""></a>
                                     <div class="link-box">
-                                        <a href="images/resource/products/8.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/8.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Water Jug</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Water Jug</a></h3>
                                     <span class="price"><del>$26.00</del> $22.10</span>
                                 </div>
                             </div>
@@ -421,16 +421,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/9.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/9.jpg') ?>" alt=""></a>
                                     <span class="tag">Sale!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/9.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/9.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Stylish Pots</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Stylish Pots</a></h3>
                                     <span class="price"><del>$36.00</del> $30.05</span>
                                 </div>
                             </div>
@@ -440,16 +440,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/10.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/10.jpg') ?>" alt=""></a>
                                     <span class="tag">Sale!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/10.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/10.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Interior Decors</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Interior Decors</a></h3>
                                     <span class="price">$40.50</span>
                                 </div>
                             </div>
@@ -459,16 +459,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/12.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/12.jpg') ?>" alt=""></a>
                                     <span class="tag">Sale!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/12.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/12.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Home Decors</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Home Decors</a></h3>
                                     <span class="price">$18.20</span>
                                 </div>
                             </div>
@@ -478,15 +478,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/4.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/4.jpg') ?>" alt=""></a>
                                     <div class="link-box">
-                                        <a href="images/resource/products/4.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/4.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Home Decor</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Home Decor</a></h3>
                                     <span class="price">$22.10</span>
                                 </div>
                             </div>
@@ -496,16 +496,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/6.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/6.jpg') ?>" alt=""></a>
                                     <span class="tag">Sale!</span>
                                     <div class="link-box">
-                                        <a href="images/resource/products/6.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/6.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Wireless Speaker</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Wireless Speaker</a></h3>
                                     <span class="price">$155.70</span>
                                 </div>
                             </div>
@@ -515,15 +515,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="product-block col-md-4 col-sm-6 col-xs-12">
                             <div class="inner-box">
                                 <div class="image-box">
-                                	<a href="product-details.html"><img src="images/resource/products/11.jpg" alt=""></a>
+                                	<a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/11.jpg') ?>" alt=""></a>
                                     <div class="link-box">
-                                        <a href="images/resource/products/11.jpg" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="<?php echo base_url('/assets/images/resource/products/11.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                         <a href="#"><span class="flaticon-like-1"></span></a>
                                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                                     </div>                       
                                 </div>
                                 <div class="content-box">
-                                    <h3><a href="product-details.html">Plate and Spoon</a></h3>
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Plate and Spoon</a></h3>
                                     <span class="price"><del>$22.00</del> $20.10</span>
                                 </div>
                             </div>
@@ -531,14 +531,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
 
                     <!-- Styled Pagination -->
-                    <div class="styled-pagination text-center">
+                   <!--  <div class="styled-pagination text-center">
                         <ul class="clearfix">
                             <li><a href="#">1</a></li>
                             <li class="active"><a href="#">2</a></li>
                             <li><a href="#">3</a></li>
                             <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
                         </ul>
-                    </div>
+                    </div> -->
                 </div>
 
                 <!--Sidebar Side-->
@@ -547,16 +547,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!--Price Filter Widget-->
                         <div class="sidebar-widget price-filter-widget">
-                            <div class="sidebar-title"><h2>Filter Price</h2></div>
+                            <div class="sidebar-title"><h2>Skala Harga</h2></div>
                             <div class="widget-content">
                                 <div class="range-slider-one clearfix">
                                     <div class="price-range-slider"></div>
                                     <div class="clearfix">
                                         <div class="pull-right">
-                                            <a href="#" class="theme-btn">Filtter</a>
+                                            <a href="#" class="theme-btn">Saring Harga</a>
                                         </div>
                                         <div class="pull-left">
-                                            <div class="title">Price:</div>
+                                            <div class="title">Harga:</div>
                                             <div class="input"><input type="text" class="property-amount" name="field-name" readonly></div>
                                         </div>
                                     </div>
@@ -566,26 +566,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                         <!-- Categories -->
                         <div class="sidebar-widget categories">
-                            <div class="sidebar-title"><h2>Categories</h2></div>
+                            <div class="sidebar-title"><h2>Kategori</h2></div>
                             <ul class="category-list">
-                                <li><a href="#">Home Decors  <span>(50)</span></a></li>
-                                <li><a href="#">Furniture   <span>(06)</span></a></li>
-                                <li><a href="#">Women’s   <span>(84)</span></a></li>
-                                <li><a href="#">Men’s <span>(70)</span></a></li>
-                                <li><a href="#">Fashions    <span>(26)</span></a></li>
-                                <li><a href="#">Wrist Watches    <span>(30)</span></a></li>
-                            </ul>
-                        </div>
-
-                        <!-- Colors -->
-                        <div class="sidebar-widget colors">
-                            <div class="sidebar-title"><h2>Colors</h2></div>
-                            <ul class="category-list">
-                                <li><a href="#">Black  <span>(06)</span></a></li>
-                                <li><a href="#">Yellow   <span>(84)</span></a></li>
-                                <li><a href="#">Red   <span>(70)</span></a></li>
-                                <li><a href="#">Blue <span>(26)</span></a></li>
-                                <li><a href="#">Brown    <span>(30)</span></a></li>
+                                <li><a href="#">Biji Kopi  <span>(50)</span></a></li>
+                                <li><a href="#">Biji Kopi Khusus   <span>(06)</span></a></li>
+                                <li><a href="#">Mesin Kopi   <span>(84)</span></a></li>
+                                <li><a href="#">Penyaring Kopi <span>(70)</span></a></li>
                             </ul>
                         </div>
 

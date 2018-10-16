@@ -289,7 +289,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!--content side-->
                             <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                                 <div class="shop-upper-box clearfix">
-                                    <div class="items-label pull-left">Melihat 1-7 of 84 hasil
+                                    <div class="items-label pull-left">Melihat 1-7 dari 84 hasil
                                         <div class="link-box">
                                             <a href="<?php echo site_url('shop/index'); ?>"><i class="fa fa-th"></i></a>
                                             <a href="<?php echo site_url('shop/list'); ?>" class="active"><i class="fa fa-th-list"></i></a>
