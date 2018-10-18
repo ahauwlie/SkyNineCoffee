@@ -10,6 +10,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/plugins/revolution/css/layers.css'); ?>">
 <!-- layer style -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/plugins/revolution/css/navigation.css'); ?>">
+<!-- parallax style -->
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/styleparallax1.css'); ?>">
 
-
-<!-- <link rel="shortcut icon" href="<?php echo base_url('/assets/icons/arulogo.png') ?>"> -->
+<!-- <link rel="shortcut icon" href="<?php echo base_url('/assets/icons/arulogo.png') ?>">

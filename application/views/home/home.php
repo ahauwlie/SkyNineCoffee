@@ -702,7 +702,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         
         <!--Footer Bottom-->
-         <div class="footer-bottom">
+        <div class="footer-bottom">
             <div class="auto-container">
                 <div class="inner-container clearfix"> 
                     <div class="pull-left">
@@ -723,6 +723,43 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
+
+        <br><br><br>
+        <!-- parallax -->
+        <div class="footer-water">
+            <div class="box">
+                <div id="water" class="water">
+                    <div id="wave" class="water_wave water_wave_back1">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_back2">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_back3">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_middle1">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_middle2">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_middle3">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_front1">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_front2">
+                        <div class="image-container"></div>
+                    </div>
+                    <div id="wave" class="water_wave water_wave_front3">
+                        <div class="image-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end paralax -->
     </footer>
     <!-- End Main Footer -->
 </div>
