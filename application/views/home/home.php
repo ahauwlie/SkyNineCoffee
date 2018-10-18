@@ -635,9 +635,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="footer-widget about-widget">
                             <div class="widget-content">
                                 <div class="footer-logo">
-                                    <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo.png') ?>"/></a>
+                                    <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo1.png') ?>"/></a>
                                 </div>
-                                <div class="text">Skynine Coffee adalah coffee shop sekaligus roastery
+                                <div class="text white">Skynine Coffee adalah coffee shop sekaligus roastery
                                     yang berlokasi di Tekno Park, Tangerang. Kami menyediakan
                                     biji kopi terbaik yang langsung diolah dari roastery kami.</div>
                                 <ul class="contact-info">
