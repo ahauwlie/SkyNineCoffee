@@ -176,6 +176,24 @@ body{
     .bg6{
         background-image: url('../a6/images/6.jpg');
     }
+    .bg7{
+        background-image: url('../images/main-slider/sky4.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bg8{
+        background-image: url('../images/main-slider/bg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .bg9{
+        background-image: url('../images/main-slider/sky5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
 
     .grid-two-bn-01{

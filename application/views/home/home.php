@@ -474,7 +474,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--End Main Slider-->
 
     <!-- Testimonial Section -->
-    <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
+    <section class="testimonial-section bg8">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
 
@@ -583,7 +583,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--End News Section -->
 
     <!--Clients Section-->
-    <section class="clients-section">
+    <section class="clients-section bg7">
         <div class="auto-container">
             <div class="sponsors-outer">
                 <!--Sponsors Carousel-->
@@ -624,7 +624,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- End Subscribe Section -->
 
     <!-- Main Footer -->
-    <footer class="main-footer">
+    <footer class="main-footer bg9">
         <div class="auto-container">
 
             <!--Widgets Section-->
@@ -709,11 +709,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="copyright">© 2018 <a href="<?php echo site_url('home/index'); ?>">Hauw.</a> Yeah!.</div>
                     </div>
                     <div class="pull-right clearfix">
-                        <div class="payment-box">
-                            <h4>Pembayaran :</h4>
-                            <a href="#"><img src="<?php echo base_url('/assets/images/resource/payments-options.png') ?>" alt=""></a>
-                        </div>
-
                         <div class="social-links">
                             <h4>Sosial Media :</h4>
                             <ul class="social-icon-two clearfix">
