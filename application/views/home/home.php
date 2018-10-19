@@ -619,12 +619,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <div class="footer-logo">
                                     <a href="<?php echo site_url('home/index'); ?>"><img src="<?php echo base_url('/assets/images/logo1.png') ?>"/></a>
                                 </div>
-                                <div class="text white">Skynine Coffee adalah coffee shop sekaligus roastery
-                                    yang berlokasi di Tekno Park, Tangerang. Kami menyediakan
-                                    biji kopi terbaik yang langsung diolah dari roastery kami.</div>
+                                <div class="text white">Sky Nine Coffee menyediakan kopi arabika green bean, roasted bean dan berbagai alat seduh kopi.</div>
                                 <ul class="contact-info">
-                                    <li><i class="fa fa-phone"></i> <span>Hubungi Kami :</span> +62 857 1488 9509</li>
-									<li><i class="fa fa-phone"></i> <span>Atau :</span> +62 858 4140 2758</li>
+                                    <li><i class="fa fa-phone"></i> <span>Firman :</span> +62 815-1798-0622</li>
+									<li><i class="fa fa-phone"></i> <span>Oscar :</span>  ‭‭+62 878-7768-9782</li>
                                     <li><i class="fa fa-envelope-open-o"></i> <span>Email :</span>  skynine.coffee.id@gmail.com</li>
                                 </ul>
                             </div>
@@ -694,11 +692,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="social-links">
                             <h4>Sosial Media :</h4>
                             <ul class="social-icon-two clearfix">
-                                <li><a href="#"><i class="fa fa-facebook"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-twitter"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li> 
-                                <li><a href="#"><i class="fa fa-youtube-play"></i></a></li> 
+                                <li><a href="https://www.facebook.com/skyninecoffee.id"><i class="fa fa-facebook"></i></a></li> 
+                                <li><a href="https://www.yooying.com/skyninecoffee"><i class="fa fa-yahoo"></i></a></li> 
+                                <li><a href="https://www.instagram.com/skyninecoffee/"><i class="fa fa-instagram"></i></a></li> 
+                                <li><a href="https://plus.google.com/u/4/100688123397709406521"><i class="fa fa-google-plus"></i></a></li> 
+                                <li><a href="https://www.youtube.com/channel/UCZEk7mks59vl3TdRDD_OaLQ"><i class="fa fa-youtube-play"></i></a></li> 
                             </ul>
                         </div>
                     </div>
