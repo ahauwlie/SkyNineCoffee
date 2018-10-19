@@ -295,24 +295,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                            <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-7.png') ?>"></figure>
                         </div>
                         
-                        <!-- <div class="tp-caption tp-resizeme" 
-                        data-paddingbottom="[0,0,0,0]"
-                        data-paddingleft="[0,0,0,0]"
-                        data-paddingright="[0,0,0,0]"
-                        data-paddingtop="[0,0,0,0]"
-                        data-responsive_offset="on"
-                        data-type="image"
-                        data-height="none"
-                        data-whitespace="nowrap"
-                        data-width="auto"
-                        data-hoffset="['210','210','210','210']"
-                        data-voffset="['0','0','0','0']"
-                        data-x="['right','right','right','right']"
-                        data-y="['top','top','top','top']"
-                        data-frames='[{"from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-4.png') ?>"></figure>
-                        </div> -->
-                        
                         <div class="tp-caption tp-resizeme" 
                         data-paddingbottom="[0,0,0,0]"
                         data-paddingleft="[0,0,0,0]"
@@ -722,39 +704,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
+            <br>
         </div>
 
         <br><br><br>
-        <!-- parallax -->
-        <div class="footer-water">
-            <div class="box">
-                <div id="water" class="water">
-                    <div id="wave" class="water_wave water_wave_back1">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_back2">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_back3">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_middle1">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_middle2">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_middle3">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_front1">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_front2">
-                        <div class="image-container"></div>
-                    </div>
-                    <div id="wave" class="water_wave water_wave_front3">
-                        <div class="image-container"></div>
+        <div class="auto-container">
+            <!-- parallax -->
+            <div class="footer-water">
+                <div class="box">
+                    <div id="water" class="water">
+                        <div id="wave" class="water_wave water_wave_back1">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_back2">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_back3">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_middle1">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_middle2">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_middle3">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_front1">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_front2">
+                            <div class="image-container"></div>
+                        </div>
+                        <div id="wave" class="water_wave water_wave_front3">
+                            <div class="image-container"></div>
+                        </div>
                     </div>
                 </div>
             </div>
