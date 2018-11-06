@@ -1,0 +1,72 @@
+:root {
+  --delay: 100ms;
+}
+
+.spooky-text {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  left: 50%;
+  letter-spacing: 0.5rem;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0.5em 3em #b33939, 0 1em 5em #474787, 0 0em 3em #474787, 0 0.2em 1.5em rgba(102, 32, 32, 0.5), 0 0.3em 1em #a53200, 0 0.1em 0.35em #3f1300, 0px 1px #e6e6e6, 0px 2px #d9d9d9, 0px 3px #cccccc;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  mix-blend-mode: hard-light;
+}
+
+.spooky-text__letter {
+  display: inline-block;
+  will-change: transform;
+}
+
+.spooky-text__letter {
+  animation-name: zoom;
+  animation-direction: alternate;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.spooky-text__letter:nth-child(1) {
+  animation-delay: calc(1 * var(--delay));
+  transform-origin: calc(100% - (1-1)*16.66%) 100%;
+}
+.spooky-text__letter:nth-child(2) {
+  animation-delay: calc(2 * var(--delay));
+  transform-origin: calc(100% - (2-1)*16.66%) 100%;
+}
+.spooky-text__letter:nth-child(3) {
+  animation-delay: calc(3 * var(--delay));
+  transform-origin: calc(100% - (3-1)*16.66%) 100%;
+}
+.spooky-text__letter:nth-child(4) {
+  animation-delay: calc(4 * var(--delay));
+  transform-origin: calc(100% - (4-1)*16.66%) 100%;
+}
+.spooky-text__letter:nth-child(5) {
+  animation-delay: calc(5 * var(--delay));
+  transform-origin: calc(100% - (5-1)*16.66%) 100%;
+}
+.spooky-text__letter:nth-child(6) {
+  animation-delay: calc(6 * var(--delay));
+  transform-origin: calc(100% - (6-1)*16.66%) 100%;
+}
+.spooky-text__letter:nth-child(7) {
+  animation-delay: calc(7 * var(--delay));
+  transform-origin: calc(100% - (7-1)*16.66%) 100%;
+}
+
+@keyframes zoom {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: none;
+  }
+  to {
+    transform: scale(2);
+  }
+}

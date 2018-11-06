@@ -269,12 +269,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- bar pilihan menu selesai -->
 
     <!--Page Title-->
-    <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/3.jpg'); ?>);">
+    <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/3new.jpg'); ?>);">
         <div class="auto-container">
-            <h1>About us</h1>
-            <ul class="bread-crumb clearfix">
-                <li><a href="index-2.html">Home </a></li>
-                <li>About us</li>
+            <h1 class="spooky-text">
+                <span class="spooky-text__letter">S</span>
+                <span class="spooky-text__letter">K</span>
+                <span class="spooky-text__letter">Y</span>
+                <span class="spooky-text__letter">N</span>
+                <span class="spooky-text__letter">I</span>
+                <span class="spooky-text__letter">N</span>
+                <span class="spooky-text__letter">E</span>
+            </h1>
+            <h2>About us</h2>
+            <ul class="bread-crumb1 clearfix">
+                <li><a href="<?php echo site_url('Home/index'); ?>">Home</a></li>
+                <li>/ About us</li>
             </ul>
         </div>
     </section>
@@ -293,7 +302,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="content-column col-md-6 col-sm-12 col-xs-12">
                    <div class="inner-column">
                        <h2>Sejarah Skynine Coffee</h2>
-                       <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewer's attention from the layout this is required when, for example, the final text is not yet available dummy text is also known as 'fill text' it is said that song composers.</div>
+                       <div class="text">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
                        <div class="btn-box">
                            <a href="contact.html" class="theme-btn btn-style-four">Contact us</a>
                        </div>
@@ -305,14 +314,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--End History Section -->
 
     <!-- Testimonial Section -->
-    <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1.jpg'); ?>);">
+    <section class="testimonial-section" style="background-image: url(<?php echo base_url('assets/images/background/1new.jpg'); ?>);">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
                 <!-- Testimonial Block -->
                 <div class="testimonial-block">
                     <div class="inner-box">
                         <span class="icon flaticon-left-quote"></span>
-                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
                         <div class="info">
                             <h4 class="name">Jalen Newman</h4>
                             <span class="designation">Art Director</span>
@@ -324,7 +333,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="testimonial-block">
                     <div class="inner-box">
                         <span class="icon flaticon-left-quote"></span>
-                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
                         <div class="info">
                             <h4 class="name">Jalen Newman</h4>
                             <span class="designation">Art Director</span>
@@ -336,7 +345,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="testimonial-block">
                     <div class="inner-box">
                         <span class="icon flaticon-left-quote"></span>
-                        <div class="text">Now the world don't move to the beat of just one drum what might be right for you may not be right for some the biggest gift would be from me and the card attached would say thank you</div>
+                        <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
                         <div class="info">
                             <h4 class="name">Jalen Newman</h4>
                             <span class="designation">Art Director</span>

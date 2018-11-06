@@ -103,6 +103,10 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Nunito Sans', sans-serif;
 }
 
+.white{
+	color: white;
+}
+
 input,button,select{
 	
 }
@@ -1147,6 +1151,15 @@ img{
 	margin-bottom: 5px;
 }
 
+.page-title h2{
+	position:relative;
+	font-size:40px;
+	line-height: 1.2em;
+	font-weight: 700;
+	color: #f4fff9;
+	margin-bottom: 5px;
+}
+
 .page-title .bread-crumb li{
 	position: relative;
 	display: inline-block;
@@ -1159,8 +1172,31 @@ img{
 	cursor: default;
 }
 
+.page-title .bread-crumb1 li{
+	position: relative;
+	display: inline-block;
+	font-size: 15px;
+	line-height: 26px;
+	color: #f4fff9;
+	font-weight: 300;
+	margin-right:7px;
+	padding-right:7px;
+	cursor: default;
+}
+
 .page-title .bread-crumb li a{
 	color:#232323;
+	line-height: 26px;
+	display: inline-block;
+	-webkit-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	transition:all 300ms ease;
+}
+
+.page-title .bread-crumb1 li a{
+	color:#f4fff9;
 	line-height: 26px;
 	display: inline-block;
 	-webkit-transition:all 300ms ease;
@@ -2411,7 +2447,7 @@ img{
 	top: 0;
 	height: 100%;
 	width: 0%;
-	background-color: #d4b196;
+	background-color: #0322cf;
 	opacity: .50;
 	content: "";
 	-webkit-transition: all 300ms ease;
@@ -2478,7 +2514,7 @@ img{
 }
 
 .team-block .image-box .social-links li a:hover{
-	background:#d4b196;
+	background:#0322cf;
 	color:#ffffff;	
 }
 
@@ -2486,6 +2522,9 @@ img{
 	position: relative;
 	padding: 25px 0 0;
 	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    color: #232323;
 }
 
 .team-block .info .name{
@@ -2507,7 +2546,7 @@ img{
 }
 
 .team-block .info .name a:hover{
-	color: #d4b196;
+	color: #0322cf;
 }
 
 .team-block .info .designation{
@@ -2532,6 +2571,7 @@ img{
 	background-position: center;
 	background-size: cover;
 	padding: 90px 0;
+	background-image: url('../images/main-slider/bg.jpg');
 }
 
 .testimonial-section:before{
@@ -3228,6 +3268,10 @@ img{
 .clients-section{
 	position: relative;
 	display: block;
+	background-image: url('../images/main-slider/sky4.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
 }
 
 .clients-section.alternate{
@@ -3490,7 +3534,7 @@ img{
 	background-repeat:no-repeat;
 	background-position:center center;
 	background-size: cover;
-	background-color:#f8f8f8;
+	background-color:#132a38;
 }
 
 .main-footer .widgets-section{
@@ -3511,7 +3555,7 @@ img{
 	position: relative;
 	font-size:22px;
 	font-weight:600;
-	color:#232323;	
+	color:#fff;	
 	text-transform:capitalize;
 	margin-bottom:20px;
 }
@@ -3546,16 +3590,17 @@ img{
 	padding-left: 35px;
 	line-height: 30px;
 	font-size: 18px;
-	color: #232323;
+	color: #fff;
 	font-weight: 300;
 }
 
 .main-footer .contact-info li a {
-	color: #232323;
+	color: #fff;
 }
 
 .main-footer .contact-info li span{
 	display: inline-block;
+	color: #fff;
 	font-weight: 400;
 	font-family: "Rubik", sans-serif;
 }
@@ -3566,7 +3611,7 @@ img{
 	top: 0;
 	font-size: 18px;
 	line-height: 27px;
-	color: #232323;
+	color: #fff;
 	font-weight: 400;
 }
 
@@ -3652,7 +3697,7 @@ img{
 	display: inline-block;
 	font-size: 18px;
 	line-height: 30px;
-	color: #232323;
+	color: #ffffff;
 	font-weight: 600;
 	margin-right: 10px;
 }
@@ -3661,12 +3706,12 @@ img{
 	position: relative;
 	font-size: 17px;
 	line-height: 30px;
-	color: #777777;
+	color: #fff;
 	font-weight: 300;
 }
 
 .main-footer .copyright a{
-	color: #777777;
+	color: #fff;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -3719,7 +3764,7 @@ img{
 }
 
 .social-icon-two li a{
-	color: #8f8f8f;
+	color: #000000;
 	-webkit-transition: all 300ms ease;
 	-moz-transition: all 300ms ease;
 	-ms-transition: all 300ms ease;
@@ -3915,6 +3960,10 @@ a.ui-button:active, .ui-button:active,
 .sidebar-widget{
 	position: relative;
 	margin-bottom: 35px;
+}
+
+.white{
+	color: #fff;
 }
 
 .sidebar-title {
@@ -5808,3 +5857,12 @@ a.ui-button:active, .ui-button:active,
 	font-weight: 400;
 }
 
+/*video*/
+.myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    width: 100%; 
+    height: auto;
+}
+/*end video*/

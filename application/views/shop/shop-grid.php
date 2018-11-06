@@ -33,294 +33,275 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="main-box">
                 <div class="nav-outer clearfix">
 
-                    <!-- Main Menu -->
-                    <nav class="main-menu">
-                        <div class="navbar-header">     
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
-                        
-                        <div class="navbar-collapse collapse clearfix">
-                            <ul class="navigation clearfix">
-                                <li class="current dropdown"><a href="#">Home</a>
-                                <ul>
-                                    <li><a href="index-2.html">Home Style 01</a></li>
-                                    <li><a href="index-3.html">Home Style 02</a></li>
-                                    <li class="dropdown"><a href="#">Header Styles</a>
-                                    <ul>
-                                        <li><a href="index-2.html">Header Type 01</a></li>
-                                        <li><a href="index-3.html">Header Type 02</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown"><a href="#">Pages</a>
-                        <ul>                                
-                            <li><a href="about.html">About Us</a></li>
-                            <li class="dropdown"><a href="#">Blog</a>
-                            <ul>
-                                <li><a href="blog-classic.html">Latest Blog</a></li>
-                                <li><a href="blog-single.html">Post Details</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>   
-
-                <li class="dropdown"><a href="#">Shop</a>
-                <ul>
-                    <li><a href="shop-grid.html">Products Grid View</a></li>
-                    <li><a href="shop-list.html">Products List View</a></li>
-                    <li><a href="external-products.html">Product Details 01</a></li>
-                    <li><a href="variable-products.html">Product Details 02</a></li>
-                    <li><a href="product-details.html">Product Details 03</a></li>
-                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                    <li><a href="checkout.html">Checkout Page</a></li>
-                </ul>
-            </li>
-            
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-    </div>
-</nav>
-
-<div class="iner-box">
-    <ul class="social-icon-one">
-        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
-    </ul>
-</div>
-
-<div class="logo-outer">
-    <div class="logo">
-        <a href="#"><img src="<?php echo base_url('/assets/images/skynine.png') ?>"/></a>
-        <a href="#"><img src="<?php echo base_url('/assets/images/coffee.png') ?>"/></a>
-    </div>
-</div>
-
-<!-- Main Menu End-->
-<div class="outer-box clearfix">
-    <!--Search Box-->
-    <div class="search-box-outer">
-        <div class="dropdown">
-            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
-            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                <li class="panel-outer">
-                    <div class="form-container">
-                        <form method="post" action="http://t.commonsupport.com/lescons/blog.html">
-                            <div class="form-group">
-                                <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-                            </div>
-                        </form>
+                    <div class="iner-box">
+                        <ul class="social-icon-one">
+                            <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
+                        </ul>
                     </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="like-btn"><span class="icon flaticon-like"></span></div>
-    <div class="cart-btn">
-        <a href="<?php echo site_url('shop/cart'); ?>">
-            <span class="count">3</span>
-            <span class="icon flaticon-shopping-bag"></span>
-        </a>
-    </div>
-</div>
-</div>
 
-<!--Mobile Menu-->
-<div class="mobile-menu">
-    <div class="nav-header clearfix">
-        <div class="text">Menu</div>
-        <div class="menu-btn"><span class="fa fa-bars"></span></div>
-    </div>
-    <div class="links-outer">
-        <div class="links-box">
-            <ul class="navigation">
-                <!--Keep This Empty / Menu will come through Javascript-->
-            </ul>
-        </div>
-    </div>
-</div>
+                    <div class="logo-outer">
+                        <div class="logo">
+                            <a href="#"><img src="<?php echo base_url('/assets/images/skynine.png') ?>"/></a>
+                            <a href="#"><img src="<?php echo base_url('/assets/images/coffee.png') ?>"/></a>
+                        </div>
+                    </div>
 
-</div>
-<!--End Main Box -->
+                    <!-- Main Menu End-->
+                    <div class="outer-box clearfix">
+                        <!--Search Box-->
+                        <div class="search-box-outer">
+                            <div class="dropdown">
+                                <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
+                                <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
+                                    <li class="panel-outer">
+                                        <div class="form-container">
+                                            <form method="post" action="http://t.commonsupport.com/lescons/blog.html">
+                                                <div class="form-group">
+                                                    <input type="search" name="field-name" value="" placeholder="Search Here" required>
+                                                    <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="like-btn"><span class="icon flaticon-like"></span></div>
+                        <div class="cart-btn">
+                            <a href="<?php echo site_url('shop/cart'); ?>">
+                                <span class="count">3</span>
+                                <span class="icon flaticon-shopping-bag"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-</header>
-<!--End Main Header -->    
+                <!--Mobile Menu-->
+                <div class="mobile-menu">
+                    <div class="nav-header clearfix">
+                        <div class="text">Skynine Coffee</div>
+                        <div class="menu-btn"><span class="fa fa-bars"></span></div>
+                    </div>
+                </div>
 
-<!-- bar pilih menu -->
-<div class="header header-style-1">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="nav-section header-sticky">
-                <div class="primary-nav-section">
-                    <div class="container">
-                        <div class="text-center">
-                            <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
-                                <li class="menu-item home-icon">
-                                    <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
-                                </li>
+            </div>
+            <!--End Main Box -->
 
-                                <li class="menu-item menu-item-has-children item-megamenu" >
-                                    <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
-                                    <div class="wrap-megamenu">
-                                        <div class="megamenu-content min-height-460 bg1">
-                                            <div class="row">
-                                                <div class="custom-col-8">
-                                                    <div class="wrap-vertical-nav">
-                                                        <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                        <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Klik disini</a> </button>
+        </header>
+        <!--End Main Header -->    
+
+        <!-- bar pilih menu -->
+        <div class="header header-style-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="nav-section header-sticky">
+                        <div class="primary-nav-section">
+                            <div class="container">
+                                <div class="text-center">
+                                    <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
+                                        <li class="menu-item home-icon">
+                                            <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        </li>
+
+                                        <li class="menu-item menu-item-has-children item-megamenu" >
+                                            <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
+                                            <div class="wrap-megamenu">
+                                                <div class="megamenu-content min-height-460 bg1">
+                                                    <div class="row">
+                                                        <div class="custom-col-8">
+                                                            <div class="wrap-vertical-nav">
+                                                                <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                                <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Klik disini</a> </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
 
-                                <li class="menu-item menu-item-has-children item-megamenu" >
-                                    <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
-                                    <div class="wrap-megamenu">
-                                        <div class="megamenu-content min-height-460 bg2">
-                                            <div class="row">
-                                                <div class="custom-col-8">
-                                                    <div class="wrap-vertical-nav">
-                                                        <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                        <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
+                                        <li class="menu-item menu-item-has-children item-megamenu" >
+                                            <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
+                                            <div class="wrap-megamenu">
+                                                <div class="megamenu-content min-height-460 bg2">
+                                                    <div class="row">
+                                                        <div class="custom-col-8">
+                                                            <div class="wrap-vertical-nav">
+                                                                <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                                <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
 
-                                <li class="menu-item menu-item-has-children item-megamenu" >
-                                    <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
-                                    <div class="wrap-megamenu">
-                                        <div class="megamenu-content min-height-460 bg3">
-                                            <div class="row">
-                                                <div class="custom-col-8">
-                                                    <div class="wrap-vertical-nav">
-                                                        <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                        <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Klik disini</a> </button>
+                                        <li class="menu-item menu-item-has-children item-megamenu" >
+                                            <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
+                                            <div class="wrap-megamenu">
+                                                <div class="megamenu-content min-height-460 bg3">
+                                                    <div class="row">
+                                                        <div class="custom-col-8">
+                                                            <div class="wrap-vertical-nav">
+                                                                <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                                <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Klik disini</a> </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
 
-                                <li class="menu-item menu-item-has-children item-megamenu" >
-                                    <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
-                                    <div class="wrap-megamenu">
-                                        <div class="megamenu-content min-height-460 bg4">
-                                            <div class="row">
-                                                <div class="custom-col-8">
-                                                    <div class="wrap-vertical-nav">
-                                                        <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                        <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Klik disini</a> </button>
+                                        <li class="menu-item menu-item-has-children item-megamenu" >
+                                            <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
+                                            <div class="wrap-megamenu">
+                                                <div class="megamenu-content min-height-460 bg4">
+                                                    <div class="row">
+                                                        <div class="custom-col-8">
+                                                            <div class="wrap-vertical-nav">
+                                                                <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                                <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Klik disini</a> </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
 
-                                <li class="menu-item menu-item-has-children item-megamenu" >
-                                    <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
-                                    <div class="wrap-megamenu">
-                                        <div class="megamenu-content min-height-460 bg5">
-                                            <div class="row">
-                                                <div class="custom-col-8">
-                                                    <div class="wrap-vertical-nav">
-                                                        <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                        <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
+                                        <li class="menu-item menu-item-has-children item-megamenu" >
+                                            <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
+                                            <div class="wrap-megamenu">
+                                                <div class="megamenu-content min-height-460 bg5">
+                                                    <div class="row">
+                                                        <div class="custom-col-8">
+                                                            <div class="wrap-vertical-nav">
+                                                                <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                                <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
+                                        </li>
 
-                                <li class="menu-item menu-item-has-children item-megamenu" >
-                                    <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
-                                    <div class="wrap-megamenu">
-                                        <div class="megamenu-content min-height-460 bg6">
-                                            <div class="row">
-                                                <div class="custom-col-8">
-                                                    <div class="wrap-vertical-nav">
-                                                        <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                        <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Klik disini</a> </button>
+                                        <li class="menu-item menu-item-has-children item-megamenu" >
+                                            <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
+                                            <div class="wrap-megamenu">
+                                                <div class="megamenu-content min-height-460 bg6">
+                                                    <div class="row">
+                                                        <div class="custom-col-8">
+                                                            <div class="wrap-vertical-nav">
+                                                                <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
+                                                                <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Klik disini</a> </button>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- bar pilihan menu selesai -->
+        <!-- bar pilihan menu selesai -->
 
-<!--Page Title-->
-<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/7.jpg'); ?>);">
-    <div class="auto-container">
-        <h1>Toko Produk</h1>
-        <ul class="bread-crumb clearfix">
-            <li><a href="index-2.html">Home </a></li>
-            <li>Toko</li>
-        </ul>
-    </div>
-</section>
-<!--End Page Title-->
+        <!--Page Title-->
+        <!-- <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/Untitled-1.gif'); ?>);">
+            <div class="auto-container">
+                <h2>Toko Produk</h2>
+                <ul class="bread-crumb1 clearfix">
+                    <li><a href="index-2.html">Home </a></li>
+                    <li>Toko</li>
+                </ul>
+            </div>
+        </section> -->
+        <video autoplay muted loop class="myVideo">
+            <source src="<?php echo base_url('/assets/images/skysky.mov') ?>">
+                Your browser does not support HTML5 video.
+        </video>
+        <!--End Page Title-->
 
-<!--Sidebar Page Container-->
-<div class="sidebar-page-container">
-    <div class="auto-container">
-        <div class="row clearfix">
-            
-            <!--content side-->
-            <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
-                <div class="shop-upper-box clearfix">
-                    <div class="items-label pull-left">Melihat 1-7 dari 84 Hasil
-                        <div class="link-box">
-                            <a href="<?php echo site_url('shop/index'); ?>" class="active"><i class="fa fa-th"></i></a>
-                            <a href="<?php echo site_url('shop/list'); ?>"><i class="fa fa-th-list"></i></a>
+        <!--Sidebar Page Container-->
+        <div class="sidebar-page-container">
+            <div class="auto-container">
+                <div class="row clearfix">
+
+                    <!--content side-->
+                    <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
+                        <div class="shop-upper-box clearfix">
+                            <div class="items-label pull-left">Melihat 1-7 dari 84 Hasil
+                                <div class="link-box">
+                                    <a href="<?php echo site_url('shop/index'); ?>" class="active"><i class="fa fa-th"></i></a>
+                                    <a href="<?php echo site_url('shop/list'); ?>"><i class="fa fa-th-list"></i></a>
+                                </div>
+                            </div>
+                            <div class="sort-by pull-right">
+                                <select class="custom-select-box">
+                                    <option>Pengurutan Otomatis</option>
+                                    <option>Harga: Termurah</option>
+                                    <option>Harga: Tertinggi</option>
+                                    <option>Murah -> Tinggi</option>
+                                    <option>Tinggi -> Murah</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row clearfix">
+                            <!-- Product Block -->
+                            <div class="product-block col-md-4 col-sm-6 col-xs-12">
+                                <div class="inner-box">
+                                    <div class="image-box">
+                                     <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/1.jpg') ?>" alt=""></a>
+                                     <span class="tag">Promo!</span>
+                                     <div class="link-box">
+                                        <a href="<?php echo base_url('/assets/images/resource/products/1.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                        <a href="#"><span class="flaticon-like-1"></span></a>
+                                        <a href="#"><span class="flaticon-shopping-bag"></span></a>
+                                    </div>                       
+                                </div>
+                                <div class="content-box">
+                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Pair Waterbottle</a></h3>
+                                    <span class="price">$65.10</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Product Block -->
+                        <div class="product-block col-md-4 col-sm-6 col-xs-12">
+                            <div class="inner-box">
+                                <div class="image-box">
+                                 <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/2.jpg') ?>" alt=""></a>
+                                 <div class="link-box">
+                                    <a href="<?php echo base_url('/assets/images/resource/products/2.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                                    <a href="#"><span class="flaticon-like-1"></span></a>
+                                    <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
+                                </div>                       
+                            </div>
+                            <div class="content-box">
+                                <h3><a href="<?php echo site_url('Shop/cart'); ?>">Small Table</a></h3>
+                                <span class="price"><del>$86.00</del> $82.30</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="sort-by pull-right">
-                        <select class="custom-select-box">
-                            <option>Pengurutan Otomatis</option>
-                            <option>Harga: Termurah</option>
-                            <option>Harga: Tertinggi</option>
-                            <option>Murah -> Tinggi</option>
-                            <option>Tinggi -> Murah</option>
-                        </select>
-                    </div>
-                </div>
 
-                <div class="row clearfix">
                     <!-- Product Block -->
                     <div class="product-block col-md-4 col-sm-6 col-xs-12">
                         <div class="inner-box">
                             <div class="image-box">
-                               <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/1.jpg') ?>" alt=""></a>
-                               <span class="tag">Promo!</span>
-                               <div class="link-box">
-                                <a href="<?php echo base_url('/assets/images/resource/products/1.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                             <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/3.jpg') ?>" alt=""></a>
+                             <span class="tag">Sale!</span>
+                             <div class="link-box">
+                                <a href="<?php echo base_url('/assets/images/resource/products/3.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                                 <a href="#"><span class="flaticon-like-1"></span></a>
-                                <a href="#"><span class="flaticon-shopping-bag"></span></a>
+                                <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                             </div>                       
                         </div>
                         <div class="content-box">
-                            <h3><a href="<?php echo site_url('Shop/cart'); ?>">Pair Waterbottle</a></h3>
-                            <span class="price">$65.10</span>
+                            <h3><a href="<?php echo site_url('Shop/cart'); ?>">Storage Tap</a></h3>
+                            <span class="price">$25.00</span>
                         </div>
                     </div>
                 </div>
@@ -329,16 +310,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="product-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
                         <div class="image-box">
-                           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/2.jpg') ?>" alt=""></a>
-                           <div class="link-box">
-                            <a href="<?php echo base_url('/assets/images/resource/products/2.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                         <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/5.jpg') ?>" alt=""></a>
+                         <div class="link-box">
+                            <a href="<?php echo base_url('/assets/images/resource/products/5.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                             <a href="#"><span class="flaticon-like-1"></span></a>
                             <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
                         </div>                       
                     </div>
                     <div class="content-box">
-                        <h3><a href="<?php echo site_url('Shop/cart'); ?>">Small Table</a></h3>
-                        <span class="price"><del>$86.00</del> $82.30</span>
+                        <h3><a href="<?php echo site_url('Shop/cart'); ?>">Wooden Wallclock</a></h3>
+                        <span class="price">$80.00</span>
                     </div>
                 </div>
             </div>
@@ -347,17 +328,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="product-block col-md-4 col-sm-6 col-xs-12">
                 <div class="inner-box">
                     <div class="image-box">
-                       <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/3.jpg') ?>" alt=""></a>
-                       <span class="tag">Sale!</span>
-                       <div class="link-box">
-                        <a href="<?php echo base_url('/assets/images/resource/products/3.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                     <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/7.jpg') ?>" alt=""></a>
+                     <span class="tag">Sale!</span>
+                     <div class="link-box">
+                        <a href="<?php echo base_url('/assets/images/resource/products/7.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                         <a href="#"><span class="flaticon-like-1"></span></a>
                         <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                    </div>                       
+                    </div>
                 </div>
                 <div class="content-box">
-                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Storage Tap</a></h3>
-                    <span class="price">$25.00</span>
+                    <h3><a href="<?php echo site_url('Shop/cart'); ?>">Modern Lamp</a></h3>
+                    <span class="price">$172.00</span>
                 </div>
             </div>
         </div>
@@ -366,16 +347,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="product-block col-md-4 col-sm-6 col-xs-12">
             <div class="inner-box">
                 <div class="image-box">
-                   <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/5.jpg') ?>" alt=""></a>
-                   <div class="link-box">
-                    <a href="<?php echo base_url('/assets/images/resource/products/5.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+                 <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/8.jpg') ?>" alt=""></a>
+                 <div class="link-box">
+                    <a href="<?php echo base_url('/assets/images/resource/products/8.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                     <a href="#"><span class="flaticon-like-1"></span></a>
                     <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-                </div>                       
+                </div>
             </div>
             <div class="content-box">
-                <h3><a href="<?php echo site_url('Shop/cart'); ?>">Wooden Wallclock</a></h3>
-                <span class="price">$80.00</span>
+                <h3><a href="<?php echo site_url('Shop/cart'); ?>">Water Jug</a></h3>
+                <span class="price"><del>$26.00</del> $22.10</span>
             </div>
         </div>
     </div>
@@ -384,17 +365,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="product-block col-md-4 col-sm-6 col-xs-12">
         <div class="inner-box">
             <div class="image-box">
-               <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/7.jpg') ?>" alt=""></a>
-               <span class="tag">Sale!</span>
-               <div class="link-box">
-                <a href="<?php echo base_url('/assets/images/resource/products/7.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
+             <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/9.jpg') ?>" alt=""></a>
+             <span class="tag">Sale!</span>
+             <div class="link-box">
+                <a href="<?php echo base_url('/assets/images/resource/products/9.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
                 <a href="#"><span class="flaticon-like-1"></span></a>
                 <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-            </div>
+            </div>                       
         </div>
         <div class="content-box">
-            <h3><a href="<?php echo site_url('Shop/cart'); ?>">Modern Lamp</a></h3>
-            <span class="price">$172.00</span>
+            <h3><a href="<?php echo site_url('Shop/cart'); ?>">Stylish Pots</a></h3>
+            <span class="price"><del>$36.00</del> $30.05</span>
         </div>
     </div>
 </div>
@@ -403,46 +384,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="product-block col-md-4 col-sm-6 col-xs-12">
     <div class="inner-box">
         <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/8.jpg') ?>" alt=""></a>
-           <div class="link-box">
-            <a href="<?php echo base_url('/assets/images/resource/products/8.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-            <a href="#"><span class="flaticon-like-1"></span></a>
-            <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-        </div>
-    </div>
-    <div class="content-box">
-        <h3><a href="<?php echo site_url('Shop/cart'); ?>">Water Jug</a></h3>
-        <span class="price"><del>$26.00</del> $22.10</span>
-    </div>
-</div>
-</div>
-
-<!-- Product Block -->
-<div class="product-block col-md-4 col-sm-6 col-xs-12">
-    <div class="inner-box">
-        <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/9.jpg') ?>" alt=""></a>
-           <span class="tag">Sale!</span>
-           <div class="link-box">
-            <a href="<?php echo base_url('/assets/images/resource/products/9.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
-            <a href="#"><span class="flaticon-like-1"></span></a>
-            <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
-        </div>                       
-    </div>
-    <div class="content-box">
-        <h3><a href="<?php echo site_url('Shop/cart'); ?>">Stylish Pots</a></h3>
-        <span class="price"><del>$36.00</del> $30.05</span>
-    </div>
-</div>
-</div>
-
-<!-- Product Block -->
-<div class="product-block col-md-4 col-sm-6 col-xs-12">
-    <div class="inner-box">
-        <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/10.jpg') ?>" alt=""></a>
-           <span class="tag">Sale!</span>
-           <div class="link-box">
+         <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/10.jpg') ?>" alt=""></a>
+         <span class="tag">Sale!</span>
+         <div class="link-box">
             <a href="<?php echo base_url('/assets/images/resource/products/10.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
             <a href="#"><span class="flaticon-like-1"></span></a>
             <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
@@ -459,9 +403,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="product-block col-md-4 col-sm-6 col-xs-12">
     <div class="inner-box">
         <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/12.jpg') ?>" alt=""></a>
-           <span class="tag">Sale!</span>
-           <div class="link-box">
+         <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/12.jpg') ?>" alt=""></a>
+         <span class="tag">Sale!</span>
+         <div class="link-box">
             <a href="<?php echo base_url('/assets/images/resource/products/12.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
             <a href="#"><span class="flaticon-like-1"></span></a>
             <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
@@ -478,8 +422,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="product-block col-md-4 col-sm-6 col-xs-12">
     <div class="inner-box">
         <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/4.jpg') ?>" alt=""></a>
-           <div class="link-box">
+         <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/4.jpg') ?>" alt=""></a>
+         <div class="link-box">
             <a href="<?php echo base_url('/assets/images/resource/products/4.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
             <a href="#"><span class="flaticon-like-1"></span></a>
             <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
@@ -496,9 +440,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="product-block col-md-4 col-sm-6 col-xs-12">
     <div class="inner-box">
         <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/6.jpg') ?>" alt=""></a>
-           <span class="tag">Sale!</span>
-           <div class="link-box">
+         <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/6.jpg') ?>" alt=""></a>
+         <span class="tag">Sale!</span>
+         <div class="link-box">
             <a href="<?php echo base_url('/assets/images/resource/products/6.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
             <a href="#"><span class="flaticon-like-1"></span></a>
             <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
@@ -515,8 +459,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <div class="product-block col-md-4 col-sm-6 col-xs-12">
     <div class="inner-box">
         <div class="image-box">
-           <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/11.jpg') ?>" alt=""></a>
-           <div class="link-box">
+         <a href="<?php echo site_url('Shop/cart'); ?>"><img src="<?php echo base_url('/assets/images/resource/products/11.jpg') ?>" alt=""></a>
+         <div class="link-box">
             <a href="<?php echo base_url('/assets/images/resource/products/11.jpg') ?>" class="lightbox-image" data-fancybox="gallery"><span class="flaticon-eye-1"></span></a>
             <a href="#"><span class="flaticon-like-1"></span></a>
             <a href="shopping-cart.html"><span class="flaticon-shopping-bag"></span></a>
@@ -623,7 +567,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <!--Big Column-->
                     <div class="big-column col-md-7 col-sm-12 col-xs-12">
                         <div class="row clearfix">
-                            
+
                             <!--Footer Column-->
                             <div class="footer-column col-md-4 col-sm-6 col-xs-12">
                                 <div class="footer-widget links-widget">

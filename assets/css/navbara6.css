@@ -137,7 +137,6 @@ body{
     margin-top: 28px;
 }
 
-
 /******************************
 * RESPONSIVE
 ******************************/
@@ -193,6 +192,14 @@ body{
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        min-width: 360px;
+    }
+    .bg10{
+        background-image: url('../images/background/lampubiru.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        min-width: 360px;
     }
 
 

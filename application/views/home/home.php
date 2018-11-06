@@ -33,59 +33,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="main-box">
             <div class="nav-outer clearfix">
 
-        		<!-- Main Menu -->
-                <nav class="main-menu">
-                    <div class="navbar-header"> 	
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    
-                    <div class="navbar-collapse collapse clearfix">
-                        <ul class="navigation clearfix">
-                            <li class="current dropdown"><a href="#">Home</a>
-                                <ul>
-                                    <li><a href="index-2.html">Home Style 01</a></li>
-                                    <li><a href="index-3.html">Home Style 02</a></li>
-                                    <li class="dropdown"><a href="#">Header Styles</a>
-                                        <ul>
-                                            <li><a href="index-2.html">Header Type 01</a></li>
-                                            <li><a href="index-3.html">Header Type 02</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a href="#">Pages</a>
-                                <ul>                                
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li class="dropdown"><a href="#">Blog</a>
-                                        <ul>
-                                            <li><a href="blog-classic.html">Latest Blog</a></li>
-                                            <li><a href="blog-single.html">Post Details</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>   
-
-                            <li class="dropdown"><a href="#">Shop</a>
-                                <ul>
-                                    <li><a href="shop-grid.html">Products Grid View</a></li>
-                                    <li><a href="shop-list.html">Products List View</a></li>
-                                    <li><a href="external-products.html">Product Details 01</a></li>
-                                    <li><a href="variable-products.html">Product Details 02</a></li>
-                                    <li><a href="product-details.html">Product Details 03</a></li>
-                                    <li><a href="shopping-cart.html">Shopping Cart</a></li>
-                                    <li><a href="checkout.html">Checkout Page</a></li>
-                                </ul>
-                            </li>
-                            
-                            <li><a href="contact.html">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </nav>
-
                 <div class="iner-box">
                     <ul class="social-icon-one">
                         <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
@@ -125,21 +72,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <span class="count">3</span>
                             <span class="icon flaticon-shopping-bag"></span>
                         </a>
-                    </div>
-                </div>
-            </div>
-            
-            <!--Mobile Menu-->
-            <div class="mobile-menu">
-                <div class="nav-header clearfix">
-                    <div class="text">Menu</div>
-                    <div class="menu-btn"><span class="fa fa-bars"></span></div>
-                </div>
-                <div class="links-outer">
-                    <div class="links-box">
-                        <ul class="navigation">
-                            <!--Keep This Empty / Menu will come through Javascript-->
-                        </ul>
                     </div>
                 </div>
             </div>
