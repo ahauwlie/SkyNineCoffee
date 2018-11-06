@@ -75,6 +75,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
+
+            <!--Mobile Menu-->
+            <div class="mobile-menu">
+                <div class="nav-header clearfix">
+                    <div class="text">Skynine Coffee</div>
+                </div>
+            </div>
             
         </div>
         <!--End Main Box -->

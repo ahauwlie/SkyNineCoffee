@@ -80,7 +80,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="mobile-menu">
                     <div class="nav-header clearfix">
                         <div class="text">Skynine Coffee</div>
-                        <div class="menu-btn"><span class="fa fa-bars"></span></div>
                     </div>
                 </div>
 

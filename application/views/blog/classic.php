@@ -133,15 +133,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!--Mobile Menu-->
             <div class="mobile-menu">
                 <div class="nav-header clearfix">
-                    <div class="text">Menu</div>
-                    <div class="menu-btn"><span class="fa fa-bars"></span></div>
-                </div>
-                <div class="links-outer">
-                    <div class="links-box">
-                        <ul class="navigation">
-                            <!--Keep This Empty / Menu will come through Javascript-->
-                        </ul>
-                    </div>
+                    <div class="text">Skynine Coffee</div>
                 </div>
             </div>
             
