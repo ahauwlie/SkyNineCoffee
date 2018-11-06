@@ -224,7 +224,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         data-x="['right','right','right','right']"
                         data-y="['top','top','top','top']"
                         data-frames='[{"from":"y:0;z:0;x:1000;rX:0;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img-7.png') ?>"></figure>
+                           <figure class="image mobile-hidden"><img alt="" src="<?php echo base_url('/assets/images/main-slider/content-img.png') ?>"></figure>
                         </div>
                         
                         <div class="tp-caption tp-resizeme" 
