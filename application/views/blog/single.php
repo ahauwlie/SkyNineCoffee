@@ -261,7 +261,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!-- bar pilihan menu selesai -->
 
     <!--Page Title-->
-    <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/6.jpg'); ?>);">
+    <section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/blog2.jpg'); ?>);">
         <div class="auto-container">
             <h1>Blog</h1>
             <ul class="bread-crumb clearfix">
