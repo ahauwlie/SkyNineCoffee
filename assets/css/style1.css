@@ -374,6 +374,29 @@ img{
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;		
 }
+.scroll-to-bottom{
+	position:fixed;
+	bottom:25px;
+	right:15px;
+	width:40px;
+	height:70px;
+	color:#ffffff;
+	font-size:24px;
+	text-transform:uppercase;
+	line-height:65px;
+	text-align:center;
+	z-index:99999;
+	cursor:pointer;
+	border-radius:50px;
+	background:#d4b196;
+	display:none;
+	border:2px solid #d4b196;
+	-webkit-transition:all 300ms ease;
+	-ms-transition:all 300ms ease;
+	-o-transition:all 300ms ease;
+	-moz-transition:all 300ms ease;
+	transition:all 300ms ease;		
+}
 
 .scroll-to-top:hover{
 	color:#ffffff;
@@ -5859,10 +5882,10 @@ a.ui-button:active, .ui-button:active,
 
 /*video*/
 .myVideo {
-    position: fixed;
+    position: relative;
     right: 0;
     bottom: 0;
-    min-width: 100%; 
-    min-height: 100%;
+    width: 100%; 
+    height: auto;
 }
 /*end video*/

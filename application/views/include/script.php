@@ -24,4 +24,3 @@
 <script src="<?php echo base_url('/assets/js/wow.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/scriptbackup.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/map-script.js') ?>"></script>
-<script src="<?php echo base_url('/assets/js/voronoi-zoom.js') ?>"></script>

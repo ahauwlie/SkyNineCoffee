@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 </head>
 
-<body>
+<body style="background-image: url(<?php echo base_url('assets/images/background/blue.jpg'); ?>);">
     <div class="page-wrapper">
         <!-- Preloader -->
         <div class="preloader"></div>
@@ -269,7 +269,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- bar pilihan menu selesai -->
 
 <!--Page Title-->
-<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/3.jpg'); ?>);">
+<section class="page-title">
     <div class="auto-container">
         <h1>Contact us</h1>
         <ul class="bread-crumb clearfix">
