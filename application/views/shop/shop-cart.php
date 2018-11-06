@@ -269,10 +269,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- bar pilihan menu selesai -->
 
 <!--Page Title-->
-<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/8.jpg'); ?>);">
+<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/4new.jpg'); ?>);">
     <div class="auto-container">
-        <h1>Keranjang Belanja</h1>
-        <ul class="bread-crumb clearfix">
+        <h2>Keranjang Belanja</h2>
+        <ul class="bread-crumb1 clearfix">
             <li><a href="index-2.html">Beranda </a></li>
             <li>Keranjang Belanja</li>
         </ul>
