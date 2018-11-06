@@ -269,15 +269,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- bar pilihan menu selesai -->
 
 <!--Page Title-->
-<section class="page-title" style="background-image: url(<?php echo base_url('assets/images/background/8.jpg'); ?>);">
-    <div class="auto-container">
-        <h1>List Produk</h1>
-        <ul class="bread-crumb clearfix">
-            <li><a href="index-2.html">Beranda </a></li>
-            <li>Toko</li>
-        </ul>
-    </div>
-</section>
+<video autoplay muted loop class="myVideo">
+    <source src="<?php echo base_url('/assets/images/sky1.mov') ?>">
+        Your browser does not support HTML5 video.
+</video>
 <!--End Page Title-->
 
 <!--Sidebar Page Container-->
