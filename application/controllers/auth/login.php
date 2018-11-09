@@ -12,7 +12,7 @@ class Login extends CI_Controller {
                 //mengambil helpher form. digunakan di v_login.php untuk membuat element form.
                 $this->load->helper('form');
                 //tampilan html login
-                $this->load->view('auth/login');
+                $this->load->view('auth/login2');
             }else
             {
                 //jika seasson ada direct ke home

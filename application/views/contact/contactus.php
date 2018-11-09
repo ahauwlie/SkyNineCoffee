@@ -275,20 +275,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!-- Map Section -->
 <section class="map-section">
     <div class="auto-container">
-        <div class="map-outer wow fadeInUp">
-            <!--Map Canvas-->
-            <div class="map-canvas"
-            data-zoom="17"
-            data-lat="-6.328099"
-            data-lng="106.681519"
-            data-type="roadmap"
-            data-hue="#ffc400"
-            data-title="SkyNineCoffee"
-            data-icon-path="<?php echo base_url('/assets/images/icons/map-marker.png') ?>"
-            data-content="Komplek BSD Sektor XI Ruko Boulevard Tekno Block A Nomer 3 Kota Tanggerang Selatan 15314, Setu, South Tangerang City, Banten 15310">
-        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5072390908167!2d106.67931841447624!3d-6.328255095420276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69e51eb777b679%3A0x597b2bb1c2ca8b4a!2sSky+Nine+Coffee!5e0!3m2!1sen!2sid!4v1541673369864" style="width:100%; height:500px;" style="border:0" allowfullscreen></iframe>
     </div>
-</div>
 </section>
 <!--End Map Section -->
 

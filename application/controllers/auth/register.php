@@ -6,7 +6,7 @@ class Register extends CI_Controller {
     public function index()
     {
 		$this->load->helper('form');
-		$this->load->view('auth/registration');
+		$this->load->view('auth/register');
 	}
 	
 	public function submit(){
