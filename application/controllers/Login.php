@@ -16,7 +16,7 @@ class Login extends CI_Controller {
             }else
             {
                 //jika seasson ada direct ke home
-                redirect('Home','refresh');
+                redirect('home_log','refresh');
             }
     }
 
@@ -24,6 +24,6 @@ class Login extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('url');
         $this->session->unset_userdata('login');
-        redirect('auth/login','refresh');
+        redirect('login','refresh');
     }
 }

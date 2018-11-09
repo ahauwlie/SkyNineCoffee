@@ -19,7 +19,7 @@
 				<a class="h1">klik disini<br>untuk<br>masuk</a>
 			</div>
 			<div class="login-right1">
-				<form action="<?php echo site_url('auth/register/submit'); ?>" method="post">
+				<form action="<?php echo site_url('login_validation'); ?>" method="post">
 					<div class="h2">Masuk</div>
 					<div class="form-group">  
 						<label class="control-label" for="pswd">Username</label>  
@@ -42,9 +42,16 @@
 					</div> 
 					<div class="button-area">
 						<button type="submit" class="btn btn-secondary h3">Back</button>
-						<button type="submit" class="btn btn-primary h3" name="daftar">Masuk</button>
-						<a href="<?php echo site_url('auth/register/index'); ?>">Daftar</a>
+						<button type="submit" class="btn btn-primary h3" value="Login" name="daftar">Masuk</button>
+						<a href="<?php echo site_url('register'); ?>">Daftar</a>
 					</div>
+					<?php 
+					if($this->input->get('gagal')==1){
+						?>
+						<span>username atau password salah</span>
+						<?php
+					}
+					?>
 				</form>
 			</div>
 		</div>

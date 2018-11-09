@@ -11,7 +11,7 @@
 		{
             $this->load->database();
 			$this -> db -> select('username, password,nama,email,active');
-			$this -> db -> from('login');
+			$this -> db -> from('users');
 			$this -> db -> where('username', $username);
 			$this -> db -> where('password', $password);
 			$this -> db -> limit(1);

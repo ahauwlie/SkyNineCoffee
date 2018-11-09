@@ -35,7 +35,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                 <div class="iner-box">
                     <ul class="social-icon-one">
-                        <li><a href="<?php echo site_url('auth/login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
+                        <li><a href="<?php echo site_url('login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
                     </ul>
                 </div>
 

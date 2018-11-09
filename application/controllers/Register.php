@@ -28,7 +28,7 @@ class Register extends CI_Controller {
 			'active' => 0
 		);
 		//tambahkan akun ke database
-		$this->load->model('auth/m_register');
+		$this->load->model('m_register');
 		$id = $this->m_register->add_account($data);
 		
 		//enkripsi id
@@ -57,34 +57,31 @@ class Register extends CI_Controller {
 		$this->email->subject("Verifikasi Akun");
 		$this->email->message(
 			"terimakasih telah melakuan registrasi, untuk memverifikasi silahkan klik tautan dibawah ini<br><br>".
-			site_url("auth/register/verification/$encrypted_id")
+			site_url("register/verification/$encrypted_id")
 		);
 		
 		if($this->email->send())
 		{
-			//echo "Berhasil melakukan registrasi, silahkan cek email kamu";
-			$data['css'] = $this->load->view('include/style.php', NULL, TRUE);
-			$data['js'] = $this->load->view('include/script.php', NULL, TRUE);
-			$this->load->view('home/new1', $data);
+			echo "Berhasil melakukan registrasi, silahkan cek email kamu";
 		}else
 		{
 			echo "Berhasil melakukan registrasi, namun gagal mengirim verifikasi email";
 		}
 		
-		//echo "<br><br><a href='".site_url("home")."'>Back to Home Page</a>";
+		echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
 	}
 	
 	public function verification($key)
 	{
 		$this->load->helper('url');
-		$this->load->model('auth/m_register');
+		$this->load->model('m_register');
 		$this->m_register->changeActiveState($key);
 		$aktif = array(
                'active' => 1
             );
 		$this->db->update('users', $aktif);
 		echo "Selamat kamu telah memverifikasi akun kamu";
-		echo "<br><br><a href='".site_url("auth/login")."'>Kembali ke Menu Login</a>";
+		echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
 	}
 }
 

@@ -1,7 +1,7 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 //nama class harus sama dengan nama file dan diawali dengan huruf besar
-class Home extends CI_Controller {
+class Home_log extends CI_Controller {
 
     public function index()
     {
@@ -14,7 +14,7 @@ class Home extends CI_Controller {
             $data['nama'] = $session['nama'];
 			$data['email'] = $session['email'];
 			$data['active'] = $session['active'];
-            $this->load->view('v_home',$data);
+            $this->load->view('auth/v_home',$data);
         }else{
             redirect('login','refresh');   
         }

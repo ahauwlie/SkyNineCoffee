@@ -18,7 +18,7 @@ class Login_validation extends CI_Controller {
             redirect('login?gagal=1','refresh');
         }else
         {
-            redirect('home','refresh');
+            redirect('Home_log','refresh');
 
         }
     }

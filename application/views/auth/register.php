@@ -19,7 +19,7 @@
 				<a class="h1">Selamat Datang<br>di<br>SkyNine</a>
 			</div>
 			<div class="login-right">
-				<form action="<?php echo site_url('auth/register/submit'); ?>" method="post">
+				<form action="<?php echo site_url('register/submit'); ?>" method="post">
 					<div class="h2">Daftar</div>
 					<div class="form-group">
 						<label class="control-label"></label>   
@@ -54,7 +54,7 @@
 					<div class="button-area">
 						<button type="submit" class="btn btn-secondary h3">Back</button>
 						<button type="submit" class="btn btn-primary h3" name="daftar">Daftar</button>
-						<a href="<?php echo site_url('auth/login/index'); ?>">Login</a>
+						<a href="<?php echo site_url('login'); ?>">Login</a>
 					</div>
 				</form>
 			</div>
