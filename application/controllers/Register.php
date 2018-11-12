@@ -11,10 +11,6 @@ class Register extends CI_Controller {
 	
 	public function submit(){
 
-		$this->form_validation->set_rules('username_us', 'username', 'trim|required|xss_clean|is_unique[user.username_us]');
-		if ($this->form_validation->run() == FALSE) {
-                $this->load->view('auth/register');
-        }else{
 		//passing post data dari view
 		$this->load->helper(array('form', 'url'));
 		$username = $this->input->post('username_us');
@@ -67,14 +63,17 @@ class Register extends CI_Controller {
 		
 		if($this->email->send())
 		{
-			echo "Berhasil melakukan registrasi, silahkan cek email kamu";
+			// echo "Berhasil melakukan registrasi, silahkan cek email kamu";
+			$data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+			$data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+			$data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+			$data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+			$this->load->view('auth/verifikasi', $data);
 		}else
 		{
 			echo "Berhasil melakukan registrasi, namun gagal mengirim verifikasi email";
+			echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
 		}
-		
-		echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
-	}
 	}
 	
 	public function verification($key)

@@ -14,11 +14,11 @@
 </head>  
 	<body>
 		<div class="login-wrapper">
-			<div class="login-left1">
+			<div class="login-left">
 				<img src="<?php echo base_url('/assets/images/background/bg-login.png'); ?>">
 				<a class="h1">klik disini<br>untuk<br>masuk</a>
 			</div>
-			<div class="login-right1">
+			<div class="login-right">
 				<form action="<?php echo site_url('login_validation'); ?>" method="post">
 					<div class="h2">Masuk</div>
 					<div class="form-group">  
