@@ -14,7 +14,11 @@ class Home_log extends CI_Controller {
             $data['nama'] = $session['nama'];
 			$data['email'] = $session['email'];
 			$data['active'] = $session['active'];
-            $this->load->view('auth/v_home',$data);
+            $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+            $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+            $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+            $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+            $this->load->view('home/home',$data);
         }else{
             redirect('login','refresh');   
         }

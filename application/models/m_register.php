@@ -11,8 +11,6 @@
 		{
             $this->load->database();
 			$this->db->insert('users',$data);
-			// $this->db->insert_id();
-			// return mysql_insert_id();
 		}
 		
 		function changeActiveState($key)

@@ -9,9 +9,7 @@ class Login extends CI_Controller {
             $this->load->helper('url');
             //jika seasson login belum ada maka tampilkan login
             if(!$this->session->userdata('login')){
-                //mengambil helpher form. digunakan di v_login.php untuk membuat element form.
                 $this->load->helper('form');
-                //tampilan html login
                 $this->load->view('auth/login2');
             }else
             {
@@ -24,6 +22,6 @@ class Login extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('url');
         $this->session->unset_userdata('login');
-        redirect('login','refresh');
+        redirect('home/index','refresh');
     }
 }

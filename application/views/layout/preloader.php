@@ -10,6 +10,7 @@
 
                         <?php if ($this->session->userdata('login')) { ?>
                         <!-- <h1>hay</h1> -->
+                        <li><a href="<?php echo site_url('login/logout'); ?>">Keluar </a></li>
                         <?php } else { ?>
                         <li><a href="<?php echo site_url('login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
                         <?php } ?>

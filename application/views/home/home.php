@@ -29,6 +29,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="header-span"></div>
     <?php echo $preloader; ?>
 
+    <!-- selamat datang loginers -->
+    <?php if ($this->session->userdata('login')) { ?>
+        <li class="nav-item dropdown bg7">
+            <a class="nav-link dropdown-toggle text-muted" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="mdi mdi-account-circle profile-pic"></i>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+                click sini<br>
+            </a>
+            <div class="dropdown-menu dropdown-menu-left animated zoomIn">
+                <ul class="dropdown-user">
+                    <li><a>Selamat datang <b><?php echo $nama;?></b></a></li>
+                    <li><a href="<?php echo site_url('login/logout'); ?>">Keluar </a></li>
+                </ul>
+            </div>
+        </li>
+    <?php } ?>
+    <!-- selesai -->
+
     <!--Main Slider-->
     <section class="main-slider with-border">
         <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">

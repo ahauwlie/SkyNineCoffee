@@ -14,7 +14,6 @@ class Login_validation extends CI_Controller {
         //jika validasi gagal maka akan langsung akan dkembalikan ke login
         if($this->form_validation->run() == FALSE)
         {
-
             redirect('login?gagal=1','refresh');
         }else
         {
