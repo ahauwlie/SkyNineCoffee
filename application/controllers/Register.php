@@ -10,6 +10,11 @@ class Register extends CI_Controller {
 	}
 	
 	public function submit(){
+
+		$this->form_validation->set_rules('username_us', 'username', 'trim|required|xss_clean|is_unique[user.username_us]');
+		if ($this->form_validation->run() == FALSE) {
+                $this->load->view('auth/register');
+        }else{
 		//passing post data dari view
 		$this->load->helper(array('form', 'url'));
 		$username = $this->input->post('username_us');
@@ -30,7 +35,7 @@ class Register extends CI_Controller {
 		//tambahkan akun ke database
 		$this->load->model('m_register');
 		$id = $this->m_register->add_account($data);
-		
+
 		//enkripsi id
 		$encrypted_id = md5($id);
 		
@@ -69,6 +74,7 @@ class Register extends CI_Controller {
 		}
 		
 		echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
+	}
 	}
 	
 	public function verification($key)

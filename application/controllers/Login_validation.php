@@ -8,8 +8,8 @@ class Login_validation extends CI_Controller {
 
         $this->load->helper('url'); // digunakan untuk fungsi redirect di bawah
 
-        $this->form_validation->set_rules('username', 'username', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('password', 'password', 'trim|required|xss_clean|callback_check_database');// disini terdapat callback : callback_check_database. digunakan untuk memanggil function check_database() dibawah.
+        $this->form_validation->set_rules('username_us', 'username', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('password_us', 'password', 'trim|required|xss_clean|callback_check_database');// disini terdapat callback : callback_check_database. digunakan untuk memanggil function check_database() dibawah.
 
         //jika validasi gagal maka akan langsung akan dkembalikan ke login
         if($this->form_validation->run() == FALSE)
