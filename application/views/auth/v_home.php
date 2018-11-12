@@ -3,7 +3,8 @@
         <title>Login Form</title>
     </head>
     <body>
-        Selamat datang <?php echo $nama;?><!-- variable nama adalah array dengan nama = 'nama' menghasilkan variable di view dari controller tadi.-->
+
+        <br>Selamat datang <?php echo $active;?><!-- variable nama adalah array dengan nama = 'nama' menghasilkan variable di view dari controller tadi.-->
 		<?php 
 			if ($active)
 				echo "Akun anda telah aktif";

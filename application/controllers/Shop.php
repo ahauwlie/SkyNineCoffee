@@ -12,6 +12,8 @@ class Shop extends CI_Controller
     public function index() {
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $this->load->view('shop/shop-grid', $data);
     }
 
@@ -19,6 +21,8 @@ class Shop extends CI_Controller
     {
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $this->load->view('shop/shop-list', $data);
     }
 
@@ -26,6 +30,8 @@ class Shop extends CI_Controller
     {
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $this->load->view('shop/shop-cart', $data);
     }
 }
