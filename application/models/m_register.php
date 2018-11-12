@@ -10,7 +10,7 @@
 		function add_account($data)
 		{
             $this->load->database();
-			$this->db->insert('users',$data);
+			$this->db->insert('user',$data);
 		}
 		
 		function changeActiveState($key)
@@ -20,8 +20,8 @@
                'active' => 1
             );
 
-			$this->db->where('md5(id)', $key);
-			$this->db->update('users', $aktif); //beda nih
+			$this->db->where('md5(id_us)', $key);
+			$this->db->update('user', $aktif); //beda nih
 
 			return true;
 		}

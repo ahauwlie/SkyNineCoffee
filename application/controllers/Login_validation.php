@@ -26,8 +26,8 @@ class Login_validation extends CI_Controller {
     {
         $this->load->library('session');
         //validasi kedua dengan cara mengecek database
-        $username = $this->input->post('username');
-        $password = $this->input->post('password');
+        $username = $this->input->post('username_us');
+        $password = $this->input->post('password_us');
 
         //query ke database dan memanggil model m_login
         $this->load->model('m_login');
@@ -39,10 +39,10 @@ class Login_validation extends CI_Controller {
             foreach($result as $row)
             {
                 $sess_array = array(
-                    'nama'=> $row->nama,
-                    'username' => $row->username,
+                    'full_name_us'=> $row->full_name_us,
+                    'username_us' => $row->username_us,
 					'active' => $row->active,
-					'email' => $row->email
+					'email_us' => $row->email_us
                 );
 
                 $this->session->set_userdata('login', $sess_array);

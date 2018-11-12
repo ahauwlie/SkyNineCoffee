@@ -24,15 +24,15 @@
 					<div class="form-group">  
 						<label class="control-label" for="pswd">Username</label>  
 						<div>  
-							<input type="text" id="username" name="username" required="">  
-							<span class="text-danger"><?php echo form_error('username'); ?></span>  
+							<input type="text" id="username" name="username_us" required="">  
+							<span class="text-danger"><?php echo form_error('username_us'); ?></span>  
 						</div>  
 					</div>  
 					<div class="form-group">  
 						<label class="control-label" for="pswd">Password</label>  
 						<div>  
-							<input type="password" id="password" name="password" required="">  
-							<span class="text-danger"><?php echo form_error('password'); ?></span>  
+							<input type="password" id="password" name="password_us" required="">  
+							<span class="text-danger"><?php echo form_error('password_us'); ?></span>  
 						</div>  
 					</div> 
 

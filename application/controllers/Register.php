@@ -12,19 +12,19 @@ class Register extends CI_Controller {
 	public function submit(){
 		//passing post data dari view
 		$this->load->helper(array('form', 'url'));
-		$username = $this->input->post('username');
-		$password = $this->input->post('password');
-		$nama = $this->input->post('nama');
-		$email = $this->input->post('email');
-		$no_telp = $this->input->post('no_telp');
+		$username = $this->input->post('username_us');
+		$password = $this->input->post('password_us');
+		$nama = $this->input->post('full_name_us');
+		$email = $this->input->post('email_us');
+		$no_telp = $this->input->post('phone_num_us');
 		
 		//memasukan ke array
 		$data = array(
-			'username' => $username,
-			'password' => $password,
-			'nama' => $nama,
-			'email' => $email,
-			'no_telp' => $no_telp,
+			'username_us' => $username,
+			'password_us' => $password,
+			'full_name_us' => $nama,
+			'email_us' => $email,
+			'phone_num_us' => $no_telp,
 			'active' => 0
 		);
 		//tambahkan akun ke database
@@ -79,7 +79,7 @@ class Register extends CI_Controller {
 		$aktif = array(
                'active' => 1
             );
-		$this->db->update('users', $aktif);
+		$this->db->update('user', $aktif);
 		echo "Selamat kamu telah memverifikasi akun kamu";
 		echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
 	}

@@ -11,8 +11,8 @@ class Home_log extends CI_Controller {
         {
             //mengambil nama dari session
             $session = $this->session->userdata('login');
-            $data['nama'] = $session['nama'];
-			$data['email'] = $session['email'];
+            $data['full_name_us'] = $session['full_name_us'];
+			$data['email_us'] = $session['email_us'];
 			$data['active'] = $session['active'];
             $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
             $data['js'] = $this->load->view('include/script.php', NULL, TRUE);

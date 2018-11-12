@@ -23,28 +23,28 @@
 					<div class="h2">Daftar</div>
 					<div class="form-group">
 						<label class="control-label"></label>   
-						<input type="text" id="nama" name="nama" placeholder="Full Name" required="">  
-						<span class="text-danger"><?php echo form_error('nama'); ?></span>  
+						<input type="text" id="nama" name="full_name_us" placeholder="Full Name" required="">  
+						<span class="text-danger"><?php echo form_error('full_name_us'); ?></span>  
 					</div>
 					<div class="form-group">  
 						<label class="control-label"></label> 
-						<input type="text" id="email" name="email" placeholder="Email" required="">  
-						<span class="text-danger"><?php echo form_error('email'); ?></span>
+						<input type="text" id="email" name="email_us" placeholder="Email" required="">  
+						<span class="text-danger"><?php echo form_error('email_us'); ?></span>
 					</div>  
 					<div class="form-group">  
 						<label class="control-label"></label>  
-						<input type="text" id="username" name="username" placeholder="Username" required="">  
-						<span class="text-danger"><?php echo form_error('username'); ?></span>  
+						<input type="text" id="username" name="username_us" placeholder="Username" required="">  
+						<span class="text-danger"><?php echo form_error('username_us'); ?></span>  
 					</div>  
 					<div class="form-group">  
 						<label class="control-label"></label>  
-						<input type="password" id="pswd" name="password" placeholder="Password" required="">  
-						<span class="text-danger"><?php echo form_error('password'); ?></span>  
+						<input type="password" id="pswd" name="password_us" placeholder="Password" required="">  
+						<span class="text-danger"><?php echo form_error('password_us'); ?></span>  
 					</div>  
 					<div class="form-group">
 						<label class="control-label"></label>   
-						<input type="text" id="no_telp" name="no_telp" placeholder="Phone Number" required="">  
-						<span class="text-danger"><?php echo form_error('no_telp'); ?></span>  
+						<input type="text" id="no_telp" name="phone_num_us" placeholder="Phone Number" required="">  
+						<span class="text-danger"><?php echo form_error('phone_num_us'); ?></span>  
 					</div>
 
 					<div class="checkbox-container">

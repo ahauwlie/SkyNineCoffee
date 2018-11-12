@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </a>
             <div class="dropdown-menu dropdown-menu-left animated zoomIn">
                 <ul class="dropdown-user">
-                    <li><a>Selamat datang <b><?php echo $nama;?></b></a></li>
+                    <li><a>Selamat datang <b><?php echo $full_name_us;?></b></a></li>
                     <li><a href="<?php echo site_url('login/logout'); ?>">Keluar </a></li>
                 </ul>
             </div>

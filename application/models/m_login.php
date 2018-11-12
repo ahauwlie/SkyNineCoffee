@@ -10,10 +10,10 @@
 		function login($username, $password)
 		{
             $this->load->database();
-			$this -> db -> select('username, password,nama,email,active');
-			$this -> db -> from('users');
-			$this -> db -> where('username', $username);
-			$this -> db -> where('password', $password);
+			$this -> db -> select('username_us, password_us, full_name_us, email_us, active');
+			$this -> db -> from('user');
+			$this -> db -> where('username_us', $username);
+			$this -> db -> where('password_us', $password);
 			$this -> db -> limit(1);
 			
 			$query = $this -> db -> get();
