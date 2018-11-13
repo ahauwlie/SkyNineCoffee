@@ -13,7 +13,7 @@ class Register extends CI_Controller {
 
 		//passing post data dari view
 		$this->load->helper(array('form', 'url'));
-		$username = $this->input->post('username_us');
+		$username1 = $this->input->post('username_us');
 		$password = $this->input->post('password_us');
 		$nama = $this->input->post('full_name_us');
 		$email = $this->input->post('email_us');
@@ -21,7 +21,7 @@ class Register extends CI_Controller {
 		
 		//memasukan ke array
 		$data = array(
-			'username_us' => $username,
+			'username_us' => $username1,
 			'password_us' => $password,
 			'full_name_us' => $nama,
 			'email_us' => $email,
@@ -29,8 +29,12 @@ class Register extends CI_Controller {
 			'active' => 0
 		);
 		//tambahkan akun ke database
-		$this->load->model('m_register');
-		$id = $this->m_register->add_account($data);
+		// $this->load->model('m_register');
+		$this->load->model('m_register', 'user_model', TRUE);
+		if($this->user_model->isDuplicate($this->input->post('username_us'))){
+                    echo "username telah digunakan";
+        }else{
+		$id = $this->user_model->add_account($data);
 
 		//enkripsi id
 		$encrypted_id = md5($id);
@@ -74,6 +78,7 @@ class Register extends CI_Controller {
 			echo "Berhasil melakukan registrasi, namun gagal mengirim verifikasi email";
 			echo "<br><br><a href='".site_url("login")."'>Kembali ke Menu Login</a>";
 		}
+	}
 	}
 	
 	public function verification($key)

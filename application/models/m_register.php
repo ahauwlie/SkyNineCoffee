@@ -25,5 +25,10 @@
 
 			return true;
 		}
+		public function isDuplicate($username1)
+		{     
+			$this->db->get_where('user', array('username_us' => $username1), 1);
+			return $this->db->affected_rows() > 0 ? TRUE : FALSE;         
+		}
 	}
 ?>
