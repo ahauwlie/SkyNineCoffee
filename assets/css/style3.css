@@ -4078,8 +4078,8 @@ a.ui-button:active, .ui-button:active,
 
 .sidebar-widget .range-slider-one .title:before{
 	position:absolute;
-	content:'$';
-	right:-14px;
+	content:'Rp.';
+	right:-30px;
 	top:0px;
 	color:#888888;
 	font-size:16px;
