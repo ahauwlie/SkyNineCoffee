@@ -119,14 +119,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <!-- Categories -->
                                 <div class="sidebar-widget categories">
                                     <div class="sidebar-title"><h2>Kategori</h2></div>
-                                        <a>
-                                            <?php foreach ($starts as $start ) : ?>
-                                                <?=  anchor('Shop/showme/'.$start->tipe_pr,$start->tipe_pr,['class'=>'btn btn-default']) ?>
-                                            <?php endforeach; ?>
-                                        </a>
-                                        <!-- <li><a href="#">Biji Kopi Khusus   <span>(06)</span></a></li>
+                                    <ul class="category-list">
+                                        <li><a href="#">Biji Kopi  <span>(50)</span></a></li>
+                                        <li><a href="#">Biji Kopi Khusus   <span>(06)</span></a></li>
                                         <li><a href="#">Mesin Kopi   <span>(84)</span></a></li>
-                                        <li><a href="#">Penyaring Kopi <span>(70)</span></a></li> -->
+                                        <li><a href="#">Penyaring Kopi <span>(70)</span></a></li>
+                                    </ul>
                                 </div>
 
                                 <!-- Tags -->

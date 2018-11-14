@@ -22,8 +22,18 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['product'] = $this->model_product->all_products();
-        // $data['products'] = $this->model_products->all_products();
+        $data['starts'] = $this->model_product->dis_products();
         $this->load->view('shop/shop-grid', $data);
+    }
+    public function showme($tipe_pr)
+    {        
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $data['comes'] = $this->model_product->showme($tipe_pr);
+        $data['starts'] = $this->model_product->dis_products();
+        $this->load->view('shop/shop-grid-filter-tipe',$data);
     }
 
     public function list()
