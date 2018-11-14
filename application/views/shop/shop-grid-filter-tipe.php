@@ -63,7 +63,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                             <div class="row clearfix">
                                 <!-- Product Block -->
-                                <?php foreach ($product as $products) : ?>
+                                <?php foreach ($comes as $come) : ?>
                                     <div class="product-block col-md-4 col-sm-6 col-xs-12">
                                         <div class="inner-box">
                                             <div class="image-box">
@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <img src="#g" alt="">
                                                     <?php
                                                         $product_image =[
-                                                            'src'  =>'assets/images/resource/products/'.$products->img_pr,
+                                                            'src'  =>'assets/images/resource/products/'.$come->img_pr,
                                                             'class'=>'img-responsive img-portfolio img-hover',
                                                             'id'=>'g'
                                                         ];
@@ -80,12 +80,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 </a>
                                                 <span class="tag">Promo!</span>
                                                 <div class="link-box">
-                                                    <a href="#"><span><?=  $products->decs_pr  ?></span></a>
+                                                    <a href="#"><span><?=  $come->decs_pr  ?></span></a>
                                                 </div>                       
                                             </div>
                                             <div class="content-box">
-                                                <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
-                                                <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
+                                                <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $come->nama_pr  ?> - <?=  $come->tipe_pr  ?></a></h3>
+                                                <span class="price">Rp. <?=  $come->harga_pr  ?>,-</span>
                                             </div>
                                         </div>
                                     </div>
@@ -119,12 +119,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <!-- Categories -->
                                 <div class="sidebar-widget categories">
                                     <div class="sidebar-title"><h2>Kategori</h2></div>
-                                    <ul class="category-list">
-                                        <li><a href="#">Biji Kopi  <span>(50)</span></a></li>
-                                        <li><a href="#">Biji Kopi Khusus   <span>(06)</span></a></li>
-                                        <li><a href="#">Mesin Kopi   <span>(84)</span></a></li>
-                                        <li><a href="#">Penyaring Kopi <span>(70)</span></a></li>
-                                    </ul>
+                                        <a>
+                                            <?php foreach ($starts as $start ) : ?>
+                                                <?=  anchor('Shop/showme/'.$start->tipe_pr,$start->tipe_pr,['class'=>'btn btn-default']) ?>
+                                            <?php endforeach; ?>
+                                        </a>
                                 </div>
 
                                 <!-- Tags -->
