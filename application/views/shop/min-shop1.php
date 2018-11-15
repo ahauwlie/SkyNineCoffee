@@ -45,9 +45,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!--content side-->
                             <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                                 <div class="shop-upper-box clearfix">
-                                    <div class="items-label pull-left">Melihat <h4><b><?php echo $links; ?></b></h4> dari <?php foreach ($hasil as $row) : ?>
-                                                                                        <span><?=  $row->num_of_time  ?></span>
-                                                                                    <?php endforeach; ?> Hasil
+                                    <div class="items-label pull-left">Pengurutan <?php foreach ($hasil as $row) : ?>
+                                                                            <span><?=  $row->num_of_time  ?></span>
+                                                                        <?php endforeach; ?> Produk dari yang Termurah
                                         <div class="link-box">
                                             <a href="<?php echo site_url('shop/index'); ?>"><i class="fa fa-th"></i></a>
                                             <a href="<?php echo site_url('shop/list'); ?>" class="active"><i class="fa fa-th-list"></i></a>
@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
 
                                 <!-- Product Block Two -->
-                                <?php foreach ($results as $products) : ?>
+                                <?php foreach ($min->result() as $products) : ?>
                                     <div class="product-block-two">
                                         <div class="row clearfix">
                                             <div class="image-box col-md-4 col-sm-4 col-xs-12">

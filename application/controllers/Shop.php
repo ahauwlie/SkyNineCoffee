@@ -49,6 +49,18 @@ class Shop extends CI_Controller
         $this->load->view('shop/max-shop',$data);
     }
 
+    public function max_pro2()
+    {        
+        $data['hasil'] = $this->model_product->countRow(); 
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $data['starts'] = $this->model_product->dis_products();
+        $data['max'] = $this->model_product->maxprice();
+        $this->load->view('shop/max-shop1',$data);
+    }
+
     public function min_pro()
     {        
         $data['hasil'] = $this->model_product->countRow(); 
@@ -59,6 +71,18 @@ class Shop extends CI_Controller
         $data['starts'] = $this->model_product->dis_products();
         $data['min'] = $this->model_product->minprice();
         $this->load->view('shop/min-shop',$data);
+    }
+
+    public function min_pro2()
+    {        
+        $data['hasil'] = $this->model_product->countRow(); 
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $data['starts'] = $this->model_product->dis_products();
+        $data['min'] = $this->model_product->minprice();
+        $this->load->view('shop/min-shop1',$data);
     }
 
     public function showme($tipe_pr)
