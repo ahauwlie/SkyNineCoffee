@@ -53,23 +53,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     </div>
                                 </div>
                                 <div class="sort-by pull-right">
-                                    <select class="custom-select-box">
-                                        <option>Pengurutan Otomatis</option>
-                                        <option>Harga: Termurah</option>
-                                        <option>Harga: Tertinggi</option>
-                                        <option>Murah -> Tinggi</option>
-                                        <option>Tinggi -> Murah</option>
-                                    </select>
+                                    <label class="custom-select">
+                                        <select size="1" name="links" onchange="location = this.value;">
+                                            <option>Urutkan Harga</option>
+                                            <option value="<?php echo site_url('shop/min_pro'); ?>">Harga Termurah</option>
+                                            <option value="<?php echo site_url('shop/max_pro'); ?>">Harga Tertinggi</option>
+                                        </select>
+                                    </label>
                                 </div>
                             </div>
-
-                            <h1>
-                                <?php foreach ($min->result() as $row) : ?>
-                                    <?php echo $row->id_pr ?><br>
-                                    <?php echo $row->nama_pr ?><br>
-                                    <?php echo $row->harga_pr ?>
-                                <?php endforeach; ?>
-                            </h1>
 
                             <div class="row clearfix">
                                 <!-- Product Block -->

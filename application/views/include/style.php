@@ -3,6 +3,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/plugins/revolution/css/settings.css'); ?>">
 <!-- navigation style -->
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/style3.css'); ?>">
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/select_option.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/responsive1.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/navbara6.css'); ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo base_url('/assets/css/color-01.css'); ?>">

@@ -46,8 +46,14 @@ class Model_product extends CI_Model {
 	        }
 	        return false;
 	    }
+
 	    public function minprice(){
-			$this->db->order_by('id_pr','desc');
+			$this->db->order_by('harga_pr','asc');
+			return $this->db->get('product');
+    	}
+
+    	public function maxprice(){
+			$this->db->order_by('harga_pr','desc');
 			return $this->db->get('product');
     	}
 		

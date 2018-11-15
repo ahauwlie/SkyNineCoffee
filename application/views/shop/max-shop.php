@@ -44,9 +44,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!--content side-->
                         <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                             <div class="shop-upper-box clearfix">
-                                <div class="items-label pull-left"> <?php foreach ($hasil as $row) : ?>
+                                <div class="items-label pull-left">Pengurutan <?php foreach ($hasil as $row) : ?>
                                                                         <span><?=  $row->num_of_time  ?></span>
-                                                                    <?php endforeach; ?> Produk barang
+                                                                    <?php endforeach; ?> Produk dari yang Termahal
                                     <div class="link-box">
                                         <a href="<?php echo site_url('shop/index'); ?>" class="active"><i class="fa fa-th"></i></a>
                                         <a href="<?php echo site_url('shop/list'); ?>"><i class="fa fa-th-list"></i></a>
@@ -65,7 +65,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                             <div class="row clearfix">
                                 <!-- Product Block -->
-                                <?php foreach ($comes as $come) : ?>
+                                <?php foreach ($max->result() as $products) : ?>
                                     <div class="product-block col-md-4 col-sm-6 col-xs-12">
                                         <div class="inner-box">
                                             <div class="image-box">
@@ -73,7 +73,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <img src="#g" alt="">
                                                     <?php
                                                         $product_image =[
-                                                            'src'  =>'assets/images/resource/products/'.$come->img_pr,
+                                                            'src'  =>'assets/images/resource/products/'.$products->img_pr,
                                                             'class'=>'img-responsive img-portfolio img-hover',
                                                             'id'=>'g'
                                                         ];
@@ -82,18 +82,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 </a>
                                                 <span class="tag">Promo!</span>
                                                 <div class="link-box">
-                                                    <a href="#"><span><?=  $come->decs_pr  ?></span></a>
+                                                    <a href="#"><span><?=  $products->decs_pr  ?></span></a>
                                                 </div>                       
                                             </div>
                                             <div class="content-box">
-                                                <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $come->nama_pr  ?> - <?=  $come->tipe_pr  ?></a></h3>
-                                                <span class="price">Rp. <?=  $come->harga_pr  ?>,-</span>
+                                                <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
+                                                <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
                                             </div>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
                             </div>
                         </div>
+                        
 
                         <!--Sidebar Side-->
                         <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
