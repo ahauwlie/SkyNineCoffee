@@ -14,9 +14,9 @@ class Model_product extends CI_Model {
 
 		public function dis_products()
 		{
-				$this->db->distinct();
-				$query = $this->db->query('SELECT DISTINCT tipe_pr FROM product');
-				return $query->result();
+			$this->db->distinct();
+			$query = $this->db->query('SELECT DISTINCT tipe_pr FROM product');
+			return $query->result();
 		}
 
 		public function showme($tipe_pr)
@@ -26,8 +26,8 @@ class Model_product extends CI_Model {
 		}
 
 		public function countRow(){
-        $query = $this->db->query("SELECT COUNT(*) AS num_of_time FROM product");
-     	return $query->result();
+	        $query = $this->db->query("SELECT COUNT(*) AS num_of_time FROM product");
+	     	return $query->result();
     	}
 
     	public function record_count() {
@@ -46,5 +46,9 @@ class Model_product extends CI_Model {
 	        }
 	        return false;
 	    }
+	    public function minprice(){
+			$this->db->order_by('id_pr','desc');
+			return $this->db->get('product');
+    	}
 		
 }

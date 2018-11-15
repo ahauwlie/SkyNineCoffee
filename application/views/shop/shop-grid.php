@@ -63,6 +63,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
                             </div>
 
+                            <h1>
+                                <?php foreach ($min->result() as $row) : ?>
+                                    <?php echo $row->id_pr ?><br>
+                                    <?php echo $row->nama_pr ?><br>
+                                    <?php echo $row->harga_pr ?>
+                                <?php endforeach; ?>
+                            </h1>
+
                             <div class="row clearfix">
                                 <!-- Product Block -->
                                 <?php foreach ($results as $products) : ?>

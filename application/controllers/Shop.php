@@ -34,6 +34,7 @@ class Shop extends CI_Controller
         $data['product'] = $this->model_product->all_products();
         $data['starts'] = $this->model_product->dis_products();
         $data['hasil'] = $this->model_product->countRow(); 
+        $data['min'] = $this->model_product->minprice();
         $this->load->view('shop/shop-grid', $data);
     }
     public function showme($tipe_pr)
