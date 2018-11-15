@@ -14,19 +14,32 @@ class Shop extends CI_Controller
         parent::__construct();
         $this->load->model('model_product');
         $this->load->model('model_settings');
+        $this->load->library('pagination');
     }
 
     public function index() {
+        $config = array();
+        $config["base_url"] = base_url() . "index.php/shop/index";
+        $config["total_rows"] = $this->model_product->record_count();
+        $config["per_page"] = 6;
+        $config["uri_segment"] = 3;
+        $this->pagination->initialize($config);
+        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data["results"] = $this->model_product->fetch_countries($config["per_page"], $page);
+        $data["links"] = $this->pagination->create_links();
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['product'] = $this->model_product->all_products();
         $data['starts'] = $this->model_product->dis_products();
+        $data['hasil'] = $this->model_product->countRow(); 
         $this->load->view('shop/shop-grid', $data);
     }
     public function showme($tipe_pr)
     {        
+        $data['hasil'] = $this->model_product->countRow(); 
+        $data['starts'] = $this->model_product->dis_products();
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
@@ -38,6 +51,17 @@ class Shop extends CI_Controller
 
     public function list()
     {
+        $config = array();
+        $config["base_url"] = base_url() . "index.php/shop/list";
+        $config["total_rows"] = $this->model_product->record_count();
+        $config["per_page"] = 3;
+        $config["uri_segment"] = 3;
+        $this->pagination->initialize($config);
+        $page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        $data["results"] = $this->model_product->fetch_countries($config["per_page"], $page);
+        $data["links"] = $this->pagination->create_links();
+        $data['hasil'] = $this->model_product->countRow(); 
+        $data['starts'] = $this->model_product->dis_products();
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);

@@ -24,5 +24,27 @@ class Model_product extends CI_Model {
 			$query = $this->db->get_where('product', array('tipe_pr' => $tipe_pr));
 			return $query->result();
 		}
+
+		public function countRow(){
+        $query = $this->db->query("SELECT COUNT(*) AS num_of_time FROM product");
+     	return $query->result();
+    	}
+
+    	public function record_count() {
+        	return $this->db->count_all('product');
+    	}
+
+    	public function fetch_countries($limit, $start) {
+	        $this->db->limit($limit, $start);
+	        $query = $this->db->get('product');
+
+	        if ($query->num_rows() > 0) {
+	            foreach ($query->result() as $row) {
+	                $data[] = $row;
+	            }
+	            return $data;
+	        }
+	        return false;
+	    }
 		
 }
