@@ -47,7 +47,7 @@
                     <div class="like-btn"><span class="icon flaticon-like"></span></div>
                     <div class="cart-btn">
                         <a href="<?php echo site_url('shop/cart'); ?>">
-                            <span class="count">3</span>
+                            <!-- <span class="count"> </span> data keranjang berapa banyak -->
                             <span class="icon flaticon-shopping-bag"></span>
                         </a>
                     </div>
