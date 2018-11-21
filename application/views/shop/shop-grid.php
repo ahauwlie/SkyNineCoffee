@@ -83,11 +83,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <span class="tag">Promo!</span>
                                                 <div class="link-box">
                                                     <a href="#"><span><?=  $products->decs_pr  ?></span></a>
-                                                </div>                       
+                                                </div>                
                                             </div>
                                             <div class="content-box">
                                                 <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
                                                 <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
+                                                <span>Stock: <?=  $products->stock_pr  ?></span><br>
+                                                <button class="btn btn-success col">Keranjang</button>
                                             </div>
                                         </div>
                                     </div>
