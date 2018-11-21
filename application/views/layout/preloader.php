@@ -76,10 +76,15 @@
                         <div class="container">
                             <div class="text-center">
                                 <ul class="nav primary clone-main-menu" id="mercado_main" data-menuname="Main menu" >
-                                    <li class="menu-item home-icon">
-                                        <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
-                                    </li>
-
+                                    <?php if ($this->session->userdata('login')) { ?>
+                                        <li class="menu-item home-icon">
+                                            <a href="<?php echo site_url('Home_log/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        </li>
+                                    <?php } else {?>
+                                        <li class="menu-item home-icon">
+                                            <a href="<?php echo site_url('Home/index'); ?>" class="link-term mercado-item-title"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                        </li>
+                                    <?php } ?>
                                     <li class="menu-item menu-item-has-children item-megamenu" >
                                         <a href="<?php echo site_url('shop/index'); ?>" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
                                     </li>
