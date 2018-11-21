@@ -81,99 +81,27 @@
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
-                                        <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg1">
-                                                <div class="row">
-                                                    <div class="custom-col-8">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('shop/index'); ?>"> Klik disini</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="<?php echo site_url('shop/index'); ?>" title="Fashion & Accessories" class="link-term mercado-item-title">Toko Kami</a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
-                                        <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg2">
-                                                <div class="row">
-                                                    <div class="custom-col-8">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="<?php echo site_url('contactus/index'); ?>" title="Furnitures & Home decors" class="link-term mercado-item-title">Acara Kopi</a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
-                                        <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg3">
-                                                <div class="row">
-                                                    <div class="custom-col-8">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('blog/index'); ?>"> Klik disini</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="<?php echo site_url('blog/index'); ?>" title="Digital & Electronics" class="link-term mercado-item-title">Artikel</a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
-                                        <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg4">
-                                                <div class="row">
-                                                    <div class="custom-col-8">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('video/index'); ?>"> Klik disini</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="<?php echo site_url('video/index'); ?>" title="Tools & Equipments" class="link-term mercado-item-title" >Video</a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
-                                        <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg5">
-                                                <div class="row">
-                                                    <div class="custom-col-8">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('contactus/index'); ?>"> Klik disini</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="<?php echo site_url('contactus/index'); ?>" title="Kid’s Toys" class="link-term mercado-item-title">Hubungi Kami</a>
                                     </li>
 
                                     <li class="menu-item menu-item-has-children item-megamenu" >
-                                        <a href="#" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
-                                        <div class="wrap-megamenu">
-                                            <div class="megamenu-content min-height-460 bg6">
-                                                <div class="row">
-                                                    <div class="custom-col-8">
-                                                        <div class="wrap-vertical-nav">
-                                                            <h3 class="banner-title">Cari tahu kami lebih lanjut</h3>
-                                                            <button class="btn btn-primary"><a href="<?php echo site_url('aboutus/index'); ?>"> Klik disini</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <a href="<?php echo site_url('aboutus/index'); ?>" title="Organics & Spa" class="link-term mercado-item-title">Tentang Kami</a>
                                     </li>
                                 </ul>
                             </div>

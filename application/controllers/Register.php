@@ -29,11 +29,16 @@ class Register extends CI_Controller {
 			'active' => 0
 		);
 		//tambahkan akun ke database
-		// $this->load->model('m_register');
 		$this->load->model('m_register', 'user_model', TRUE);
 		if($this->user_model->isDuplicate($this->input->post('username_us'))){
-                    echo "username telah digunakan";
-        }else{
+            // bikin toast anjink
+            echo "Username telah digunakan";
+        }
+        else if($this->user_model->isDuplicate1($this->input->post('email_us')))
+        {
+        	echo "Email telah digunakan";
+        }
+        else{
 		$id = $this->user_model->add_account($data);
 
 		//enkripsi id

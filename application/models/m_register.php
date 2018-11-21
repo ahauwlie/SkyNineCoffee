@@ -30,5 +30,10 @@
 			$this->db->get_where('user', array('username_us' => $username1), 1);
 			return $this->db->affected_rows() > 0 ? TRUE : FALSE;         
 		}
+		public function isDuplicate1($email)
+		{     
+			$this->db->get_where('user', array('email_us' => $email), 1);
+			return $this->db->affected_rows() > 0 ? TRUE : FALSE;         
+		}
 	}
 ?>
