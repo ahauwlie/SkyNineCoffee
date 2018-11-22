@@ -131,9 +131,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <!-- Tags -->
                                 <div class="sidebar-widget">
                                     <div class="sidebar-title"><h2>tags</h2></div>
-                                    <?php foreach ($starts1 as $start ) : ?>
-                                        <?=  anchor('Shop/showme1/'.$start->tag_pr,$start->tag_pr,['class'=>'btn btn-default']) ?>
-                                    <?php endforeach; ?>
+                                    <a>
+                                        <?php foreach ($starts1 as $start ) : ?>
+                                            <?=  anchor('Shop/showme1/'.$start->tag_pr,$start->tag_pr,['class'=>'btn btn-default']) ?>
+                                        <?php endforeach; ?>
+                                    </a>
                                 </div>
                             </aside>
                         </div>

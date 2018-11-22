@@ -19,9 +19,22 @@ class Model_product extends CI_Model {
 			return $query->result();
 		}
 
+		public function dis_products1()
+		{
+			$this->db->distinct();
+			$query = $this->db->query('SELECT DISTINCT tag_pr FROM product');
+			return $query->result();
+		}
+
 		public function showme($tipe_pr)
 		{ 
 			$query = $this->db->get_where('product', array('tipe_pr' => $tipe_pr));
+			return $query->result();
+		}
+
+		public function showme1($tag_pr)
+		{ 
+			$query = $this->db->get_where('product', array('tag_pr' => $tag_pr));
 			return $query->result();
 		}
 

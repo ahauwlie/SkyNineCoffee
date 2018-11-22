@@ -33,6 +33,7 @@ class Shop extends CI_Controller
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['product'] = $this->model_product->all_products();
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['hasil'] = $this->model_product->countRow(); 
         $this->load->view('shop/shop-grid', $data);
     }
@@ -45,6 +46,7 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['max'] = $this->model_product->maxprice();
         $this->load->view('shop/max-shop',$data);
     }
@@ -57,6 +59,7 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['max'] = $this->model_product->maxprice();
         $this->load->view('shop/max-shop1',$data);
     }
@@ -69,6 +72,7 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['min'] = $this->model_product->minprice();
         $this->load->view('shop/min-shop',$data);
     }
@@ -81,6 +85,7 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['min'] = $this->model_product->minprice();
         $this->load->view('shop/min-shop1',$data);
     }
@@ -89,13 +94,26 @@ class Shop extends CI_Controller
     {        
         $data['hasil'] = $this->model_product->countRow(); 
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['comes'] = $this->model_product->showme($tipe_pr);
-        $data['starts'] = $this->model_product->dis_products();
         $this->load->view('shop/shop-grid-filter-tipe',$data);
+    }
+
+    public function showme1($tag_pr)
+    {        
+        $data['hasil'] = $this->model_product->countRow(); 
+        $data['starts1'] = $this->model_product->dis_products1();
+        $data['starts'] = $this->model_product->dis_products();
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $data['comes'] = $this->model_product->showme1($tag_pr);
+        $this->load->view('shop/shop-grid-filter-tag',$data);
     }
 
     public function list()
@@ -111,6 +129,7 @@ class Shop extends CI_Controller
         $data["links"] = $this->pagination->create_links();
         $data['hasil'] = $this->model_product->countRow(); 
         $data['starts'] = $this->model_product->dis_products();
+        $data['starts1'] = $this->model_product->dis_products1();
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
