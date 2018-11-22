@@ -70,7 +70,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="row clearfix">
                                             <div class="image-box col-md-4 col-sm-4 col-xs-12">
                                                 <div class="image wow fadeInLeft">
-                                                    <figure><a href="product-details.html">
+                                                    <figure><a>
                                                         <img src="#g" alt="">
                                                             <?php
                                                                 $product_image =[
