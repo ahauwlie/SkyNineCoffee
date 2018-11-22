@@ -94,7 +94,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <a class="btn btn-success col">Keranjang</a>
                                                 <?php } else {?>
                                                     <!-- ini buat yang kalo belum login, dia bakal kasih error handlernya berupa suruh login -->
-                                                    <a class="btn btn-success col">Keranjang</a>
+                                                    <button class="btn btn-success col" onclick="myFunction()">Keranjang</button>
+                                                    <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
                                                 <?php } ?>
                                             </div>
                                         </div>
@@ -164,5 +165,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--Scroll to top-->
         <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
         <?php echo $js; ?>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
     </body>
 </html>
