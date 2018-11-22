@@ -299,7 +299,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="image-box">                         
                             <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/Kopi Arabika - Kenya -Roasted Beans 250 Gram.jpeg') ?>" alt=""></a>
                             </div>
-                            <span class="tag">Coffee</span>
+                            <span class="tag">Kopi</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
@@ -318,7 +318,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <div class="image-box">                         
                             <div class="image"><a href="blog-single.html"><img src="<?php echo base_url('/assets/images/Skynine/coffee_machine.jpg') ?>" alt=""></a>
                             </div>
-                            <span class="tag">Equipments</span>
+                            <span class="tag">Mesin_kopi</span>
                         </div>
                         <div class="lower-content">
                             <ul class="info">
