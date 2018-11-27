@@ -93,7 +93,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <!-- ini buat yang udah login -->
                                                     <a class="btn btn-success col">Keranjang</a>
                                                 <?php } else {?>
-                                                    <!-- ini buat yang kalo belum login, dia bakal kasih error handlernya berupa suruh login -->
                                                     <button class="btn btn-success col" onclick="myFunction()">Keranjang</button>
                                                     <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
                                                 <?php } ?>

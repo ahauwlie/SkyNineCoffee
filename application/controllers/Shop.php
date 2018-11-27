@@ -36,6 +36,17 @@ class Shop extends CI_Controller
         $data['starts1'] = $this->model_product->dis_products1();
         $data['hasil'] = $this->model_product->countRow(); 
         $this->load->view('shop/shop-grid', $data);
+       
+        // if ($_SERVER['REQUEST_METHOD'] == "POST")
+        // {
+        //     $data = Array (
+        //         'id_pr' => $this->input->post('id_pr')
+        //     );
+
+        //     $this->model_product->addcart(html_escape($data), false);
+        //     redirect(site_url("shop/cart"));
+        // }
+
     }
 
     public function max_pro()
@@ -145,4 +156,5 @@ class Shop extends CI_Controller
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $this->load->view('shop/shop-cart', $data);
     }
+
 }
