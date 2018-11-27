@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Nov 27, 2018 at 03:32 PM
+-- Generation Time: Nov 27, 2018 at 04:06 PM
 -- Server version: 5.7.19
 -- PHP Version: 7.1.14
 
@@ -150,6 +150,17 @@ CREATE TABLE `user` (
   `id_ug` int(2) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `user`
+--
+
+INSERT INTO `user` (`id_us`, `username_us`, `password_us`, `full_name_us`, `email_us`, `phone_num_us`, `img_us`, `date_birth_us`, `address_us`, `active`, `id_ug`) VALUES
+(1, 'bayu.tirta', '123456', 'bayu tirta sartama', 'tejotejoejo@gmail.com', '089514055817', NULL, NULL, NULL, 0, 4),
+(2, 'so.ny', '123456', 'sony playstation', 'legatomusictutorial@gmail.com', '089685476132', NULL, NULL, NULL, 1, 4),
+(3, 'skynine', 'skynine', 'skyninecoffee', 'skynine.coffee.id@gmail.com', '081517980622', NULL, NULL, NULL, 1, 1),
+(4, 'skynine_mar', 'skynine_mar', 'skyninecoffee Marketing', 'skynine.coffee.id@gmail.com', '081517980622', NULL, NULL, NULL, 1, 2),
+(5, 'skynine_buku', 'skynine_buku', 'skyninecoffee pembukuan', 'skynine.coffee.id@gmail.com', '081517980622', NULL, NULL, NULL, 1, 3);
+
 -- --------------------------------------------------------
 
 --
@@ -248,7 +259,7 @@ ALTER TABLE `trans_detail`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id_us` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_us` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `user_group`
