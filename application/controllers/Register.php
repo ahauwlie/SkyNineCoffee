@@ -26,7 +26,8 @@ class Register extends CI_Controller {
 			'full_name_us' => $nama,
 			'email_us' => $email,
 			'phone_num_us' => $no_telp,
-			'active' => 0
+			'active' => 0,
+			'id_ug' => 4
 		);
 		//tambahkan akun ke database
 		$this->load->model('m_register', 'user_model', TRUE);
