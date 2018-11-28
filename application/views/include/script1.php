@@ -1,0 +1,19 @@
+<script src="<?php echo base_url('/assets/js/jquery.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/jquery-ui.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/bootstrap.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/bootstrap-datepicker.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/jquery.sparkline.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/jquery-jvectormap-1.2.2.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/jquery-jvectormap-world-mill-en.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/jquery.knob.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/moment.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/daterangepicker.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/bootstrap3-wysihtml5.all.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/jquery.slimscroll.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/fastclick.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/adminlte.min.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/dashboard1.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/demo.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/jquery.dataTables.js') ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/dataTables.bootstrap.js') ?>"></script>
+

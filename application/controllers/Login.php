@@ -16,16 +16,16 @@ class Login extends CI_Controller {
                     $session = $this->session->userdata('login');
                     $id_ug = $session['id_ug'];
                     if($id_ug == 1){
-                        redirect('shop','refresh');
+                        redirect('Home_admin','refresh');
                     }
                     else if($id_ug == 2){
-                        redirect('blog','refresh');
+                        redirect('Blog','refresh');
                     }
                     else if($id_ug == 3){
-                        redirect('video','refresh');
+                        redirect('Video','refresh');
                     }
                     else{
-                        redirect('home_log','refresh');
+                        redirect('Home_log','refresh');
                     }
                 }
             }
@@ -35,6 +35,6 @@ class Login extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('url');
         $this->session->unset_userdata('login');
-        redirect('home/index','refresh');
+        redirect('Home/index','refresh');
     }
 }

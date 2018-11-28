@@ -2,6 +2,11 @@
 
 class Model_product extends CI_Model {
 	
+		 public function getAll()
+	    {
+	        return $this->db->get('product')->result_array();
+	    }
+	    
 		public function all_products()
 		{ 
 			$show = $this->db->get('product');
