@@ -29,9 +29,6 @@ class Login extends CI_Controller {
                         redirect('home_log','refresh');
                     }
                 }
-                // else{
-                //     redirect('home_log','refresh');
-                // }
             }
     }
 
