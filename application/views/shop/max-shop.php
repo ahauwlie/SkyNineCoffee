@@ -69,7 +69,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                     <div class="product-block col-md-4 col-sm-6 col-xs-12">
                                         <div class="inner-box">
                                             <div class="image-box">
-                                                <a>
+                                                <a href="<?php echo site_url('Shop/cart'); ?>">
                                                     <img src="#g" alt="">
                                                     <?php
                                                         $product_image =[
