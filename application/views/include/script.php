@@ -1,10 +1,4 @@
 <script src="<?php echo base_url('/assets/js/jquery.js'); ?>"></script>
-<script src="<?php echo base_url('/assets/js/popper.min.js'); ?>"></script>
-<script src="<?php echo base_url('/assets/js/jquery.slimscroll.js'); ?>"></script>
-<script src="<?php echo base_url('/assets/js/sidebarmenu.js'); ?>"></script>
-<script src="<?php echo base_url('/assets/js/sticky-kit.min.js') ?>"></script>
-<script src="<?php echo base_url('/assets/js/scripts.js'); ?>"></script>
-<script src="<?php echo base_url('/assets/js/custom.min.js'); ?>"></script>
 
 <!-- revolution slider -->
 <script src="<?php echo base_url('/assets/plugins/revolution/js/jquery.themepunch.revolution.min.js'); ?>"></script>
