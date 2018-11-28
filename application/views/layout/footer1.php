@@ -1,1 +1,0 @@
-<footer class="footer"> © 2018 All rights reserved. Template kit by <a href="#">Ela Admin</a>. Developed by ARUNA Developer.</footer>

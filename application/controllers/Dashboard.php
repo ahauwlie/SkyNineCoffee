@@ -14,9 +14,9 @@ class Dashboard extends MY_Controller
     public function index() {
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
-        $data['layout'] = $this->load->view('layout/layout1.php', NULL, TRUE);
-        $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
-        $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
+        $data['layout'] = $this->load->view('layout/layout.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
 
         // if($this->acl->allow('lihat_total_laba_bersih') == 'ALLOWED')
         //     $data['total_profit'] = $this->db->query("SELECT SUM(total_profit) AS total_revenue FROM transaction WHERE MONTH(CURRENT_DATE) = MONTH(date_transaction)")->row()->total_revenue;
