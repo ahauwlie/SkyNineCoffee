@@ -35,7 +35,7 @@
       <div class="box">
         <!-- /.box-header -->
         <div class="box-body">
-          <a href="<?php echo site_url('product/addProduct') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah barang</a>
+          <a href="<?php echo site_url('Barang_admin/addProduct') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah barang</a>
           <table id="productTable" class="table table-bordered table-hover">
             <thead>
             <tr>

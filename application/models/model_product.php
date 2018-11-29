@@ -6,6 +6,11 @@ class Model_product extends CI_Model {
 	    {
 	        return $this->db->get('product')->result_array();
 	    }
+
+	    public function insert($data)
+	    {
+	        $this->db->insert('product', $data);
+	    }
 	    
 		public function all_products()
 		{ 
