@@ -7,6 +7,7 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <?php echo $css; ?>
+  <link href="<?php echo base_url('assets/css/admin/sweetalert.css'); ?>" rel="stylesheet">
   <!-- Google Font -->
   <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
@@ -20,7 +21,7 @@
     <section class="content-header">
       <h1>
         Data Tables
-        <small>advanced tables</small>
+        <small>- Daftar Barang</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
@@ -32,13 +33,9 @@
     <!-- Main content -->
     <section class="content">
       <div class="box">
-        <div class="box-header">
-          <h3 class="box-title">Hover Data Table</h3>
-        </div>
         <!-- /.box-header -->
-        <a href="<?php echo site_url('product/addProduct') ?>" class="btn btn-primary"><i class="mdi mdi-plus-circle"></i> Tambah barang</a>
         <div class="box-body">
-          <!-- <table id="example2" class="table table-bordered table-hover"> -->
+          <a href="<?php echo site_url('product/addProduct') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah barang</a>
           <table id="productTable" class="table table-bordered table-hover">
             <thead>
             <tr>
@@ -115,25 +112,36 @@
     })
   })
 </script>
+<!-- Datatable & buttons -->
+<script src="<?php echo base_url('/assets/js/admin/barang/dataTables.buttons.min.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/barang/buttons.flash.min.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/barang/jszip.min.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/barang/pdfmake.min.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/barang/vfs_fonts.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/barang/buttons.html5.min.js'); ?>"></script>
+<script src="<?php echo base_url('/assets/js/admin/barang/buttons.print.min.js'); ?>"></script>
+<!-- Delete alert -->
+<script src="<?php echo base_url('/assets/js/admin/barang/sweetalert.min.js'); ?>"></script>
+<!-- Modified buttons -->
 <script>
     $(document).ready(function () {
         $('#productTable').DataTable({
             dom: 'Bfrtip',
             buttons: [{ //customized datatable button
                 extend: "excel",
-                text: "<i class='fa fa-table'></i>",
+                text: "<br><button><i class='fa fa-table'>Excel</i></button> ",
                 exportOptions: {
                     columns: ":not(:last-child)"
                 }
             }, {
                 extend: "pdf",
-                text: "<i class='fa fa-file-pdf-o'></i>",
+                text: "<button><i class='fa fa-file-pdf-o'>Pdf</i></button> ",
                 exportOptions: {
                     columns: ":not(:last-child)"
                 }
             }, {
                 extend: "print",
-                text: "<i class='fa fa-print'></i>",
+                text: "<button><i class='fa fa-print'>Print</i></button> ",
                 exportOptions: {
                     columns: ":not(:last-child)"
                 }
