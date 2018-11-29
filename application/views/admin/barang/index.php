@@ -93,6 +93,9 @@
   </div>
   <!-- /.content-wrapper -->
   <?php echo $footer; ?>
+  <div style="display: none">
+    <form id="delete-form" method="POST"></form>
+  </div>
 </div>
 <!-- ./wrapper -->
 
@@ -162,7 +165,7 @@
                     closeOnConfirm: true
                 },
                 function(){
-                    $('#delete-form').attr('action', '<?php echo site_url('product/delete/'); ?>' + id).submit();
+                    $('#delete-form').attr('action', '<?php echo site_url('Barang_admin/delete/'); ?>' + id).submit();
                 });
         });
     })

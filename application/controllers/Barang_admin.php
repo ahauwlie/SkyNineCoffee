@@ -51,4 +51,12 @@ class Barang_admin extends CI_Controller
             $this->load->view('admin/barang/add_barang', $data);
         }
     }
+
+    public function delete($id)
+    {
+        if ($_SERVER['REQUEST_METHOD'] == "POST") {
+            $this->model_product->delete($id);
+        }
+        redirect(site_url('Barang_admin/index'));
+    }
 }

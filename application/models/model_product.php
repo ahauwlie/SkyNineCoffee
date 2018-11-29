@@ -11,6 +11,11 @@ class Model_product extends CI_Model {
 	    {
 	        $this->db->insert('product', $data);
 	    }
+
+	    public function delete($id)
+	    {
+	        $this->db->delete('product', array('id_pr' => $id));
+	    }
 	    
 		public function all_products()
 		{ 
