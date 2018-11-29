@@ -108,13 +108,6 @@
 
 <?php echo $js; ?>
 
-<!-- page script -->
-<!-- <script>
-    $(function () {
-        $('.select-search').select2();
-    })
-</script> -->
 <script src="<?php echo base_url('/assets/js/admin/barang/bootstrap_select.min.js'); ?>"></script>
-<!-- <script src="<?php echo base_url('/assets/js/admin/barang/select2.min.js'); ?>"></script> -->
 </body>
 </html>
