@@ -36,8 +36,10 @@
           <h3 class="box-title">Hover Data Table</h3>
         </div>
         <!-- /.box-header -->
+        <a href="<?php echo site_url('product/addProduct') ?>" class="btn btn-primary"><i class="mdi mdi-plus-circle"></i> Tambah barang</a>
         <div class="box-body">
-          <table id="example2" class="table table-bordered table-hover">
+          <!-- <table id="example2" class="table table-bordered table-hover"> -->
+          <table id="productTable" class="table table-bordered table-hover">
             <thead>
             <tr>
               <th>Id</th>
@@ -48,6 +50,7 @@
               <th>Tag</th>
               <th>Deskripsi</th>
               <th>Gambar</th>
+              <th>Aksi</th>
             </tr>
             </thead>
             <tbody>
@@ -62,6 +65,10 @@
                   echo "<td>".$row['tag_pr']."</td>";
                   echo "<td>".$row['decs_pr']."</td>";
                   echo "<td>".$row['img_pr']."</td>";
+                  echo "<td class='text-center'>";
+                  echo "      <a href='".site_url('product/edit/').$row['id_pr']."'><i class='fa fa-pencil'></i></a> ";
+                  echo "      <a href='".site_url('product/detail/').$row['id_pr']."'><i class='fa fa-eye'></i></a> ";
+                  echo "      <a href='#' data-id='".$row['id_pr']."' data-name='".$row['nama_pr']."' class='sweet-confirm'><i class='fa fa-trash'></i></a>";
                   echo "</td>";
                   echo "</tr>";
               }
@@ -107,6 +114,50 @@
       'autoWidth'   : false
     })
   })
+</script>
+<script>
+    $(document).ready(function () {
+        $('#productTable').DataTable({
+            dom: 'Bfrtip',
+            buttons: [{ //customized datatable button
+                extend: "excel",
+                text: "<i class='fa fa-table'></i>",
+                exportOptions: {
+                    columns: ":not(:last-child)"
+                }
+            }, {
+                extend: "pdf",
+                text: "<i class='fa fa-file-pdf-o'></i>",
+                exportOptions: {
+                    columns: ":not(:last-child)"
+                }
+            }, {
+                extend: "print",
+                text: "<i class='fa fa-print'></i>",
+                exportOptions: {
+                    columns: ":not(:last-child)"
+                }
+            }]
+        });
+        $('#productTable tbody').on('click', '.sweet-confirm', function (e) {
+            e.preventDefault();
+            var id = $(this).data('id');
+            var name = $(this).data('name');
+            swal({
+                    title: "Konfirmasi",
+                    text: "Apakah Anda yakin akan menghapus produk " + name + "?",
+                    type: "warning",
+                    showCancelButton: true,
+                    confirmButtonColor: "#DD6B55",
+                    confirmButtonText: "Ya",
+                    cancelButtonText: "Tidak",
+                    closeOnConfirm: true
+                },
+                function(){
+                    $('#delete-form').attr('action', '<?php echo site_url('product/delete/'); ?>' + id).submit();
+                });
+        });
+    })
 </script>
 </body>
 </html>
