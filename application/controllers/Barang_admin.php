@@ -89,4 +89,15 @@ class Barang_admin extends CI_Controller
         }
     }
 
+    public function detail($id)
+    {
+        $data['css'] = $this->load->view('include/style1.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script1.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
+
+        $data['product'] = $this->model_product->getSpecified($id);
+        $this->load->view('admin/barang/detail_barang', $data);
+    }
+
 }
