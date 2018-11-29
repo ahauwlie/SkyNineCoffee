@@ -16,6 +16,16 @@ class Model_product extends CI_Model {
 	    {
 	        $this->db->delete('product', array('id_pr' => $id));
 	    }
+
+	    public function getSpecified($id)
+	    {
+	        return $this->db->get_where('product', array('id_pr' => $id))->row_array();
+	    }
+
+	    public function update($data, $id)
+	    {
+	        $this->db->update('product', $data, array('id_pr' => $id));
+	    }
 	    
 		public function all_products()
 		{ 

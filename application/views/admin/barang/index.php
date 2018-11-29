@@ -63,8 +63,8 @@
                   echo "<td>".$row['decs_pr']."</td>";
                   echo "<td>".$row['img_pr']."</td>";
                   echo "<td class='text-center'>";
-                  echo "      <a href='".site_url('product/edit/').$row['id_pr']."'><i class='fa fa-pencil'></i></a> ";
-                  echo "      <a href='".site_url('product/detail/').$row['id_pr']."'><i class='fa fa-eye'></i></a> ";
+                  echo "      <a href='".site_url('Barang_admin/edit/').$row['id_pr']."'><i class='fa fa-pencil'></i></a> ";
+                  echo "      <a href='".site_url('Barang_admin/detail/').$row['id_pr']."'><i class='fa fa-eye'></i></a> ";
                   echo "      <a href='#' data-id='".$row['id_pr']."' data-name='".$row['nama_pr']."' class='sweet-confirm'><i class='fa fa-trash'></i></a>";
                   echo "</td>";
                   echo "</tr>";

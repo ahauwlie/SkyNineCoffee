@@ -59,4 +59,34 @@ class Barang_admin extends CI_Controller
         }
         redirect(site_url('Barang_admin/index'));
     }
+
+    public function edit($id)
+    {
+        if ($_SERVER['REQUEST_METHOD'] == "POST")
+        {
+            $data = Array (
+                'id_pr' => $id,
+                'nama_pr' => $this->input->post('nama'),
+                'tipe_pr' => $this->input->post('tipe'),
+                'harga_pr' => $this->input->post('harga'),
+                'stock_pr' => $this->input->post('stock'),
+                'tag_pr' => $this->input->post('tag'),
+                'decs_pr' => $this->input->post('decs'),
+                'img_pr' => $this->input->post('img')
+            );
+
+            $this->model_product->update(html_escape($data), $id, false);
+            redirect(site_url("Barang_admin/index"));
+        }
+        else
+        {
+            $data['css'] = $this->load->view('include/style1.php', NULL, TRUE);
+            $data['js'] = $this->load->view('include/script1.php', NULL, TRUE);
+            $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
+            $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
+            $data['product'] = $this->model_product->getSpecified($id);
+            $this->load->view('admin/barang/edit_barang', $data);
+        }
+    }
+
 }
