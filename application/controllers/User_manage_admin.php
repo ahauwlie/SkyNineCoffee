@@ -22,7 +22,7 @@ class User_manage_admin extends CI_Controller {
         if ($_SERVER['REQUEST_METHOD'] == "POST")
         {
             $data = Array (
-              'ig_ug' => $this->input->post('idug'),
+              'id_ug' => $this->input->post('idug'),
               'username_us' => $this->input->post('uname'),
               'password_us' => $this->input->post('pass'),
               'full_name_us' => $this->input->post('fnama'),
@@ -44,7 +44,7 @@ class User_manage_admin extends CI_Controller {
             $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
             $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
 
-            $this->load->view('admin/user/view_user', $data);
+            $this->load->view('admin/user/add_user', $data);
         }
     }
 
@@ -62,7 +62,7 @@ class User_manage_admin extends CI_Controller {
         {
             $data = Array (
               'id_us' => $id,
-              'ig_ug' => $this->input->post('idug'),
+              'id_ug' => $this->input->post('idug'),
               'username_us' => $this->input->post('uname'),
               'password_us' => $this->input->post('pass'),
               'full_name_us' => $this->input->post('fnama'),

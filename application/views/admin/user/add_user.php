@@ -19,11 +19,11 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>Edit User</h1>
+      <h1>Tambah User Baru</h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Tables</a></li>
-        <li class="active">Edit User</li>
+        <li class="active">Tambah User Baru</li>
       </ol>
     </section>
 
@@ -36,7 +36,7 @@
             <div class="row">
               <div class="col-lg-6">
                 <div class="form-group">
-                    <label>User Group</label>
+                    <label>Id Ugrup</label>
                     <select name="idug" id="idug" class="form-control select-search m-t-4" required>
                       <option value="" disabled>Pilih kategori...</option>
                       <option value="1">Admin</option>
@@ -47,46 +47,46 @@
                 </div>
                 <div class="form-group">
                     <label>Username</label>
-                    <input name="uname" id="uname" type="text" maxlength="32" class="form-control" value="<?php echo $user['username_us']; ?>" required>
+                    <input name="uname" id="uname" type="text" maxlength="32" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>Password</label>
-                    <input name="pass" id="pass" type="text" maxlength="16" class="form-control" value="<?php echo $user['password_us']; ?>" required>
+                    <input name="pass" id="pass" type="text" max="16" class="form-control" required>
                 </div>
                 <div class="form-group">
-                    <label>Full Name</label>
-                    <input name="fnama" id="fnama" type="text" maxlength="100" class="form-control" value="<?php echo $user['full_name_us']; ?>" required>
+                    <label>Nama Lengkap</label>
+                    <input name="fnama" id="fnama" type="text" max="100" class="form-control" required>
                 </div>
                 <div class="form-group">
                     <label>E-mail</label>
-                    <input name="email" id="email" type="text" maxlength="150" class="form-control" value="<?php echo $user['email_us']; ?>" required>
+                    <input name="email" id="email" type="text" max="150" class="form-control" required>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
                     <label>Nomor HP</label>
-                    <input name="hp" id="hp" type="number" class="form-control" value="<?php echo $user['phone_num_us']; ?>" required>
+                    <input name="hp" id="hp" type="number" class="form-control" required>
                 </div>
-                <div class="form-group">
+                <div class="form-group p-t-4">
                     <label>Foto</label>
-                    <input name="foto" id="foto" type="text" maxlength="255" class="form-control" value="<?php echo $user['img_us']; ?>">
+                    <input name="foto" id="foto" type="text" maxlength="255" class="form-control">
                 </div>
-                <div class="form-group">
+                <div class="form-group p-t-4">
                     <label>Tanggal Lahir</label>
-                    <input name="ultah" id="ultah" type="text" class="form-control" value="<?php echo $user['date_birth_us']; ?>">
+                    <input name="ultah" id="ultah" type="text" class="form-control">
                 </div>
-                <div class="form-group">
+                <div class="form-group p-t-4">
                     <label>Alamat</label>
-                    <input name="alamat" id="alamat" type="text" maxlength="255" class="form-control" value="<?php echo $user['address_us']; ?>">
+                    <input name="alamat" id="alamat" type="text" maxlength="255" class="form-control">
                 </div>
-                <div class="form-group">
+                <div class="form-group p-t-4">
                     <label>Aktif</label>
-                    <input name="active" id="active" type="number" max="2" class="form-control" value="<?php echo $user['active']; ?>" required>
+                    <input name="active" id="active" type="number" max="2" class="form-control" required>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="form-group">
-                    <button class="btn btn-info">Edit</button>
+                    <button class="btn btn-info">Tambah</button>
                     <a href="<?php echo site_url('User_manage_admin/index'); ?>" class="btn btn-danger">Batal</a>
                 </div>
               </div>
@@ -106,11 +106,6 @@
 
 <?php echo $js; ?>
 
-<script>
-  $(function () {
-    $('#idug').val('<?php echo $user['id_ug']; ?>').trigger('change');
-  })
-</script>
 <script src="<?php echo base_url('/assets/js/admin/barang/bootstrap_select.min.js'); ?>"></script>
 </body>
 </html>

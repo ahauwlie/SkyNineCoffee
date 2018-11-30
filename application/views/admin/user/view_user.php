@@ -35,7 +35,7 @@
       <div class="box">
         <!-- /.box-header -->
         <div class="box-body">
-          <a href="<?php echo site_url('Barang_admin/addUser') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah barang</a>
+          <a href="<?php echo site_url('User_manage_admin/addUser') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah barang</a>
           <table id="productTable" class="table table-bordered table-hover">
             <thead>
             <tr>
@@ -167,7 +167,7 @@
                     closeOnConfirm: true
                 },
                 function(){
-                    $('#delete-form').attr('action', '<?php echo site_url('Barang_admin/delete/'); ?>' + id).submit();
+                    $('#delete-form').attr('action', '<?php echo site_url('User_manage_admin/delete/'); ?>' + id).submit();
                 });
         });
     })
