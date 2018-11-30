@@ -14,7 +14,7 @@ class Diskon_admin extends CI_Controller {
     $data['js'] = $this->load->view('include/script1.php', NULL, TRUE);
     $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
     $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
-    $this->load->view('admin/user/view_diskon', $data);
+    $this->load->view('admin/diskon/view_diskon', $data);
   }
 
   public function addDiskon()
