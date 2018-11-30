@@ -1,6 +1,6 @@
 <header class="main-header">
   <!-- Logo -->
-  <a href="index1.html" class="logo">
+  <a href="<?php echo site_url('Home_admin'); ?>" class="logo">
     <span class="logo-mini"><b>S9</b>A</span>
     <span class="logo-lg"><b>Skynine</b>Admin</span>
   </a>
@@ -62,17 +62,6 @@
         <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
       </div>
     </div>
-    <!-- search form -->
-    <form action="#" method="get" class="sidebar-form">
-      <div class="input-group">
-        <input type="text" name="q" class="form-control" placeholder="Search...">
-        <span class="input-group-btn">
-              <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-              </button>
-            </span>
-      </div>
-    </form>
-    <!-- /.search form -->
     <!-- sidebar menu: : style can be found in sidebar.less -->
     <ul class="sidebar-menu" data-widget="tree">
       <li class="header">BERANDA</li>
@@ -84,7 +73,7 @@
           </span>
         </a>
         <ul class="treeview-menu">
-          <li class="active"><a href="index1.html"><i class="fa fa-circle-o"></i> Dashboard</a></li>
+          <li class="active"><a href="<?php echo site_url('Home_admin'); ?>"><i class="fa fa-circle-o"></i> Dashboard</a></li>
         </ul>
       </li>
       
@@ -92,7 +81,7 @@
       <li class="header">MANAJEMEN</li>
       <li class="treeview">
         <a href="#">
-          <i class="fa fa-pie-chart"></i>
+          <i class="fa fa-table"></i>
           <span>Barang</span>
           <span class="pull-right-container">
             <i class="fa fa-angle-left pull-right"></i>
@@ -128,7 +117,7 @@
           <li><a href="#"><i class="fa fa-circle-o"></i> Daftar Transaksi Penjualan</a></li>
         </ul>
       </li>
-      <li><a href="#"><i class="fa fa-book"></i> <span> Karyawan</span></a></li>
+      <li><a href="<?php echo site_url('User_manage_admin'); ?>"><i class="fa fa-user-circle-o"></i> <span> Karyawan</span></a></li>
       <li><a href="#"><i class="fa fa-book"></i> <span> Pelanggan</span></a></li>
     </ul>
   </section>
