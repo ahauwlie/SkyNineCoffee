@@ -117,8 +117,8 @@
           <li><a href="#"><i class="fa fa-circle-o"></i> Daftar Transaksi Penjualan</a></li>
         </ul>
       </li>
-      <li><a href="<?php echo site_url('User_manage_admin'); ?>"><i class="fa fa-user-circle-o"></i> <span> Karyawan</span></a></li>
-      <li><a href="#"><i class="fa fa-book"></i> <span> Pelanggan</span></a></li>
+      <li><a href="<?php echo site_url('User_manage_admin'); ?>"><i class="fa fa-user-circle-o"></i> <span> Karyawan & Pelanggan</span></a></li>
+      <li><a href="<?php echo site_url('Diskon_admin'); ?>"><i class="fa fa-tags"></i> <span> Kelola Diskon</span></a></li>
     </ul>
   </section>
   <!-- /.sidebar -->

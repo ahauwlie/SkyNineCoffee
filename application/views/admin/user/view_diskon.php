@@ -21,12 +21,12 @@
     <section class="content-header">
       <h1>
         Data Tables
-        <small>- Kelola User</small>
+        <small>- Kelola Diskon</small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li><a href="#">Tables</a></li>
-        <li class="active">Kelola User</li>
+        <li class="active">Kelola Diskon</li>
       </ol>
     </section>
 
@@ -35,43 +35,27 @@
       <div class="box">
         <!-- /.box-header -->
         <div class="box-body">
-          <a href="<?php echo site_url('User_manage_admin/addUser') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah User</a>
+          <a href="<?php echo site_url('Diskon_admin/addDiskon') ?>" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Tambah Diskon</a>
           <table id="productTable" class="table table-bordered table-hover">
             <thead>
             <tr>
               <th>Id</th>
-              <th>Id Ugrup</th>
-              <th>Username</th>
-              <th>Passsword</th>
-              <th>Nama Lengkap</th>
-              <th>Email</th>
-              <th>Nomer HP</th>
-              <th>Gambar</th>
-              <th>Tanggal Lahir</th>
-              <th>Alamat</th>
-              <th>Aktif</th>
+              <th>Jenis Diskon</th>
+              <th>Jumlah Diskon</th>
               <th>Aksi</th>
             </tr>
             </thead>
             <tbody>
             <?php
-              foreach ($user as $row) {
+              foreach ($diskon as $row) {
                   echo "<tr>";
-                  echo "<td>".$row['id_us']."</td>";
-                  echo "<td>".$row['id_ug']."</td>";
-                  echo "<td>".$row['username_us']."</td>";
-                  echo "<td>".$row['password_us']."</td>";
-                  echo "<td>".$row['full_name_us']."</td>";
-                  echo "<td>".$row['email_us']."</td>";
-                  echo "<td>".$row['phone_num_us']."</td>";
-                  echo "<td>".$row['img_us']."</td>";
-                  echo "<td>".$row['date_birth_us']."</td>";
-                  echo "<td>".$row['address_us']."</td>";
-                  echo "<td>".$row['active']."</td>";
+                  echo "<td>".$row['id_disc']."</td>";
+                  echo "<td>".$row['jenis_disc']."</td>";
+                  echo "<td>".$row['jum_disc']."</td>";
                   echo "<td class='text-center'>";
-                  echo "      <a href='".site_url('User_manage_admin/edit/').$row['id_us']."'><i class='fa fa-pencil'></i></a> ";
-                  echo "      <a href='".site_url('User_manage_admin/detail/').$row['id_us']."'><i class='fa fa-eye'></i></a> ";
-                  echo "      <a href='#' data-id='".$row['id_us']."' data-name='".$row['username_us']."' class='sweet-confirm'><i class='fa fa-trash'></i></a>";
+                  echo "<a href='".site_url('Diskon_admin/edit/').$row['id_disc']."'><i class='fa fa-pencil'></i></a> ";
+                  echo "<a href='".site_url('Diskon_admin/detail/').$row['id_disc']."'><i class='fa fa-eye'></i></a> ";
+                  echo "<a href='#' data-id='".$row['id_disc']."' data-name='".$row['jenis_disc']."' class='sweet-confirm'><i class='fa fa-trash'></i></a>";
                   echo "</td>";
                   echo "</tr>";
               }
@@ -80,28 +64,12 @@
             <tfoot>
             <tr>
               <th>Id</th>
-              <th>Id Ugrup</th>
-              <th>Username</th>
-              <th>Passsword</th>
-              <th>Nama Lengkap</th>
-              <th>Email</th>
-              <th>Nomer HP</th>
-              <th>Gambar</th>
-              <th>Tanggal Lahir</th>
-              <th>Alamat</th>
-              <th>Aktif</th>
+              <th>Jenis Diskon</th>
+              <th>Jumlah Diskon</th>
             </tr>
             </tfoot>
           </table>
         </div>
-        <p><b>Info:</b><br>
-          Id Ugrup: 1 = admin<br>
-          Id Ugrup: 2 = marketing<br>
-          Id Ugrup: 3 = Publikasi<br>
-          Id Ugrup: 4 = User<br><br>
-          <b>Info:</b><br>
-          apabila di kolom aktif 1 artinya user telah melakukan verifikasi akun melalui email
-        </p>
         <!-- /.box-body -->
       </div>
       <!-- /.box -->
@@ -167,7 +135,7 @@
                     closeOnConfirm: true
                 },
                 function(){
-                    $('#delete-form').attr('action', '<?php echo site_url('User_manage_admin/delete/'); ?>' + id).submit();
+                    $('#delete-form').attr('action', '<?php echo site_url('Diskon_admin/delete/'); ?>' + id).submit();
                 });
         });
     })
