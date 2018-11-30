@@ -16,7 +16,7 @@
   <h3>Form Import</h3>
   <hr>
   
-  <a href="<?php echo base_url("assets/formatproduct.xlsx"); ?>">Download Format</a>
+  <a href="<?php echo base_url("excel/import_data.xlsx"); ?>">Download Format</a>
   <br>
   <br>
   
