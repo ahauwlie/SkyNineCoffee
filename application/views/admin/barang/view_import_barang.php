@@ -35,10 +35,11 @@
       <div class="box">
         <!-- /.box-header -->
         <div class="box-body">
-          <a href="<?php echo base_url("index.php/Barang_import_admin/form"); ?>">Import Data</a><br><br>
-          <table class="table table-bordered table-hover">
+          <a href="<?php echo site_url("Barang_import_admin/form") ?>"class="btn btn-primary"><i class="fa fa-plus-circle"></i> Import barang</a>
+          <table id="example2" class="table table-bordered table-hover">
             <thead>
             <tr>
+              <th>Id</th>
               <th>Nama</th>
               <th>Tipe</th>
               <th>Harga</th>
@@ -53,9 +54,10 @@
                 if( ! empty($import)){
                   foreach($import as $data){
                     echo "<tr>";
+                    echo "<td>".$data->id_pr."</td>";
                     echo "<td>".$data->nama_pr."</td>";
                     echo "<td>".$data->tipe_pr."</td>";
-                    echo "<td>".$data->harga_pr."</td>";
+                    echo "<td class='text-right'>".number_format($data->harga_pr,0)."</td>";
                     echo "<td>".$data->stock_pr."</td>";
                     echo "<td>".$data->tag_pr."</td>";
                     echo "<td>".$data->decs_pr."</td>";
@@ -69,6 +71,7 @@
             </tbody>
             <tfoot>
             <tr>
+              <th>Id</th>
               <th>Nama</th>
               <th>Tipe</th>
               <th>Harga</th>
@@ -88,9 +91,6 @@
   </div>
   <!-- /.content-wrapper -->
   <?php echo $footer; ?>
-  <div style="display: none">
-    <form id="delete-form" method="POST"></form>
-  </div>
 </div>
 <!-- ./wrapper -->
 
@@ -98,17 +98,11 @@
 
 <!-- page script -->
 <script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
+  $(document).ready(function () {
+        $('#example2').DataTable({
+            dom: 'Bfrtip',
+        });
+      })
 </script>
 </body>
 </html>

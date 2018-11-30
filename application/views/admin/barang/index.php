@@ -100,21 +100,6 @@
 <!-- ./wrapper -->
 
 <?php echo $js; ?>
-
-<!-- page script -->
-<script>
-  $(function () {
-    $('#example1').DataTable()
-    $('#example2').DataTable({
-      'paging'      : true,
-      'lengthChange': false,
-      'searching'   : false,
-      'ordering'    : true,
-      'info'        : true,
-      'autoWidth'   : false
-    })
-  })
-</script>
 <!-- Datatable & buttons -->
 <script src="<?php echo base_url('/assets/js/admin/barang/dataTables.buttons.min.js'); ?>"></script>
 <script src="<?php echo base_url('/assets/js/admin/barang/buttons.flash.min.js'); ?>"></script>
