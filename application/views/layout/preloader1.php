@@ -100,7 +100,7 @@
         </a>
         <ul class="treeview-menu">
           <li><a href="<?php echo site_url('Barang_admin'); ?>"><i class="fa fa-circle-o"></i> Daftar Barang</a></li>
-          <li><a href="#"><i class="fa fa-circle-o"></i> Unggah data Barang</a></li>
+          <li><a href="<?php echo site_url('Barang_import_admin'); ?>"><i class="fa fa-circle-o"></i> Unggah data Barang</a></li>
         </ul>
       </li>
       <li class="treeview">
