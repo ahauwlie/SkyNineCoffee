@@ -3,7 +3,7 @@
   <title>Form Import</title>
   
   <!-- Load File jquery.min.js yang ada difolder js -->
-  <script src="<?php echo base_url('assets/js/jquery.js'); ?>"></script>
+  <script src="<?php echo base_url('js/jquery.min.js'); ?>"></script>
   
   <script>
   $(document).ready(function(){
@@ -16,12 +16,12 @@
   <h3>Form Import</h3>
   <hr>
   
-  <a href="<?php echo base_url("assets/formatproduct.xlsx"); ?>">Download Format</a>
+  <a href="<?php echo base_url("excel/format.xlsx"); ?>">Download Format</a>
   <br>
   <br>
   
   <!-- Buat sebuah tag form dan arahkan action nya ke controller ini lagi -->
-  <form method="post" action="<?php echo base_url("index.php/Barang_import_admin/form"); ?>" enctype="multipart/form-data">
+  <form method="post" action="<?php echo base_url("index.php/Siswa/form"); ?>" enctype="multipart/form-data">
     <!-- 
     -- Buat sebuah input type file
     -- class pull-left berfungsi agar file input berada di sebelah kiri
@@ -42,25 +42,22 @@
     }
     
     // Buat sebuah tag form untuk proses import data ke database
-    echo "<form method='post' action='".base_url("index.php/Barang_import_admin/import")."'>";
+    echo "<form method='post' action='".base_url("index.php/Siswa/import")."'>";
     
     // Buat sebuah div untuk alert validasi kosong
-    echo "<div style='color: red;' id='kosong'>
-    Semua data belum diisi, Ada <span id='jumlah_kosong'></span> data yang belum diisi.
-    </div>";
+    // echo "<div style='color: red;' id='kosong'>
+    // Semua data belum diisi, Ada <span id='jumlah_kosong'></span> data yang belum diisi.
+    // </div>";
     
     echo "<table border='1' cellpadding='8'>
     <tr>
-      <th colspan='9'>Preview Data</th>
+      <th colspan='5'>Preview Data</th>
     </tr>
     <tr>
+      <th>NIS</th>
       <th>Nama</th>
-      <th>Tipe</th>
-      <th>Harga</th>
-      <th>Stock</th>
-      <th>Tag</th>
-      <th>Deskripsi</th>
-      <th>Gambar</th>
+      <th>Jenis Kelamin</th>
+      <th>Alamat</th>
     </tr>";
     
     $numrow = 1;
@@ -70,16 +67,13 @@
     // $sheet adalah variabel yang dikirim dari controller
     foreach($sheet as $row){ 
       // Ambil data pada excel sesuai Kolom
-      $nama_pr = $row['A']; 
-      $tipe_pr = $row['B']; 
-      $harga_pr = $row['C']; 
-      $stock_pr = $row['D'];
-      $tag_pr = $row['E']; 
-      $decs_pr = $row['F']; 
-      $img_pr = $row['G'];
+      $nis = $row['A']; // Ambil data NIS
+      $nama = $row['B']; // Ambil data nama
+      $jenis_kelamin = $row['C']; // Ambil data jenis kelamin
+      $alamat = $row['D']; // Ambil data alamat
       
       // Cek jika semua data tidak diisi
-      if(empty($nama_pr) && empty($tipe_pr) && empty($harga_pr) && empty($stock_pr) && empty($tag_pr) && empty($decs_pr) && empty($img_pr))
+      if(empty($nis) && empty($nama) && empty($jenis_kelamin) && empty($alamat))
         continue; // Lewat data pada baris ini (masuk ke looping selanjutnya / baris selanjutnya)
       
       // Cek $numrow apakah lebih dari 1
@@ -87,27 +81,21 @@
       // Jadi dilewat saja, tidak usah diimport
       if($numrow > 1){
         // Validasi apakah semua data telah diisi
-        $nama_pr_td = ( ! empty($nama_pr))? "" : " style='background: #E07171;'"; 
-        $tipe_pr_td = ( ! empty($tipe_pr))? "" : " style='background: #E07171;'"; 
-        $harga_pr_td = ( ! empty($harga_pr))? "" : " style='background: #E07171;'";
-        $stock_pr_td = ( ! empty($stock_pr))? "" : " style='background: #E07171;'"; 
-        $tag_pr_td = ( ! empty($tag_pr))? "" : " style='background: #E07171;'"; 
-        $decs_pr_td = ( ! empty($decs_pr))? "" : " style='background: #E07171;'";
-        $img_pr_td = ( ! empty($img_pr))? "" : " style='background: #E07171;'"; 
+        $nis_td = ( ! empty($nis))? "" : " style='background: #E07171;'"; // Jika NIS kosong, beri warna merah
+        $nama_td = ( ! empty($nama))? "" : " style='background: #E07171;'"; // Jika Nama kosong, beri warna merah
+        $jk_td = ( ! empty($jenis_kelamin))? "" : " style='background: #E07171;'"; // Jika Jenis Kelamin kosong, beri warna merah
+        $alamat_td = ( ! empty($alamat))? "" : " style='background: #E07171;'"; // Jika Alamat kosong, beri warna merah
         
         // Jika salah satu data ada yang kosong
-        if(empty($nama_pr) or empty($tipe_pr) or empty($harga_pr) or empty($stock_pr) or empty($tag_pr) or empty($decs_pr) or empty($img_pr)){
+        if(empty($nis) or empty($nama) or empty($jenis_kelamin) or empty($alamat)){
           $kosong++; // Tambah 1 variabel $kosong
         }
         
         echo "<tr>";
-        echo "<td".$nama_pr_td.">".$nama_pr."</td>";
-        echo "<td".$tipe_pr_td.">".$tipe_pr."</td>";
-        echo "<td".$harga_pr_td.">".$harga_pr."</td>";
-        echo "<td".$stock_pr_td.">".$stock_pr."</td>";
-        echo "<td".$tag_pr_td.">".$tag_pr."</td>";
-        echo "<td".$decs_pr_td.">".$decs_pr."</td>";
-        echo "<td".$img_pr_td.">".$img_pr."</td>";
+        echo "<td".$nis_td.">".$nis."</td>";
+        echo "<td".$nama_td.">".$nama."</td>";
+        echo "<td".$jk_td.">".$jenis_kelamin."</td>";
+        echo "<td".$alamat_td.">".$alamat."</td>";
         echo "</tr>";
       }
       
@@ -134,7 +122,7 @@
       
       // Buat sebuah tombol untuk mengimport data ke database
       echo "<button type='submit' name='import'>Import</button>";
-      echo "<a href='".base_url("index.php/Barang_import_admin")."'>Cancel</a>";
+      echo "<a href='".base_url("index.php/Siswa")."'>Cancel</a>";
     }
     
     echo "</form>";

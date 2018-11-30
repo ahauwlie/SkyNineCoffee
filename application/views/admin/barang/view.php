@@ -29,7 +29,7 @@
       echo "</tr>";
     }
   }else{ // Jika data tidak ada
-    echo "<tr><td colspan='4'>Data tidak ada</td></tr>";
+    echo "<tr><td colspan='7'>Data tidak ada</td></tr>";
   }
   ?>
   </table>
