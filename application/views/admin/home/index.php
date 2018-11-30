@@ -38,14 +38,17 @@
               <!-- small box -->
               <div class="small-box bg-aqua">
                 <div class="inner">
-                  <h3>150</h3>
-
-                  <p>New Orders</p>
+                  <h3>
+                    <?php foreach ($hasil_barang as $row) : ?>
+                      <span><?=  $row->num_of_time  ?></span>
+                    <?php endforeach; ?>
+                  </h3>
+                  <p>Jumlah Barang</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo site_url('Barang_admin/index') ?>" class="small-box-footer">Telusuri <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -53,9 +56,8 @@
               <!-- small box -->
               <div class="small-box bg-green">
                 <div class="inner">
-                  <h3>53<sup style="font-size: 20px">%</sup></h3>
-
-                  <p>Bounce Rate</p>
+                  <h3>53</h3>
+                  <p>Penjualan kami yang Sukses!</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
@@ -68,14 +70,17 @@
               <!-- small box -->
               <div class="small-box bg-yellow">
                 <div class="inner">
-                  <h3>44</h3>
-
-                  <p>User Registrations</p>
+                  <h3>
+                    <?php foreach ($hasil_user as $row) : ?>
+                      <span><?=  $row->num_of_time  ?></span>
+                    <?php endforeach; ?>
+                  </h3>
+                  <p>User yang terdaftar</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-person-add"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="<?php echo site_url('User_manage_admin/index') ?>" class="small-box-footer">Telusuri <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div>
             <!-- ./col -->
@@ -84,11 +89,10 @@
               <div class="small-box bg-red">
                 <div class="inner">
                   <h3>65</h3>
-
-                  <p>Unique Visitors</p>
+                  <p>Artikel Kami</p>
                 </div>
                 <div class="icon">
-                  <i class="ion ion-pie-graph"></i>
+                  <i class="ion ion-coffee"></i>
                 </div>
                 <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>

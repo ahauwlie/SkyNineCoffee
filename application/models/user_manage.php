@@ -26,4 +26,9 @@ class User_manage extends CI_Model {
 	    {
 	        $this->db->update('user', $data, array('id_us' => $id));
 	    }	
+
+	    public function countRow(){
+	        $query = $this->db->query("SELECT COUNT(*) AS num_of_time FROM user WHERE id_ug = 4");
+	     	return $query->result();
+    	}
 }

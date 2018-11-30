@@ -2,7 +2,7 @@
 
 class Model_product extends CI_Model {
 	
-		 public function getAll()
+		public function getAll()
 	    {
 	        return $this->db->get('product')->result_array();
 	    }
