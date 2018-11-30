@@ -12,7 +12,11 @@ class Barang_import_admin extends CI_Controller {
   
   public function index(){
     $data['import'] = $this->barang_import->view();
-    $this->load->view('admin/barang/view', $data);
+    $data['css'] = $this->load->view('include/style1.php', NULL, TRUE);
+    $data['js'] = $this->load->view('include/script1.php', NULL, TRUE);
+    $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
+    $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
+    $this->load->view('admin/barang/view_import_barang', $data);
   }
   
   public function form(){
