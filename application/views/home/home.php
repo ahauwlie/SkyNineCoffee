@@ -38,16 +38,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     click sini<br>
                     click sini<br>
                     click sini<br>
-                    click sini<br>
-                    click sini<br>
-                    click sini<br>
-                    click sini<br>
-                    click sini<br>
-                    click sini<br>
                 </a>
                 <div class="dropdown-menu dropdown-menu-left animated zoomIn">
                     <ul class="dropdown-user">
                         <li><a>Selamat datang <b><?php echo $full_name_us;?></b></a></li>
+                        <?php 
+                            $session = $this->session->userdata('login');
+                            $id_ug = $session['id_ug'];
+                            if($id_ug == 1){
+                                echo '<a href="Home_admin">Kembali ke panel Admin</a>';
+                            }
+                        ?>
                         <li><a href="<?php echo site_url('login/logout'); ?>">Keluar </a></li>
                     </ul>
                 </div>
