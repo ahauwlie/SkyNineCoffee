@@ -16,17 +16,22 @@
         <!-- User Account: style can be found in dropdown.less -->
         <li class="dropdown user user-menu">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-            <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-            <span class="hidden-xs">Alexander Pierce</span>
+            <?php  
+              $session = $this->session->userdata('login');
+              $nama = $session['full_name_us'];
+              $foto = $session['img_us'];
+              $email = $session['email_us'];
+            ?>
+            <img class="user-image" src="<?php echo base_url('assets/images/resource/photo_user/'.$foto) ?>" alt="">
+            <span class="hidden-xs"><?php echo $nama; ?></span>
           </a>
           <ul class="dropdown-menu">
             <!-- User image -->
             <li class="user-header">
-              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-
+              <img style="border-radius: 100%;height: 100px;width: 100px;" src="<?php echo base_url('/assets/images/resource/photo_user/'.$foto) ?>" alt="">
               <p>
-                Alexander Pierce - Web Developer
-                <small>Member since Nov. 2012</small>
+                <?php echo "Hay, ".strtoupper($nama); ?>
+                <small><?php echo $email; ?></small>
               </p>
             </li>
             <!-- Menu Footer-->
@@ -40,10 +45,6 @@
             </li>
           </ul>
         </li>
-        <!-- Control Sidebar Toggle Button -->
-        <li>
-          <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
-        </li>
       </ul>
     </div>
   </nav>
@@ -55,11 +56,11 @@
     <!-- Sidebar user panel -->
     <div class="user-panel">
       <div class="pull-left image">
-        <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        <img src="<?php echo base_url('/assets/images/resource/photo_user/'.$foto) ?>" class="img-circle" alt="User Image">
       </div>
       <div class="pull-left info">
-        <p>Alexander Pierce</p>
-        <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+        <?php echo $nama; ?>
+        <a href="#">|| <i class="fa fa-circle text-success"></i>Online</a>
       </div>
     </div>
     <!-- sidebar menu: : style can be found in sidebar.less -->

@@ -43,7 +43,8 @@ class Login_validation extends CI_Controller {
                     'username_us' => $row->username_us,
 					'active' => $row->active,
 					'email_us' => $row->email_us,
-                    'id_ug' => $row->id_ug
+                    'id_ug' => $row->id_ug,
+                    'img_us' => $row->img_us
                 );
 
                 $this->session->set_userdata('login', $sess_array);
