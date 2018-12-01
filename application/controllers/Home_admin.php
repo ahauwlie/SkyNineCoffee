@@ -17,12 +17,26 @@ class Home_admin extends CI_Controller
   	}
 
     public function index() {
-        $data['css'] = $this->load->view('include/style1.php', NULL, TRUE);
-        $data['js'] = $this->load->view('include/script1.php', NULL, TRUE);
-        $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
-        $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
-        $data['hasil_barang'] = $this->model_product->countRow();
-        $data['hasil_user'] = $this->user_manage->countRow();
-        $this->load->view('admin/home/index', $data);
+    	$this->load->library('session');
+        $this->load->helper('url');
+        //jika seasson login belum ada maka tampilkan login
+        if(!$this->session->userdata('login')){
+        	$this->load->helper('form');
+            $this->load->view('auth/login2');
+        }else{
+        	if($this->session->userdata('login')) {
+                $session = $this->session->userdata('login');
+                $id_ug = $session['id_ug'];
+                if($id_ug == 1){
+			        $data['css'] = $this->load->view('include/style1.php', NULL, TRUE);
+			        $data['js'] = $this->load->view('include/script1.php', NULL, TRUE);
+			        $data['footer'] = $this->load->view('layout/footer1.php', NULL, TRUE);
+			        $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
+			        $data['hasil_barang'] = $this->model_product->countRow();
+			        $data['hasil_user'] = $this->user_manage->countRow();
+			        $this->load->view('admin/home/index', $data);
+			    }
+			}
+		}
     }
 }
