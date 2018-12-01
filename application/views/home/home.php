@@ -30,7 +30,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <?php echo $preloader; ?>
 
     <!-- selamat datang loginers -->
-    <?php if ($this->session->userdata('login')) { ?>
+    <!-- <?php if ($this->session->userdata('login')) { ?>
         <?php if($active) { ?>
             <li class="nav-item dropdown bg7">
                 <a class="nav-link dropdown-toggle text-muted" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -56,7 +56,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <?php } else {?>
             <li>Akun belum aktif, silahkan cek email : <b><?php echo $email_us;?></b></li>
         <?php } ?>
-    <?php } ?>
+    <?php } ?> -->
     <!-- selesai -->
 
     <!--Main Slider-->

@@ -10,7 +10,49 @@
 
                         <?php if ($this->session->userdata('login')) { ?>
                         <!-- <h1>hay</h1> -->
-                        <li><a href="<?php echo site_url('login/logout'); ?>">Keluar </a></li>
+                        <!-- <li><a href="<?php echo site_url('login/logout'); ?>">Keluar </a></li> -->
+                        
+
+
+                        <li class="dropdown user user-menu">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <?php  
+                              $session = $this->session->userdata('login');
+                              $nama = $session['full_name_us'];
+                              $foto = $session['img_us'];
+                              $email = $session['email_us'];
+                            ?>
+                            <img style="border-radius: 100%;height: 30px;width: 30px;" src="<?php echo base_url('assets/images/resource/photo_user/'.$foto) ?>" alt="">
+                            <span class="hidden-xs"><?php echo $nama; ?></span>
+                          </a>
+                          <ul class="dropdown-menu">
+                            <!-- User image -->
+                            <li class="user-header">
+                              <img style="border-radius: 100%;height: 100px;width: 100px;" src="<?php echo base_url('/assets/images/resource/photo_user/'.$foto) ?>" alt="">
+                              <p>
+                                <?php echo "Hay, ".strtoupper($nama); ?>
+                                <small><?php echo $email; ?></small>
+                              </p>
+                            </li>
+                            <!-- Menu Footer-->
+                            <li class="user-footer">
+                                <div class="pull-left">
+                                    <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                </div>
+                                <div class="pull-right">
+                                    <a href="<?php echo site_url('login/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
+                                </div>
+                            </li>
+                            <?php 
+                                $session = $this->session->userdata('login');
+                                $id_ug = $session['id_ug'];
+                                if($id_ug == 1){
+                                    echo '<a href="Home_admin">Kembali ke panel Admin</a>';
+                                }
+                            ?>
+                          </ul>
+                        </li>
+
                         <?php } else { ?>
                         <li><a href="<?php echo site_url('login/index'); ?>"><i class="fa fa-user"></i> Masuk/Daftar</a></li>
                         <?php } ?>
