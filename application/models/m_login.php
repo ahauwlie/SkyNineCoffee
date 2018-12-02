@@ -10,7 +10,7 @@
 		function login($username, $password)
 		{
             $this->load->database();
-			$this -> db -> select('username_us, password_us, full_name_us, email_us, active, id_ug, img_us');
+			$this -> db -> select('id_us, username_us, password_us, full_name_us, email_us, active, id_ug, img_us');
 			$this -> db -> from('user');
 			$this -> db -> where('username_us', $username);
 			$this -> db -> where('password_us', $password);

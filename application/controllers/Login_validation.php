@@ -39,6 +39,7 @@ class Login_validation extends CI_Controller {
             foreach($result as $row)
             {
                 $sess_array = array(
+                    'id_us'=> $row->id_us,
                     'full_name_us'=> $row->full_name_us,
                     'username_us' => $row->username_us,
 					'active' => $row->active,
