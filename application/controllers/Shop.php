@@ -35,6 +35,7 @@ class Shop extends CI_Controller
         $data['starts'] = $this->model_product->dis_products();
         $data['starts1'] = $this->model_product->dis_products1();
         $data['hasil'] = $this->model_product->countRow(); 
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/shop-grid', $data);
        
         // if ($_SERVER['REQUEST_METHOD'] == "POST")

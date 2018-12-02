@@ -44,6 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!--content side-->
                         <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                             <div class="shop-upper-box clearfix">
+                                <p><?php echo $tanggal; ?></p>
                                 <div class="items-label pull-left">Melihat <h4><b><?php echo $links; ?></b></h4> dari <?php foreach ($hasil as $row) : ?>
                                                                                         <span><?=  $row->num_of_time  ?></span>
                                                                                     <?php endforeach; ?> Hasil
