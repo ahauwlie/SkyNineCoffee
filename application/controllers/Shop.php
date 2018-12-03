@@ -14,7 +14,6 @@ class Shop extends CI_Controller
         parent::__construct();
         $this->load->model('model_product');
         $this->load->model('model_settings');
-        $this->load->model('model_transaksi');
         $this->load->library('pagination');
     }
 
@@ -38,17 +37,6 @@ class Shop extends CI_Controller
         $data['hasil'] = $this->model_product->countRow(); 
         $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/shop-grid', $data);
-       
-        // if ($_SERVER['REQUEST_METHOD'] == "POST")
-        // {
-        //     $data = Array (
-        //         'id_pr' => $this->input->post('id_pr')
-        //     );
-
-        //     $this->model_product->addcart(html_escape($data), false);
-        //     redirect(site_url("shop/cart"));
-        // }
-
     }
 
     public function max_pro()
