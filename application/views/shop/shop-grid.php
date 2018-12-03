@@ -87,12 +87,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 </div>                
                                             </div>
                                             <div class="content-box">
-                                                <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
+                                                <h3><a><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
                                                 <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
                                                 <span>Stock: <?=  $products->stock_pr  ?></span><br>
                                                 <?php if ($this->session->userdata('login')) { ?>
                                                     <!-- ini buat yang udah login -->
-                                                    <a class="btn btn-success col">Keranjang</a>
+                                                    <?php 
+                                                        echo '<a href="cart" class="btn btn-success col">Keranjang</a>';
+                                                    ?>
                                                 <?php } else {?>
                                                     <button class="btn btn-success col" onclick="myFunction()">Keranjang</button>
                                                     <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>

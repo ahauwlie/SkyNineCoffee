@@ -14,6 +14,7 @@ class Shop extends CI_Controller
         parent::__construct();
         $this->load->model('model_product');
         $this->load->model('model_settings');
+        $this->load->model('model_transaksi');
         $this->load->library('pagination');
     }
 
