@@ -217,42 +217,33 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--End Main Slider-->
 
     <!-- Testimonial Section -->
-    <!-- <section class="testimonial-section bg8">
+    <section class="testimonial-section bg8">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
+                
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/M1YYx8fsB-o?ecver=1" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen></iframe>
+                        <div class="text col-sm-4">Tomy dan Dimas kembali untuk menjawab pertanyaan kalian! Ada pertanyaan susah lain mengenai kopi yang butuh jawaban! kerik jawaban kalian di bawah ya!</div>
+                    </div>
+                </div>
 
                 <div class="testimonial-block">
-                        <div class="inner-box">
-                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/0ctF0lmPM1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <div class="text col-sm-4">BREWCODE adalah sebuah talkshow yang akan menjawab dan membahas berbagai pertanyaan seputar kopi. Di episode ini, Dimas dan Tomy akan mencoba menjawab beberapa pertanyaan dari para teman kopi.</div>
-                        </div>
+                    <div class="inner-box">
+                        <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/0ctF0lmPM1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="text col-sm-4">BREWCODE adalah sebuah talkshow yang akan menjawab dan membahas berbagai pertanyaan seputar kopi. Di episode ini, Dimas dan Tomy akan mencoba menjawab beberapa pertanyaan dari para teman kopi.</div>
                     </div>
+                </div>
 
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/xOWlvmBFoQI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <div class="text col-sm-4">
-                                <p>
-                                    Ini cara membuat kopi manual brew dengan metode syphon.
-                                    <br>
-                                    Jika Anda tertarik dengan kopi kami,
-                                    jangan ragu untuk menghubungi tim pemasaran kami:
-                                    📱 +62 815-1798-0622 (Firman)
-                                    📱 ‭‭+62 878-7768-9782 (Oscar)
-                                </p>
-                            </div>
-                        </div>
+                <div class="testimonial-block">
+                    <div class="inner-box">
+                        <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/bMVQeWOWyQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        <div class="text col-sm-4">BREWCODE adalah sebuah talkshow yang akan menjawab dan membahas berbagai pertanyaan seputar kopi. Di episode perdana ini, Dimas dan Tomy akan mencoba menjelaskan mengenai perbedaan dari kopi robusta dan arabica.</div>
                     </div>
-
-                    <div class="testimonial-block">
-                        <div class="inner-box">
-                            <iframe class="col-sm-8" width="560" height="350" src="https://www.youtube.com/embed/bMVQeWOWyQQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                            <div class="text col-sm-4">BREWCODE adalah sebuah talkshow yang akan menjawab dan membahas berbagai pertanyaan seputar kopi. Di episode perdana ini, Dimas dan Tomy akan mencoba menjelaskan mengenai perbedaan dari kopi robusta dan arabica.</div>
-                        </div>
-                    </div>
+                </div>
             </div>
         </div>
-    </section> -->
+    </section>
     <!--End Testimonial Section -->
 
     <!-- News Section -->
