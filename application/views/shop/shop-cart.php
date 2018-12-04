@@ -46,7 +46,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="auto-container">
                     <!--Cart Outer-->
                     <div class="cart-outer">
-                        <form action="<?php echo base_url()?>Shop/ubah_cart" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
+                        <form action="<?php echo site_url()?>/Shop/ubah_cart" method="post" name="frmShopping" id="frmShopping" class="form-horizontal" enctype="multipart/form-data">
                         <?php if ($cart = $this->cart->contents()) { ?>
                             <div class="table-outer">
                                 <table class="cart-table">
@@ -85,7 +85,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <?php endforeach; ?>
                                         </tr>
                                         <tr>
-                                            <td colspan="3"><b>Order Total: Rp <?php echo number_format($grand_total, 0,",","."); ?></b></td>
+                                            <td colspan="3"><b>Total Harga: Rp <?php echo number_format($grand_total, 0,",","."); ?></b></td>
                                             <td colspan="4" align="right">
                                             <a href="<?php echo site_url()?>/Shop/hapus/all" class ='btn btn-sm btn-danger'>Kosongkan Cart</a>
                                             <button class='btn btn-sm btn-success'  type="submit">Update Cart</button>
