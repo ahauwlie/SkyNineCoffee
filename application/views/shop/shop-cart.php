@@ -81,15 +81,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <td><?php echo number_format($item['price'], 0,",","."); ?></td>
                                             <td><input type="text" class="form-control input-sm" name="cart[<?php echo $item['id'];?>][qty]" value="<?php echo $item['qty'];?>" /></td>
                                             <td><?php echo number_format($item['subtotal'], 0,",",".") ?></td>
-                                            <td><a href="<?php echo base_url()?>Shop/hapus/<?php echo $item['rowid'];?>" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a></td>
+                                            <td><a href="<?php echo site_url()?>/Shop/hapus/<?php echo $item['rowid'];?>" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a></td>
                                         <?php endforeach; ?>
                                         </tr>
                                         <tr>
                                             <td colspan="3"><b>Order Total: Rp <?php echo number_format($grand_total, 0,",","."); ?></b></td>
                                             <td colspan="4" align="right">
-                                            <a data-toggle="modal" data-target="#myModal"  class ='btn btn-sm btn-danger'>Kosongkan Cart</a>
+                                            <a href="<?php echo site_url()?>/Shop/hapus/all" class ='btn btn-sm btn-danger'>Kosongkan Cart</a>
                                             <button class='btn btn-sm btn-success'  type="submit">Update Cart</button>
-                                            <a href="<?php echo base_url()?>Shop/check_out"  class ='btn btn-sm btn-primary'>Check Out</a>
+                                            <a href="<?php echo site_url()?>/Shop/check_out"  class ='btn btn-sm btn-primary'>Check Out</a>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -145,27 +145,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </section>
             <!-- End Cart Section -->
-
-            <!-- Modal Penilai -->
-            <div class="modal fade" id="myModal" role="dialog">
-                <div class="modal-dialog modal-md">
-                <!-- Modal content-->
-                    <div class="modal-content">
-                        <form method="post" action="<?php echo base_url()?>Shop/hapus/all">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4 class="modal-title">Konfirmasi</h4>
-                            </div>
-                            <div class="modal-body"> Anda yakin mau mengosongkan Shopping Cart? </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal">Tidak</button>
-                                <button type="submit" class="btn btn-sm btn-default">Ya</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <!--End Modal-->
 
             <?php echo $footer; ?>
         </div>
