@@ -69,37 +69,41 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <?php foreach ($results as $products) : ?>
                                     <div class="product-block col-md-4 col-sm-6 col-xs-12">
                                         <div class="inner-box">
-                                            <div class="image-box">
-                                                <a href="<?php echo site_url('Shop/cart'); ?>">
-                                                    <img src="#g" alt="">
-                                                    <?php
-                                                        $product_image =[
-                                                            'src'  =>'assets/images/resource/products/'.$products->img_pr,
-                                                            'class'=>'img-responsive img-portfolio img-hover',
-                                                            'id'=>'g'
-                                                        ];
-                                                        echo img($product_image);
-                                                    ?>
-                                                </a>
-                                                <span class="tag">Promo!</span>
-                                                <div class="link-box">
-                                                    <a href="#"><span><?=  $products->decs_pr  ?></span></a>
-                                                </div>                
-                                            </div>
-                                            <div class="content-box">
-                                                <h3><a><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
-                                                <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
-                                                <span>Stock: <?=  $products->stock_pr  ?></span><br>
-                                                <?php if ($this->session->userdata('login')) { ?>
-                                                    <!-- ini buat yang udah login -->
-                                                    <?php 
-                                                        echo '<a href="cart" class="btn btn-success col">Keranjang</a>';
-                                                    ?>
-                                                <?php } else {?>
-                                                    <button class="btn btn-success col" onclick="myFunction()">Keranjang</button>
-                                                    <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
-                                                <?php } ?>
-                                            </div>
+                                            <form method="post" action="<?php echo site_url();?>/Shop/tambah" method="post" accept-charset="utf-8">
+                                                <div class="image-box">
+                                                    <a href="<?php echo site_url('Shop/cart'); ?>">
+                                                        <img src="#g" alt="">
+                                                        <?php
+                                                            $product_image =[
+                                                                'src'  =>'assets/images/resource/products/'.$products->img_pr,
+                                                                'class'=>'img-responsive img-portfolio img-hover',
+                                                                'id'=>'g'
+                                                            ];
+                                                            echo img($product_image);
+                                                        ?>
+                                                    </a>
+                                                    <span class="tag">Promo!</span>
+                                                    <div class="link-box">
+                                                        <a href="#"><span><?=  $products->decs_pr  ?></span></a>
+                                                    </div>                
+                                                </div>
+                                                <div class="content-box">
+                                                    <h3><a><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
+                                                    <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
+                                                    <span>Stock: <?=  $products->stock_pr  ?></span><br>
+                                                    <?php if ($this->session->userdata('login')) { ?>
+                                                        <input type="hidden" name="id" value="1" />
+                                                        <input type="hidden" name="nama" value="Bali Honey" />
+                                                        <input type="hidden" name="harga" value="75000" />
+                                                        <input type="hidden" name="gambar" value="balihoney.png" />
+                                                        <input type="hidden" name="qty" value="1" />
+                                                        <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
+                                                    <?php } else {?>
+                                                        <button class="btn btn-success col" onclick="myFunction()">Keranjang</button>
+                                                        <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
+                                                    <?php } ?>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
