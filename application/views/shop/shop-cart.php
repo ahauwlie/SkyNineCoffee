@@ -123,7 +123,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="column pull-right col-md-5 col-sm-12 col-xs-12">
                                 <!--Totals Table-->
                                 <ul class="totals-table">
-                                    <li class="clearfix"><span class="col col-title">Sub-total</span><span class="col">$380.10</span></li>
+                                    <li class="clearfix"><span class="col col-title">Sub-total</span><span class="col">
+                                        <b>Rp <?php echo number_format($grand_total, 0,",","."); ?></b>
+                                    </span></li>
                                     <li class="clearfix"><span class="col col-title">Pengiriman</span>
                                     <div class="col">
                                         <div class="shopping-option">
@@ -136,7 +138,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         </div>
                                     </div>
                                     </li>
-                                    <li class="clearfix"><span class="col col-title">Total</span><span class="col">$380.10</span></li>
+                                    <li class="clearfix"><span class="col col-title">Diskon</span><span class="col">
+                                        <b> %</b>
+                                    </span></li>
+                                    <li class="clearfix"><span class="col col-title">Total</span><span class="col">
+                                        <b>Rp <?php echo number_format($grand_total, 0,",","."); ?></b>
+                                    </span></li>
                                 </ul>
                                 <div class="text-right"><button type="submit" class="theme-btn checkout-btn btn-style-four">Lakukan Pembayaran</button></div>
                             </div>
