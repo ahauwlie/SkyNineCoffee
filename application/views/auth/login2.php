@@ -20,7 +20,6 @@
 			</div>
 			<div class="login-right">
 				<form action="<?php echo site_url('login_validation'); ?>" method="post">
-					<div class="h2">Masuk</div>
 					<div class="form-group">  
 						<label class="control-label" for="pswd">Username</label>  
 						<div>  

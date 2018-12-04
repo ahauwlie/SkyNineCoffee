@@ -171,19 +171,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="sidebar-title"><h2>Recent Posts</h2></div>
 
                             <article class="post">
-                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/post-thumb-1.jpg') ?>" alt=""></a></figure>
+                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></a></figure>
                                 <div class="text"><a href="<?php echo site_url('blog/single'); ?>">Instances of the unusual word to end</a></div>
                                 <div class="post-info"><i class="fa fa-clock-o"></i> 13 Jan 2018</div>
                             </article>
 
                             <article class="post">
-                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/post-thumb-2.jpg') ?>" alt=""></a></figure>
+                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></a></figure>
                                 <div class="text"><a href="<?php echo site_url('blog/single'); ?>">The original text remain in the Lorem</a></div>
                                 <div class="post-info"><i class="fa fa-clock-o"></i> 25 Feb 2018</div>
                             </article>
                             
                             <article class="post">
-                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/post-thumb-3.jpg') ?>" alt=""></a></figure>
+                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></a></figure>
                                 <div class="text"><a href="<?php echo site_url('blog/single'); ?>">Exploit the fact that fills text will born </a></div>
                                 <div class="post-info"><i class="fa fa-clock-o"></i> 13 Jan 2018</div>
                             </article>

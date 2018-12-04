@@ -20,7 +20,6 @@
 			</div>
 			<div class="login-right">
 				<form action="<?php echo site_url('register/submit'); ?>" method="post">
-					<div class="h2">Daftar</div>
 					<div class="form-group">
 						<label class="control-label"></label>   
 						<input type="text" id="nama" name="full_name_us" placeholder="Full Name" required="">  

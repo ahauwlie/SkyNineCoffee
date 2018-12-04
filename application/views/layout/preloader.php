@@ -72,28 +72,21 @@
 
                 <!-- Main Menu End-->
                 <div class="outer-box clearfix">
-                    <!--Search Box-->
-                    <div class="search-box-outer">
-                        <div class="dropdown">
-                            <button class="search-box-btn dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="flaticon-magnifying-glass"></span></button>
-                            <ul class="dropdown-menu pull-right search-panel" aria-labelledby="dropdownMenu3">
-                                <li class="panel-outer">
-                                    <div class="form-container">
-                                        <form method="post" action="http://t.commonsupport.com/lescons/blog.html">
-                                            <div class="form-group">
-                                                <input type="search" name="field-name" value="" placeholder="Search Here" required>
-                                                <button type="submit" class="search-btn"><span class="fa fa-search"></span></button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="like-btn"><span class="icon flaticon-like"></span></div>
                     <div class="cart-btn">
                         <a href="<?php echo site_url('shop/cart'); ?>">
-                            <!-- <span class="count"> </span> data keranjang berapa banyak -->
+                            <span class="count">
+                                <?php if ($cart = $this->cart->contents()) { 
+                                    $total = 0;
+                                    $i = 1;
+                                    foreach ($cart as $item):
+                                        $total = $total + $i;
+                                    endforeach;
+                                    echo $total;
+                                ?>
+                                <?php } else { 
+                                    echo " "; 
+                                } ?>
+                            </span>
                             <span class="icon flaticon-shopping-bag"></span>
                         </a>
                     </div>

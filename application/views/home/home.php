@@ -217,7 +217,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <!--End Main Slider-->
 
     <!-- Testimonial Section -->
-    <section class="testimonial-section bg8">
+    <!-- <section class="testimonial-section bg8">
         <div class="auto-container">
             <div class="testimonial-carousel owl-carousel owl-theme">
 
@@ -252,7 +252,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!--End Testimonial Section -->
 
     <!-- News Section -->
