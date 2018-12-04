@@ -90,7 +90,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                 <div class="content-box">
                                                     <h3><a><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
                                                     <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
-                                                    <span>Stock: <?=  $products->stock_pr  ?></span><br>
                                                     <?php if ($this->session->userdata('login')) { ?>
                                                         <input type="hidden" name="id" value="<?=  $products->id_pr  ?>" />
                                                         <input type="hidden" name="nama" value="<?=  $products->nama_pr  ?>" />
@@ -114,25 +113,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!--Sidebar Side-->
                         <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
                             <aside class="sidebar shop-sidebar">
-
-                                <!--Price Filter Widget-->
-                                <div class="sidebar-widget price-filter-widget">
-                                    <div class="sidebar-title"><h2>Skala Harga</h2></div>
-                                    <div class="widget-content">
-                                        <div class="range-slider-one clearfix">
-                                            <div class="price-range-slider"></div>
-                                            <div class="clearfix">
-                                                <div class="pull-right">
-                                                    <a href="#" class="theme-btn">Saring Harga</a>
-                                                </div>
-                                                <div class="pull-left">
-                                                    <div class="title">Harga:</div>
-                                                    <!-- <div class="input"><input type="text" class="property-amount" name="field-name" readonly></div> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <!-- Categories -->
                                 <div class="sidebar-widget categories">

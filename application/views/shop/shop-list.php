@@ -45,6 +45,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <!--content side-->
                             <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                                 <div class="shop-upper-box clearfix">
+                                    <p><?php echo $tanggal; ?></p>
                                     <div class="items-label pull-left">Melihat <h4><b><?php echo $links; ?></b></h4> dari <?php foreach ($hasil as $row) : ?>
                                                                                         <span><?=  $row->num_of_time  ?></span>
                                                                                     <?php endforeach; ?> Hasil
@@ -66,34 +67,46 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
                                 <!-- Product Block Two -->
                                 <?php foreach ($results as $products) : ?>
-                                    <div class="product-block-two">
-                                        <div class="row clearfix">
-                                            <div class="image-box col-md-4 col-sm-4 col-xs-12">
-                                                <div class="image wow fadeInLeft">
-                                                    <figure><a href="product-details.html">
-                                                        <img src="#g" alt="">
-                                                            <?php
-                                                                $product_image =[
-                                                                    'src'  =>'assets/images/resource/products/'.$products->img_pr,
-                                                                    'class'=>'img-responsive img-portfolio img-hover',
-                                                                    'id'=>'g'
-                                                                ];
-                                                                echo img($product_image);
-                                                            ?>
-                                                    </a></figure>
-                                                    <span class="tag">Promo!</span>
+                                    <form method="post" action="<?php echo site_url();?>/Shop/tambah" method="post" accept-charset="utf-8">
+                                        <div class="product-block-two">
+                                            <div class="row clearfix">
+                                                <div class="image-box col-md-4 col-sm-4 col-xs-12">
+                                                    <div class="image wow fadeInLeft">
+                                                        <figure><a href="product-details.html">
+                                                            <img src="#g" alt="">
+                                                                <?php
+                                                                    $product_image =[
+                                                                        'src'  =>'assets/images/resource/products/'.$products->img_pr,
+                                                                        'class'=>'img-responsive img-portfolio img-hover',
+                                                                        'id'=>'g'
+                                                                    ];
+                                                                    echo img($product_image);
+                                                                ?>
+                                                        </a></figure>
+                                                        <span class="tag">Promo!</span>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="content-box col-md-8 col-sm-8 col-xs-12">
-                                                <div class="inner-box wow fadeInRight">
-                                                    <h3><a href="product-details.html"><?=  $products->nama_pr  ?></a></h3>
-                                                    <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
-                                                    <div class="text"><?=  $products->decs_pr  ?>.</div>
-                                                    <div class="link-box"><a href="shopping-cart.html" class="theme-btn btn-style-three"><i class="flaticon-shopping-bag"></i> Add to Cart</a></div>
+                                                <div class="content-box col-md-8 col-sm-8 col-xs-12">
+                                                    <div class="inner-box wow fadeInRight">
+                                                        <h3><a href="product-details.html"><?=  $products->nama_pr  ?></a></h3>
+                                                        <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
+                                                        <div class="text"><?=  $products->decs_pr  ?>.</div>
+                                                        <?php if ($this->session->userdata('login')) { ?>
+                                                            <input type="hidden" name="id" value="<?=  $products->id_pr  ?>" />
+                                                            <input type="hidden" name="nama" value="<?=  $products->nama_pr  ?>" />
+                                                            <input type="hidden" name="harga" value="<?=  $products->harga_pr  ?>" />
+                                                            <input type="hidden" name="gambar" value="<?=  $products->img_pr  ?>" />
+                                                            <input type="hidden" name="qty" value="1" />
+                                                            <button type="submit" class="theme-btn btn-style-three"><i class="flaticon-shopping-bag"></i> Beli</button>
+                                                        <?php } else {?>
+                                                            <a onclick="myFunction()" class="theme-btn btn-style-three"><i class="flaticon-shopping-bag"></i> Beli</a>
+                                                            <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
+                                                        <?php } ?>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </form>
                                 <?php endforeach; ?>
                             </div>
 
@@ -151,5 +164,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--Scroll to top-->
         <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
         <?php echo $js; ?>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
 </body>
 </html>

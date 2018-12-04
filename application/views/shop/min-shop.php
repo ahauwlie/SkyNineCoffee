@@ -44,6 +44,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!--content side-->
                         <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
                             <div class="shop-upper-box clearfix">
+                                <p><?php echo $tanggal; ?></p>
                                 <div class="items-label pull-left">Pengurutan <?php foreach ($hasil as $row) : ?>
                                                                         <span><?=  $row->num_of_time  ?></span>
                                                                     <?php endforeach; ?> Produk dari yang Termurah
@@ -68,27 +69,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <?php foreach ($min->result() as $products) : ?>
                                     <div class="product-block col-md-4 col-sm-6 col-xs-12">
                                         <div class="inner-box">
-                                            <div class="image-box">
-                                                <a href="<?php echo site_url('Shop/cart'); ?>">
-                                                    <img src="#g" alt="">
-                                                    <?php
-                                                        $product_image =[
-                                                            'src'  =>'assets/images/resource/products/'.$products->img_pr,
-                                                            'class'=>'img-responsive img-portfolio img-hover',
-                                                            'id'=>'g'
-                                                        ];
-                                                        echo img($product_image);
-                                                    ?>
-                                                </a>
-                                                <span class="tag">Promo!</span>
-                                                <div class="link-box">
-                                                    <a href="#"><span><?=  $products->decs_pr  ?></span></a>
-                                                </div>                       
-                                            </div>
-                                            <div class="content-box">
-                                                <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
-                                                <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
-                                            </div>
+                                            <form method="post" action="<?php echo site_url();?>/Shop/tambah" method="post" accept-charset="utf-8">
+                                                <div class="image-box">
+                                                    <a href="<?php echo site_url('Shop/cart'); ?>">
+                                                        <img src="#g" alt="">
+                                                        <?php
+                                                            $product_image =[
+                                                                'src'  =>'assets/images/resource/products/'.$products->img_pr,
+                                                                'class'=>'img-responsive img-portfolio img-hover',
+                                                                'id'=>'g'
+                                                            ];
+                                                            echo img($product_image);
+                                                        ?>
+                                                    </a>
+                                                    <span class="tag">Promo!</span>
+                                                    <div class="link-box">
+                                                        <a href="#"><span><?=  $products->decs_pr  ?></span></a>
+                                                    </div>                       
+                                                </div>
+                                                <div class="content-box">
+                                                    <h3><a href="<?php echo site_url('Shop/cart'); ?>"><?=  $products->nama_pr  ?> - <?=  $products->tipe_pr  ?></a></h3>
+                                                    <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
+                                                    <?php if ($this->session->userdata('login')) { ?>
+                                                        <input type="hidden" name="id" value="<?=  $products->id_pr  ?>" />
+                                                        <input type="hidden" name="nama" value="<?=  $products->nama_pr  ?>" />
+                                                        <input type="hidden" name="harga" value="<?=  $products->harga_pr  ?>" />
+                                                        <input type="hidden" name="gambar" value="<?=  $products->img_pr  ?>" />
+                                                        <input type="hidden" name="qty" value="1" />
+                                                        <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
+                                                    <?php } else {?>
+                                                        <a class="btn btn-success col" onclick="myFunction()"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</a>
+                                                        <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
+                                                    <?php } ?>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 <?php endforeach; ?>
@@ -99,25 +113,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <!--Sidebar Side-->
                         <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
                             <aside class="sidebar shop-sidebar">
-
-                                <!--Price Filter Widget-->
-                                <div class="sidebar-widget price-filter-widget">
-                                    <div class="sidebar-title"><h2>Skala Harga</h2></div>
-                                    <div class="widget-content">
-                                        <div class="range-slider-one clearfix">
-                                            <div class="price-range-slider"></div>
-                                            <div class="clearfix">
-                                                <div class="pull-right">
-                                                    <a href="#" class="theme-btn">Saring Harga</a>
-                                                </div>
-                                                <div class="pull-left">
-                                                    <div class="title">Harga:</div>
-                                                    <!-- <div class="input"><input type="text" class="property-amount" name="field-name" readonly></div> -->
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
 
                                 <!-- Categories -->
                                 <div class="sidebar-widget categories">
@@ -149,5 +144,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <!--Scroll to top-->
         <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
         <?php echo $js; ?>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("snackbar");
+                x.className = "show";
+                setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+            }
+        </script>
     </body>
 </html>

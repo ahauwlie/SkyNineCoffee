@@ -27,6 +27,7 @@ class Register extends CI_Controller {
 			'email_us' => $email,
 			'phone_num_us' => $no_telp,
 			'active' => 0,
+			'img_us' => 'author-1.jpg',
 			'id_ug' => 4
 		);
 		//tambahkan akun ke database

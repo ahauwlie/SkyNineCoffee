@@ -12,6 +12,7 @@ class Shop extends CI_Controller
     public function __construct ()
     {
         parent::__construct();
+        date_default_timezone_set('Asia/Jakarta');
         $this->load->model('model_product');
         $this->load->model('model_settings');
         $this->load->library('pagination');
@@ -50,6 +51,7 @@ class Shop extends CI_Controller
         $data['starts'] = $this->model_product->dis_products();
         $data['starts1'] = $this->model_product->dis_products1();
         $data['max'] = $this->model_product->maxprice();
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/max-shop',$data);
     }
 
@@ -63,6 +65,7 @@ class Shop extends CI_Controller
         $data['starts'] = $this->model_product->dis_products();
         $data['starts1'] = $this->model_product->dis_products1();
         $data['max'] = $this->model_product->maxprice();
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/max-shop1',$data);
     }
 
@@ -76,6 +79,7 @@ class Shop extends CI_Controller
         $data['starts'] = $this->model_product->dis_products();
         $data['starts1'] = $this->model_product->dis_products1();
         $data['min'] = $this->model_product->minprice();
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/min-shop',$data);
     }
 
@@ -89,6 +93,7 @@ class Shop extends CI_Controller
         $data['starts'] = $this->model_product->dis_products();
         $data['starts1'] = $this->model_product->dis_products1();
         $data['min'] = $this->model_product->minprice();
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/min-shop1',$data);
     }
 
@@ -102,6 +107,7 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['comes'] = $this->model_product->showme($tipe_pr);
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/shop-grid-filter-tipe',$data);
     }
 
@@ -115,6 +121,7 @@ class Shop extends CI_Controller
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
         $data['comes'] = $this->model_product->showme1($tag_pr);
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/shop-grid-filter-tag',$data);
     }
 
@@ -136,6 +143,7 @@ class Shop extends CI_Controller
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $data['tanggal'] = date_format(date_create(date('Y/m/d H:i:s')), "d M Y H:i:s");
         $this->load->view('shop/shop-list', $data);
     }
 
