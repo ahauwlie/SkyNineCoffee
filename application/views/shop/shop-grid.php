@@ -92,10 +92,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                     <span class="price">Rp. <?=  $products->harga_pr  ?>,-</span>
                                                     <span>Stock: <?=  $products->stock_pr  ?></span><br>
                                                     <?php if ($this->session->userdata('login')) { ?>
-                                                        <input type="hidden" name="id" value="1" />
-                                                        <input type="hidden" name="nama" value="Bali Honey" />
-                                                        <input type="hidden" name="harga" value="75000" />
-                                                        <input type="hidden" name="gambar" value="balihoney.png" />
+                                                        <input type="hidden" name="id" value="<?=  $products->id_pr  ?>" />
+                                                        <input type="hidden" name="nama" value="<?=  $products->nama_pr  ?>" />
+                                                        <input type="hidden" name="harga" value="<?=  $products->harga_pr  ?>" />
+                                                        <input type="hidden" name="gambar" value="<?=  $products->img_pr  ?>" />
                                                         <input type="hidden" name="qty" value="1" />
                                                         <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
                                                     <?php } else {?>
