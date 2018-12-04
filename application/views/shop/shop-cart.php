@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </table>
                                 <?php } else
                                     {
-                                        echo "<h3>Keranjang Belanja masih kosong</h3>"; 
+                                        echo "<h3>Keranjang belanja anda masih kosong :(<br> Belanja dulu yuk...</h3>"; 
                                     }   
                                 ?>
                             </div>
@@ -113,9 +113,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 </div>
 
                             </div>
-                            <div class="form-group pull-right">
-                                <button type="button" class="theme-btn cart-btn btn-style-three">Segarkan Keranjang</button>
-                            </div>
                         </div>
 
 
@@ -124,7 +121,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 <!--Totals Table-->
                                 <ul class="totals-table">
                                     <li class="clearfix"><span class="col col-title">Sub-total</span><span class="col">
-                                        <b>Rp <?php echo number_format($grand_total, 0,",","."); ?></b>
+                                        <?php if ($cart = $this->cart->contents()) { ?>
+                                            <b>Rp <?php echo number_format($grand_total, 0,",","."); ?></b>
+                                        <?php } else { echo "<b>Rp 0,-</b>"; }   
+                                        ?>
                                     </span></li>
                                     <li class="clearfix"><span class="col col-title">Pengiriman</span>
                                     <div class="col">
@@ -142,7 +142,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <b> %</b>
                                     </span></li>
                                     <li class="clearfix"><span class="col col-title">Total</span><span class="col">
-                                        <b>Rp <?php echo number_format($grand_total, 0,",","."); ?></b>
+                                        <?php if ($cart = $this->cart->contents()) { ?>
+                                            <b>Rp <?php echo number_format($grand_total, 0,",","."); ?></b>
+                                        <?php } else { echo "<b>Rp 0,-</b>"; }   
+                                        ?>
                                     </span></li>
                                 </ul>
                                 <div class="text-right"><button type="submit" class="theme-btn checkout-btn btn-style-four">Lakukan Pembayaran</button></div>
