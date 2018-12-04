@@ -89,7 +89,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                             <td colspan="4" align="right">
                                             <a href="<?php echo site_url()?>/Shop/hapus/all" class ='btn btn-sm btn-danger'>Kosongkan Cart</a>
                                             <button class='btn btn-sm btn-success'  type="submit">Update Cart</button>
-                                            <a href="<?php echo site_url()?>/Shop/check_out"  class ='btn btn-sm btn-primary'>Check Out</a>
+                                            <a href="<?php echo site_url()?>/Shop/proses_order"  class ='btn btn-sm btn-primary'>Check Out</a>
                                         </tr>
                                     </tbody>
                                 </table>

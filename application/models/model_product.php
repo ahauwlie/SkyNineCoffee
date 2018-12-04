@@ -95,4 +95,15 @@ class Model_product extends CI_Model {
 			return $this->db->get('product');
     	}
 		
+		public function tambah_order($data)
+		{
+			$this->db->insert('transaksi', $data);
+			$id = $this->db->insert_id();
+			return (isset($id)) ? $id : FALSE;
+		}
+		
+		public function tambah_detail_order($data)
+		{
+			$this->db->insert('trans_detail', $data);
+		}
 }

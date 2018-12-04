@@ -203,4 +203,46 @@ class Shop extends CI_Controller
         }
         redirect('Shop/cart');
     }
+
+    public function proses_order()
+    {
+        $total = 0;
+        $g_tot = 0;
+        if ($cart = $this->cart->contents())
+            {
+                foreach ($cart as $item):
+                    $total = $item['price'] * $item['qty'];
+                    $g_tot = $g_tot + $total;
+                endforeach;
+            }
+        $data_order = array(
+            'id_us' => $this->session->userdata['login']['id_us'],
+            'id_disc' => '5',
+            'date_tr' => date('Y-m-d H:i:s'),
+            'total_tr' => $g_tot
+        );
+        $id_order = $this->model_product->tambah_order($data_order);
+        //-------------------------Input data detail order-----------------------       
+        if ($cart = $this->cart->contents())
+            {
+                foreach ($cart as $item)
+                    {
+                        $data_detail = array(
+                            'id_tr' =>$id_order,
+                            'id_pr' => $item['id'],
+                            'qty' => $item['qty'],
+                            'nama_pr' => $item['name'],
+                            'harga_td' => $item['price'] * $item['qty']
+                        );         
+                        $proses = $this->model_product->tambah_detail_order($data_detail);
+                    }
+            }
+        //-------------------------Hapus shopping cart--------------------------        
+        $this->cart->destroy();
+        $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
+        $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
+        $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
+        $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $this->load->view('shop/sukses', $data);    
+    }
 }
