@@ -99,7 +99,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                                         <input type="hidden" name="qty" value="1" />
                                                         <button type="submit" class="btn btn-sm btn-success"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</button>
                                                     <?php } else {?>
-                                                        <button class="btn btn-success col" onclick="myFunction()">Keranjang</button>
+                                                        <a class="btn btn-success col" onclick="myFunction()"><i class="glyphicon glyphicon-shopping-cart"></i> Beli</a>
                                                         <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
                                                     <?php } ?>
                                                 </div>
