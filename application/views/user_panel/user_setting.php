@@ -39,7 +39,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   <!-- left column -->
                   <div class="col-md-3">
                     <div class="text-center">
-                      <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                      <?php  
+                        $session = $this->session->userdata('login');
+                        $foto = $session['img_us'];
+                      ?>
+                      <img src="<?php echo base_url('assets/images/resource/photo_user/'.$foto) ?>" class="avatar img-circle" alt="avatar">
                       <h6>Upload a different photo...</h6>
                       
                       <input type="file" class="form-control">
@@ -55,56 +59,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div> -->
                     <h3>Personal info</h3>
                     
-                    <form class="form-horizontal" role="form">
+                    <form class="form-horizontal" method="post" enctype="multipart/form-data">
                       <div class="form-group">
                         <label class="col-lg-3 control-label">Full name:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="text" value="">
+                          <input name="fnama" id="fnama" class="form-control" type="text" value="<?php echo $user['full_name_us']; ?>">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-lg-3 control-label">Username:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="text" value="">
+                          <input name="uname" id="uname" class="form-control" type="text" value="<?php echo $user['username_us']; ?>">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-lg-3 control-label">Password:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="password" value="">
+                          <input name="pass" id="pass" class="form-control" type="password" value="<?php echo $user['password_us']; ?>">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-lg-3 control-label">Email:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="text" value="">
+                          <input name="email" id="email" class="form-control" type="text" value="<?php echo $user['email_us']; ?>">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-lg-3 control-label">No Hp:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="text" value="">
+                          <input name="hp" id="hp" class="form-control" type="text" value="<?php echo $user['phone_num_us']; ?>">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-lg-3 control-label">Tanggal Lahir:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="text" value="">
+                          <input name="ultah" id="ultah" class="form-control" type="text" value="<?php echo $user['date_birth_us']; ?>">
                           <p>*1992-12-28</p>
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-lg-3 control-label">Alamat:</label>
                         <div class="col-lg-8">
-                          <input class="form-control" type="text" value="">
+                          <input name="alamat" id="alamat" class="form-control" type="text" value="<?php echo $user['address_us']; ?>">
                         </div>
                       </div>
                       <div class="form-group">
                         <label class="col-md-3 control-label"></label>
                         <div class="col-md-8">
-                          <input type="button" class="btn btn-primary" value="Save Changes">
+                          <button class="btn btn-primary"> Ubah</button>
                           <span></span>
-                          <input type="reset" class="btn btn-default" value="Cancel">
+                          <a href="<?php echo site_url('Home_log'); ?>" class="btn btn-danger">Batal</a>
                         </div>
                       </div>
                     </form>
