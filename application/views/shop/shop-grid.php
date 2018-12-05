@@ -71,7 +71,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                         <div class="inner-box">
                                             <form method="post" action="<?php echo site_url();?>/Shop/tambah" method="post" accept-charset="utf-8">
                                                 <div class="image-box">
-                                                    <a href="<?php echo site_url('Shop/cart'); ?>">
+                                                    <a>
                                                         <img src="#g" alt="">
                                                         <?php
                                                             $product_image =[

@@ -49,159 +49,79 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             
                 <!--content side-->
                 <div class="content-side col-lg-9 col-md-8 col-sm-12 col-xs-12">
-
                     <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box">                         
-                                <div class="image"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/blog-1.jpg') ?>" alt=""></a>
+                    <?php foreach ($artikel as $row) : ?>
+                        <div class="news-block">
+                            <div class="inner-box">
+                                <div class="image-box">                         
+                                    <div class="image">
+                                        <a>
+                                            <img src="#g" alt="">
+                                            <?php
+                                                $product_image =[
+                                                    'src'  =>'assets/images/resource/artikel/'.$row->thumb_ar,
+                                                    'class'=>'img-responsive img-portfolio img-hover',
+                                                    'id'=>'g'
+                                                ];
+                                                echo img($product_image);
+                                            ?>
+                                        </a>
+                                    </div>
+                                    <span class="tag"><?=  $row->tag_ar  ?></span>
                                 </div>
-                                <span class="tag">Decorations</span>
-                            </div>
-                            <div class="lower-content">
-                                <ul class="info">
-                                    <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                    <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
-                                </ul>
-                                <h3><a href="<?php echo site_url('blog/single'); ?>">Be deluxe apartment in the sky</a></h3>
-                                <div class="text">The biggest gift would be from me and the card attached would say thank you of the pie so this is the tale of our long long time they'll have to make the best of things its an uphill climb.</div>
+                                <div class="lower-content">
+                                    <ul class="info">
+                                        <li><i class="fa fa-user-o"></i> <?=  $row->sumber_ar  ?></li>
+                                        <li><i class="fa fa-clock-o"></i> <?=  $row->date_ar  ?></li>
+                                    </ul>
+                                    <h3></i> <?=  $row->judul_ar  ?></h3>
+                                </div>
                             </div>
                         </div>
+                    <?php endforeach; ?>
+                    <div class="items-label pull-left">Melihat <button class="btn btn-info"><h4><b><?php echo $links; ?></b></h4></button> dari 
+                        <?php foreach ($hasil as $row) : ?>
+                            <span><?=  $row->num_of_time  ?></span>
+                        <?php endforeach; ?> Hasil
                     </div>
-
-                    <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box">                         
-                                <div class="image"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/blog-2.jpg') ?>" alt=""></a>
-                                </div>
-                                <span class="tag">Decorations</span>
-                            </div>
-                            <div class="lower-content">
-                                <ul class="info">
-                                    <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                    <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
-                                </ul>
-                                <h3><a href="<?php echo site_url('blog/single'); ?>">Various letters and symbols specific to the output</a></h3>
-                                <div class="text">The biggest gift would be from me and the card attached would say thank you of the pie so this is the tale of our long long time they'll have to make the best of things its an uphill climb.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box">                         
-                                <div class="image"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/blog-3.jpg') ?>" alt=""></a>
-                                </div>
-                                <span class="tag">Decorations</span>
-                            </div>
-                            <div class="lower-content">
-                                <ul class="info">
-                                    <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                    <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
-                                </ul>
-                                <h3><a href="<?php echo site_url('blog/single'); ?>">Might also explain why one can now find slightly</a></h3>
-                                <div class="text">The biggest gift would be from me and the card attached would say thank you of the pie so this is the tale of our long long time they'll have to make the best of things its an uphill climb.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- News Block -->
-                    <div class="news-block">
-                        <div class="inner-box">
-                            <div class="image-box">                         
-                                <div class="image"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/blog-4.jpg') ?>" alt=""></a>
-                                </div>
-                                <span class="tag">Decorations</span>
-                            </div>
-                            <div class="lower-content">
-                                <ul class="info">
-                                    <li><i class="fa fa-user-o"></i> by Mike adam</li>
-                                    <li><i class="fa fa-clock-o"></i> 13 Jan 2018</li>
-                                </ul>
-                                <h3><a href="<?php echo site_url('blog/single'); ?>">Publication going to print with overlooked</a></h3>
-                                <div class="text">The biggest gift would be from me and the card attached would say thank you of the pie so this is the tale of our long long time they'll have to make the best of things its an uphill climb.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Styled Pagination -->
-                    <!-- <div class="styled-pagination text-center">
-                        <ul class="clearfix">
-                            <li><a href="#">1</a></li>
-                            <li class="active"><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#"><i class="fa fa-angle-right"></i></a></li>
-                        </ul>
-                    </div> -->
-
                 </div>
 
                 <!--Sidebar Side-->
                 <div class="sidebar-side col-lg-3 col-md-4 col-sm-12 col-xs-12">
                     <aside class="sidebar">
 
-                        <!-- Search Box -->
-                        <div class="sidebar-widget search-box">
-                            <div class="sidebar-title"><h2>Search Keyword</h2></div>
-                            <form method="post" action="http://t.commonsupport.com/lescons/contact.html">
-                                <div class="form-group">
-                                    <input type="search" name="search-field" value="" placeholder="Search Keyword" required="">
-                                    <button type="submit"><span class="icon flaticon-search-2"></span></button>
-                                </div>
-                            </form>
-                        </div>
-
-                        <!-- Categories -->
-                        <div class="sidebar-widget categories">
-                            <div class="sidebar-title"><h2>Categories</h2></div>
-                            <ul class="category-list">
-                                <li><a href="#">Home Decors  <span>(50)</span></a></li>
-                                <li><a href="#">Furniture   <span>(06)</span></a></li>
-                                <li><a href="#">Women’s   <span>(84)</span></a></li>
-                                <li><a href="#">Men’s <span>(70)</span></a></li>
-                                <li><a href="#">Fashions    <span>(26)</span></a></li>
-                                <li><a href="#">Wrist Watches    <span>(30)</span></a></li>
-                            </ul>
-                        </div>
-
                         <!-- Popular Posts -->
                         <div class="sidebar-widget popular-posts">
                             <div class="sidebar-title"><h2>Recent Posts</h2></div>
-
-                            <article class="post">
-                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></a></figure>
-                                <div class="text"><a href="<?php echo site_url('blog/single'); ?>">Instances of the unusual word to end</a></div>
-                                <div class="post-info"><i class="fa fa-clock-o"></i> 13 Jan 2018</div>
-                            </article>
-
-                            <article class="post">
-                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></a></figure>
-                                <div class="text"><a href="<?php echo site_url('blog/single'); ?>">The original text remain in the Lorem</a></div>
-                                <div class="post-info"><i class="fa fa-clock-o"></i> 25 Feb 2018</div>
-                            </article>
-                            
-                            <article class="post">
-                                <figure class="post-thumb"><a href="<?php echo site_url('blog/single'); ?>"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></a></figure>
-                                <div class="text"><a href="<?php echo site_url('blog/single'); ?>">Exploit the fact that fills text will born </a></div>
-                                <div class="post-info"><i class="fa fa-clock-o"></i> 13 Jan 2018</div>
-                            </article>
+                            <?php foreach (array_slice($ar_side->result(), 0, 3) as $start ) : ?>
+                                <article class="post">
+                                    <figure class="post-thumb">
+                                        <a>
+                                            <img src="#j" alt="">
+                                            <?php
+                                                $u_image =[
+                                                    'src'  =>'assets/images/resource/artikel/'.$start->thumb_ar,
+                                                    'class'=>'img-responsive img-portfolio img-hover',
+                                                    'id'=>'j'
+                                                ];
+                                                echo img($u_image);
+                                            ?>
+                                        </a>
+                                    </figure>
+                                    <div class="text"><?=  $start->judul_ar  ?></div>
+                                    <div class="post-info"><i class="fa fa-clock-o"></i> <?=  $start->date_ar  ?></div>
+                                </article>
+                            <?php endforeach; ?>
                         </div>
 
                         <!-- Tags -->
                         <div class="sidebar-widget">
                             <div class="sidebar-title"><h2>tags</h2></div>
-                            <ul class="tag-list">
-                                <li><a href="#">Chairs</a></li>
-                                <li><a href="#">Sofas</a></li>
-                                <li><a href="#">Furnitures</a></li>
-                                <li><a href="#">Bottles</a></li>
-                                <li><a href="#">Home Decors</a></li>
-                                <li><a href="#">Lamp</a></li>
-                                <li><a href="#">Pots</a></li>
-                                <li><a href="#">Wall Clock</a></li>
-                            </ul>
+                            <a>
+                                <?php foreach ($starts1 as $start ) : ?>
+                                    <?=  anchor('Blog/showme/'.$start->tag_ar,$start->tag_ar,['class'=>'btn btn-default']) ?>
+                                <?php endforeach; ?>
+                            </a>
                         </div>
                     </aside>
                 </div>
