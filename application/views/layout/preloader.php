@@ -37,10 +37,10 @@
                                     <!-- Menu Footer-->
                                     <li class="user-footer">
                                         <div class="pull-left">
-                                            <a href="#" class="btn btn-default btn-flat">Profile</a>
+                                            <a href="<?php echo site_url('User_panel'); ?>" class="btn btn-info btn-flat">Profile</a>
                                         </div>
                                         <div class="pull-right">
-                                            <a href="<?php echo site_url('login/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
+                                            <a href="<?php echo site_url('login/logout'); ?>" class="btn btn-danger btn-flat">Sign out</a>
                                         </div>
                                     </li>
                                     <?php 
