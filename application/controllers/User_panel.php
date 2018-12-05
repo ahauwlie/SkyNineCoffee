@@ -21,10 +21,12 @@ class User_panel extends CI_Controller {
         $id = $this->session->userdata['login']['id_us'];
         if ($_SERVER['REQUEST_METHOD'] == "POST")
         {
+            $password = $this->input->post('pass');
+            $pass = md5($password);
             $data = Array (
               'id_us' => $id,
               'username_us' => $this->input->post('uname'),
-              'password_us' => $this->input->post('pass'),
+              'password_us' => getHashedPassword($pass),
               'full_name_us' => $this->input->post('fnama'),
               'email_us' => $this->input->post('email'),
               'phone_num_us' => $this->input->post('hp'),

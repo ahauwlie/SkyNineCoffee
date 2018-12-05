@@ -42,7 +42,6 @@
               <th>Id</th>
               <th>Id Ugrup</th>
               <th>Username</th>
-              <th>Passsword</th>
               <th>Nama Lengkap</th>
               <th>Email</th>
               <th>Nomer HP</th>
@@ -60,7 +59,6 @@
                   echo "<td>".$row['id_us']."</td>";
                   echo "<td>".$row['id_ug']."</td>";
                   echo "<td>".$row['username_us']."</td>";
-                  echo "<td>".$row['password_us']."</td>";
                   echo "<td>".$row['full_name_us']."</td>";
                   echo "<td>".$row['email_us']."</td>";
                   echo "<td>".$row['phone_num_us']."</td>";
@@ -82,7 +80,6 @@
               <th>Id</th>
               <th>Id Ugrup</th>
               <th>Username</th>
-              <th>Passsword</th>
               <th>Nama Lengkap</th>
               <th>Email</th>
               <th>Nomer HP</th>

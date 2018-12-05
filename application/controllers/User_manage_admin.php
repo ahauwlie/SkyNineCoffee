@@ -46,10 +46,12 @@ class User_manage_admin extends CI_Controller {
           if($id_ug == 1){
             if ($_SERVER['REQUEST_METHOD'] == "POST")
             {
+                $password = $this->input->post('pass');
+                $pass = md5($password);
                 $data = Array (
                   'id_ug' => $this->input->post('idug'),
                   'username_us' => $this->input->post('uname'),
-                  'password_us' => $this->input->post('pass'),
+                  'password_us' => getHashedPassword($pass),
                   'full_name_us' => $this->input->post('fnama'),
                   'email_us' => $this->input->post('email'),
                   'phone_num_us' => $this->input->post('hp'),
@@ -113,11 +115,13 @@ class User_manage_admin extends CI_Controller {
           if($id_ug == 1){
             if ($_SERVER['REQUEST_METHOD'] == "POST")
             {
+                $password = $this->input->post('pass');
+                $pass = md5($password);
                 $data = Array (
                   'id_us' => $id,
                   'id_ug' => $this->input->post('idug'),
                   'username_us' => $this->input->post('uname'),
-                  'password_us' => $this->input->post('pass'),
+                  'password_us' => getHashedPassword($pass),
                   'full_name_us' => $this->input->post('fnama'),
                   'email_us' => $this->input->post('email'),
                   'phone_num_us' => $this->input->post('hp'),
