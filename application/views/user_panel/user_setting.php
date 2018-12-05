@@ -43,20 +43,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         $session = $this->session->userdata('login');
                         $foto = $session['img_us'];
                       ?>
-                      <img src="<?php echo base_url('assets/images/resource/photo_user/'.$foto) ?>" class="avatar img-circle" alt="avatar">
-                      <h6>Upload a different photo...</h6>
-                      
-                      <input type="file" class="form-control">
+                      <img src="<?php echo base_url('assets/images/resource/photo_user/'.$foto) ?>" class="avatar img-circle" alt="avatar" height="300" width="200">
+                      <?php echo form_open("User_panel/tambah", array('enctype'=>'multipart/form-data')); ?>
+                        <input type="file" class="form-control" name="input_gambar">
+                        <input type="submit" name="submit" value="Simpan">
+                        <br><br><p>*setelah menyimpan foto, anda akan melakukan login ulang</p>
+                      <?php echo form_close(); ?>
+
                     </div>
                   </div>
                   
                   <!-- edit form column -->
                   <div class="col-md-9 personal-info">
-                    <!-- <div class="alert alert-info alert-dismissable">
-                      <a class="panel-close close" data-dismiss="alert">×</a> 
-                      <i class="fa fa-coffee"></i>
-                      This is an <strong>.alert</strong>. Use this to show important messages to the user.
-                    </div> -->
+                    <div style="color: red;"><?php echo (isset($message))? $message : ""; ?></div>
                     <h3>Personal info</h3>
                     
                     <form class="form-horizontal" method="post" enctype="multipart/form-data">
