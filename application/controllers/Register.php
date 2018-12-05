@@ -23,7 +23,7 @@ class Register extends CI_Controller {
 		//memasukan ke array
 		$data = array(
 			'username_us' => $username1,
-			'password_us' => $pass,
+			'password_us' => getHashedPassword($pass),
 			'full_name_us' => $nama,
 			'email_us' => $email,
 			'phone_num_us' => $no_telp,
