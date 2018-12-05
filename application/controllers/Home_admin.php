@@ -14,6 +14,7 @@ class Home_admin extends CI_Controller
 	    
 	    $this->load->model('model_product');
 	    $this->load->model('user_manage');
+	    $this->load->model('penjualan_manage');
   	}
 
     public function index() {
@@ -34,6 +35,7 @@ class Home_admin extends CI_Controller
 			        $data['preloader'] = $this->load->view('layout/preloader1.php', NULL, TRUE);
 			        $data['hasil_barang'] = $this->model_product->countRow();
 			        $data['hasil_user'] = $this->user_manage->countRow();
+			        $data['hasil_penjualan'] = $this->penjualan_manage->countRow();
 			        $this->load->view('admin/home/index', $data);
 			    }
 			}

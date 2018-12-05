@@ -47,7 +47,8 @@
                                         $session = $this->session->userdata('login');
                                         $id_ug = $session['id_ug'];
                                         if($id_ug == 1){
-                                            echo '<a href="Home_admin">Kembali ke panel Admin</a>';
+                                            $home = site_url('Home_admin');
+                                            echo "<a href='$home'>Kembali ke panel Admin</a>";
                                         }
                                     ?>
                                   </ul>
