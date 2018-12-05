@@ -105,14 +105,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <textarea name="message" placeholder="Your Comment"></textarea>
                         </div>
 
-                        <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-                            <input type="text" name="username" placeholder="Your Name" required="">
-                        </div>
-                        
-                        <div class="col-md-6 col-sm-12 col-xs-12 form-group">
-                            <input type="email" name="email" placeholder="Email" required="">
-                        </div>
-
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
                             <button class="theme-btn btn-style-four" type="submit" name="Submit Now">Post Comment</button>
                         </div>
