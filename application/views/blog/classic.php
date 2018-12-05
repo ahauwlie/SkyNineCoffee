@@ -96,7 +96,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <?php foreach (array_slice($ar_side->result(), 0, 3) as $start ) : ?>
                                 <article class="post">
                                     <figure class="post-thumb">
-                                        <a>
+                                        <a href="<?php echo site_url('Blog/single/'.$start->id_ar); ?>">
                                             <img src="#j" alt="">
                                             <?php
                                                 $u_image =[

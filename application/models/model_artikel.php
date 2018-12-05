@@ -1,48 +1,12 @@
 <?php
 
 class Model_artikel extends CI_Model {
-	
-		public function getAll()
-	    {
-	        return $this->db->get('product')->result_array();
-	    }
 
-	    public function insert($data)
+	    function nyoba($id)
 	    {
-	        $this->db->insert('product', $data);
+	        $query = $this->db->get_where('artikel', array('id_ar' => $id));
+			return $query->row_array();
 	    }
-
-	    public function delete($id)
-	    {
-	        $this->db->delete('product', array('id_pr' => $id));
-	    }
-
-	    public function getSpecified($id)
-	    {
-	        return $this->db->get_where('product', array('id_pr' => $id))->row_array();
-	    }
-
-	    public function update($data, $id)
-	    {
-	        $this->db->update('product', $data, array('id_pr' => $id));
-	    }
-	    
-		public function all_products()
-		{ 
-			$show = $this->db->get('product');
-			if($show->num_rows() > 0 ) {
-					return $show->result();
-			} else {
-					 return array();
-			}
-		}
-
-		public function dis_products()
-		{
-			$this->db->distinct();
-			$query = $this->db->query('SELECT DISTINCT tipe_pr FROM product');
-			return $query->result();
-		}
 
 		public function dis_products1()
 		{
@@ -83,16 +47,4 @@ class Model_artikel extends CI_Model {
 			$this->db->order_by('date_ar','desc');
 			return $this->db->get('artikel');
     	}
-		
-		public function tambah_order($data)
-		{
-			$this->db->insert('transaksi', $data);
-			$id = $this->db->insert_id();
-			return (isset($id)) ? $id : FALSE;
-		}
-		
-		public function tambah_detail_order($data)
-		{
-			$this->db->insert('trans_detail', $data);
-		}
 }

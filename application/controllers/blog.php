@@ -36,11 +36,12 @@ class Blog extends CI_Controller
         $this->load->view('blog/classic', $data);
     }
 
-    public function single() {
+    public function single($id) {
         $data['css'] = $this->load->view('include/style.php', NULL, TRUE);
         $data['js'] = $this->load->view('include/script.php', NULL, TRUE);
         $data['footer'] = $this->load->view('layout/footer.php', NULL, TRUE);
         $data['preloader'] = $this->load->view('layout/preloader.php', NULL, TRUE);
+        $data['lol'] = $this->model_artikel->nyoba($id);
         $this->load->view('blog/single', $data);
     }
 }
