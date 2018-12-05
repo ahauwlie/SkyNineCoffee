@@ -55,6 +55,14 @@
                               <?php } else { ?>
                                   <ul class="dropdown-menu">
                                     <li>Silahkan lakukan aktivasi pada email anda: <a href="http://www.gmail.com/"><?php echo $email; ?></a></li>
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="<?php echo site_url('User_panel'); ?>" class="btn btn-info btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <a href="<?php echo site_url('login/logout'); ?>" class="btn btn-danger btn-flat">Sign out</a>
+                                        </div>
+                                    </li>
                                   </ul>
                               <?php } ?>
                             </li>
