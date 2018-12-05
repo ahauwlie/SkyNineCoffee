@@ -15,6 +15,7 @@ class Register extends CI_Controller {
 		$this->load->helper(array('form', 'url'));
 		$username1 = $this->input->post('username_us');
 		$password = $this->input->post('password_us');
+		$pass = md5($password);
 		$nama = $this->input->post('full_name_us');
 		$email = $this->input->post('email_us');
 		$no_telp = $this->input->post('phone_num_us');
@@ -22,7 +23,7 @@ class Register extends CI_Controller {
 		//memasukan ke array
 		$data = array(
 			'username_us' => $username1,
-			'password_us' => $password,
+			'password_us' => $pass,
 			'full_name_us' => $nama,
 			'email_us' => $email,
 			'phone_num_us' => $no_telp,
