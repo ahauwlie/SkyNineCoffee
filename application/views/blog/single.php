@@ -99,14 +99,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <!--Comment Form-->
             <div class="comment-form">
                 <div class="group-title"><h3>Post a Comment</h3></div>
-                <form method="post" action="http://t.commonsupport.com/lescons/blog.html"> 
+                <form method="post" action="#"> 
                     <div class="row clearfix">
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
                             <textarea name="message" placeholder="Your Comment"></textarea>
                         </div>
 
                         <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <button class="theme-btn btn-style-four" type="submit" name="Submit Now">Post Comment</button>
+                            <?php if ($this->session->userdata('login')) { ?>
+                                <input type="hidden" name="id_us" value="<?=  $row->id_us  ?>" />
+                                <input type="hidden" name="nama_user_cm" value="<?=  $row->nama_user_cm  ?>" />
+                                <input type="hidden" name="date_cm" value="<?=  $row->date_cm  ?>" />
+                                <input type="hidden" name="id_ar" value="<?=  $row->id_ar  ?>" />
+                                <input type="hidden" name="isi_cm" value="<?=  $row->isi_cm  ?>" />
+                                <button class="theme-btn btn-style-four" type="submit" name="submit">Post Comment</button>
+                            <?php } else { ?>
+                                <a class="theme-btn btn-style-four" onclick="myFunction()">Post Comment</a>
+                                <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
+                            <?php } ?>
                         </div>
                     </div>
                 </form>
@@ -123,5 +133,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="icon fa fa-angle-double-up"></span></div>
 <?php echo $js; ?>
+<script>
+    function myFunction() {
+        var x = document.getElementById("snackbar");
+        x.className = "show";
+        setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    }
+</script>
 </body>
 </html>
