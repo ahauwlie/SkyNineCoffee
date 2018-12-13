@@ -59,6 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <li><i class="fa fa-user-o"></i> <?php echo $lol['sumber_ar']; ?></li>
                             <li><i class="fa fa-clock-o"></i> <?php echo $lol['date_ar']; ?></li>
                         </ul>
+                        <h1><?php echo $lol['judul_ar']; ?></h1><br>
                         <div class="text">
                             <p><?php echo $lol['isi_ar']; ?></p>
                         </div>
