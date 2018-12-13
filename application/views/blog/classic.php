@@ -55,7 +55,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <div class="inner-box">
                                 <div class="image-box">                         
                                     <div class="image">
-                                        <a>
+                                        <a href="<?php echo site_url('Blog/single/'.$start->id_ar); ?>">
                                             <img src="#g" alt="">
                                             <?php
                                                 $product_image =[

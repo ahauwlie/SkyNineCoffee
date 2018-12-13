@@ -65,62 +65,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-
-            <!--Comments Area-->
-            <div class="comments-area">
-                <div class="group-title"><h3>Comments (02)</h3></div>
-                
-                <!--Comment Box-->
-                <div class="comment-box">
-                    <div class="comment">
-                        <div class="author-thumb"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></div>
-                        <div class="comment-inner">
-                            <div class="comment-info">Jason Jordan</div>
-                            <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum is that the text does distract posers of the past used dummy texts as lyrics.</div>
-                            <a href="#" class="reply-btn">reply</a>
-                        </div>
-                    </div>
-                </div> 
-
-                <!--Comment Box-->
-                <div class="comment-box reply-comment">
-                    <div class="comment">
-                        <div class="author-thumb"><img src="<?php echo base_url('/assets/images/resource/author-1.jpg') ?>" alt=""></div>
-                        <div class="comment-inner">
-                            <div class="comment-info">Mark Henry</div>
-                            <div class="text">The advantage of its Latin origins and the relative meaninglessness of Lorum Ipsum is that the text does distract posers of the past used dummy texts as lyrics.</div>
-                            <a href="#" class="reply-btn">reply</a>
-                        </div>
-                    </div>
-                </div>                        
-            </div>
-            <!--End Comments Area-->
-
-            <!--Comment Form-->
-            <div class="comment-form">
-                <div class="group-title"><h3>Post a Comment</h3></div>
-                <form method="post" action="#"> 
-                    <div class="row clearfix">
-                        <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <textarea name="message" placeholder="Your Comment"></textarea>
-                        </div>
-
-                        <div class="col-md-12 col-sm-12 col-xs-12 form-group">
-                            <?php if ($this->session->userdata('login')) { ?>
-                                <input type="hidden" name="id_us" value="<?=  $row->id_us  ?>" />
-                                <input type="hidden" name="nama_user_cm" value="<?=  $row->nama_user_cm  ?>" />
-                                <input type="hidden" name="date_cm" value="<?=  $row->date_cm  ?>" />
-                                <input type="hidden" name="id_ar" value="<?=  $row->id_ar  ?>" />
-                                <input type="hidden" name="isi_cm" value="<?=  $row->isi_cm  ?>" />
-                                <button class="theme-btn btn-style-four" type="submit" name="submit">Post Comment</button>
-                            <?php } else { ?>
-                                <a class="theme-btn btn-style-four" onclick="myFunction()">Post Comment</a>
-                                <div id="snackbar">Silahkan Login Terlebih Dahulu..</div>
-                            <?php } ?>
-                        </div>
-                    </div>
-                </form>
-            </div>
         </div>
     </div>
     <!-- End Blog Detail -->
