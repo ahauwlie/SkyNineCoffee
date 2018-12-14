@@ -222,6 +222,33 @@ class Shop extends CI_Controller
             'total_tr' => $g_tot
         );
         $id_order = $this->model_product->tambah_order($data_order);
+        $email = $this->session->userdata('login', 'email_us');
+        // $encrypted_id = md5($id);
+        
+        $this->load->library('email');
+        $config = array();
+        $config['charset'] = 'utf-8';
+        $config['useragent'] = 'Codeigniter';
+        $config['protocol']= "smtp";
+        $config['mailtype']= "html";
+        $config['smtp_host']= "ssl://smtp.gmail.com";//pengaturan smtp
+        $config['smtp_port']= "465";
+        $config['smtp_timeout']= "400";
+        $config['smtp_user']= "skynine.coffee.id@gmail.com"; // isi dengan email kamu
+        $config['smtp_pass']= "skynine123"; // isi dengan password kamu
+        $config['crlf']="\r\n"; 
+        $config['newline']="\r\n"; 
+        $config['wordwrap'] = TRUE;
+        //memanggil library email dan set konfigurasi untuk pengiriman email
+            
+        $this->email->initialize($config);
+        //konfigurasi pengiriman
+        $this->email->from($config['smtp_user']);
+        $this->email->to($email);
+        $this->email->subject("test123");
+        $this->email->message(
+            "terimakasih telah melakuan registrasi, untuk memverifikasi silahkan klik tautan dibawah ini<br><br>"
+        );
         //-------------------------Input data detail order-----------------------       
         if ($cart = $this->cart->contents())
             {
