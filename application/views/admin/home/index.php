@@ -92,7 +92,7 @@
               <!-- small box -->
               <div class="small-box bg-red">
                 <div class="inner">
-                  <h3>65</h3>
+                  <h3>5</h3>
                   <p>Artikel Kami</p>
                 </div>
                 <div class="icon">
@@ -121,8 +121,6 @@
                     <ul class="pagination pagination-sm inline">
                       <li><a href="#">&laquo;</a></li>
                       <li><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
                       <li><a href="#">&raquo;</a></li>
                     </ul>
                   </div>
@@ -131,84 +129,30 @@
                 <div class="box-body">
                   <!-- See dist/js/pages/dashboard.js to activate the todoList plugin -->
                   <ul class="todo-list">
+                    
                     <li>
-                      <!-- drag handle -->
                       <span class="handle">
-                            <i class="fa fa-ellipsis-v"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                          </span>
-                      <!-- checkbox -->
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
                       <input type="checkbox" value="">
-                      <!-- todo text -->
-                      <span class="text">Design a nice theme</span>
-                      <!-- Emphasis label -->
-                      <small class="label label-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
-                      <!-- General tools such as edit or delete-->
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                          <span class="handle">
-                            <i class="fa fa-ellipsis-v"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                          </span>
-                      <input type="checkbox" value="">
-                      <span class="text">Make the theme responsive</span>
+                      <span class="text">Buat Artikelnya responsive "\n dan \t" </span>
                       <small class="label label-info"><i class="fa fa-clock-o"></i> 4 hours</small>
                       <div class="tools">
                         <i class="fa fa-edit"></i>
                         <i class="fa fa-trash-o"></i>
                       </div>
                     </li>
+                    
+                    
                     <li>
-                          <span class="handle">
-                            <i class="fa fa-ellipsis-v"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                          </span>
+                      <span class="handle">
+                        <i class="fa fa-ellipsis-v"></i>
+                        <i class="fa fa-ellipsis-v"></i>
+                      </span>
                       <input type="checkbox" value="">
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-warning"><i class="fa fa-clock-o"></i> 1 day</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                          <span class="handle">
-                            <i class="fa fa-ellipsis-v"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                          </span>
-                      <input type="checkbox" value="">
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-success"><i class="fa fa-clock-o"></i> 3 days</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                          <span class="handle">
-                            <i class="fa fa-ellipsis-v"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                          </span>
-                      <input type="checkbox" value="">
-                      <span class="text">Check your messages and notifications</span>
+                      <span class="text">Check WA dan Line Notifikasi</span>
                       <small class="label label-primary"><i class="fa fa-clock-o"></i> 1 week</small>
-                      <div class="tools">
-                        <i class="fa fa-edit"></i>
-                        <i class="fa fa-trash-o"></i>
-                      </div>
-                    </li>
-                    <li>
-                          <span class="handle">
-                            <i class="fa fa-ellipsis-v"></i>
-                            <i class="fa fa-ellipsis-v"></i>
-                          </span>
-                      <input type="checkbox" value="">
-                      <span class="text">Let theme shine like a star</span>
-                      <small class="label label-default"><i class="fa fa-clock-o"></i> 1 month</small>
                       <div class="tools">
                         <i class="fa fa-edit"></i>
                         <i class="fa fa-trash-o"></i>
